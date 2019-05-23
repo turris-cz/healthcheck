@@ -1,0 +1,9 @@
+Health Check
+============
+
+Tool to run various checks to ensure that system is in stable condition. Intention
+is to ensure longevity of Turris hardware and stability of software it is running
+while not limiting user. Turris routers provide users with full root access to
+device. This means that user can do anything, including actions that can
+compromise lifespan of both software and hardware. Instead of limiting such
+access, this tool provides warnings about possible problems.
