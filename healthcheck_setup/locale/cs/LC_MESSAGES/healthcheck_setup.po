@@ -1,0 +1,51 @@
+# Czech translations for healthcheck.
+# Copyright (C) 2021 CZ.NIC z.s.p.o
+# This file is distributed under the same license as the healthcheck
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: healthcheck 0.1\n"
+"Report-Msgid-Bugs-To: packaging@turris.cz\n"
+"POT-Creation-Date: 2021-11-16 17:44+0100\n"
+"PO-Revision-Date: 2021-11-16 17:48+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: cs\n"
+"Language-Team: cs <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: healthcheck_setup/email_notifications.py:28
+msgid ""
+"You should configure email for notifications to be notified about router "
+"events"
+msgstr ""
+
+#: healthcheck_setup/email_notifications.py:31
+msgid ""
+"Turris system contains notification system. Various components, including"
+" healthcheck, are using it to inform administrator about possible issues."
+msgstr ""
+
+#: healthcheck_setup/email_notifications.py:35
+msgid ""
+"In Foris navigate to Maintenance setting and configure email "
+"notifications there."
+msgstr ""
+
+#: healthcheck_setup/email_notifications.py:46
+msgid "Email notifications seems to be configured."
+msgstr ""
+
+#: healthcheck_setup/email_notifications.py:49
+msgid "Notifications are send to following mail addresses: "
+msgstr ""
+
+#: healthcheck_setup/__init__.py:19
+msgid "Suggestion for router setup."
+msgstr ""
+

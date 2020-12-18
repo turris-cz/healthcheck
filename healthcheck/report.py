@@ -19,20 +19,21 @@ LEVEL_FATAL_ERROR = 80  # The low boundary for fatal errors
 class Report(abc.ABC):
     """Generic report implementation."""
 
-    @abc.abstractstaticmethod
-    def level() -> int:
+    @property
+    @abc.abstractmethod
+    def level(self) -> int:
         """Returns numerical level of this report. You can use it to sort reports. Level should be from 0 to 100 but
         that is in no way ensured.
         """
 
-    @abc.abstractstaticmethod
-    def level_name() -> str:
+    @abc.abstractmethod
+    def level_name(self) -> str:
         """Returns name of this report. This is suppose to be used to tell user what this report is.
         To identify reports them self please use isinstance() instead.
         """
 
-    @abc.abstractstaticmethod
-    def level_description() -> str:
+    @abc.abstractmethod
+    def level_description(self) -> str:
         """Returns description of this report level.
         In other words it is string telling user how important this report is.
         """
@@ -62,31 +63,6 @@ class Report(abc.ABC):
             res += "\n" + suggestion
         return res
 
-    def volatility(self) -> float:
-        """Returns number between between zero and one. This number informs how volatile report can be considered. Zero
-        means no change is expected unless there is user's or other unconsidered intervention. One is other case and
-        report is expected to change almost immediately.
-        As change of report we consider change of report level/type. Change of details in same report type is not change
-        of report.
-        """
-        return 0
-
-    @staticmethod
-    def _calculate_volatility(data_points, min: float = -math.inf, max: flost = math.inf, trend: float = .0):
-        """This is helper function for calculating volatility from series of data points recorded in time.
-
-        trend: this is expected trend of data where positive number is rising, negative number is falling and zero is
-            no change in value. In match speak this is derivative at a point.
-        """
-        # Here comes the math
-        return 0
-
-    def effective_level(self):
-        """This is combination of report level and volatility. High volatility decreases level.
-        """
-        lvl = self.level()
-        return lvl - (lvl * self.volatility())
-
 
 class InconclusiveReport(Report):
     """Report used when check is unable to finish or failed."""
@@ -95,8 +71,7 @@ class InconclusiveReport(Report):
     def level(self):
         return 5
 
-    @staticmethod
-    def level_name():
+    def level_name(self):
         return _("Inconclusive")
 
     def level_description(self):
@@ -109,12 +84,11 @@ class InconclusiveReport(Report):
 class NotApplicableReport(Report):
     """Report used when check passed but had nothing to do for what ever reason."""
 
-    @staticmethod
-    def level():
+    @property
+    def level(self):
         return 0
 
-    @staticmethod
-    def level_name():
+    def level_name(self):
         return _("Not applicable")
 
     def level_description(self):
@@ -127,16 +101,14 @@ class NotApplicableReport(Report):
 class PassReport(Report):
     """Report used when everything is OK."""
 
-    @staticmethod
-    def level():
+    @property
+    def level(self):
         return 10
 
-    @staticmethod
-    def level_name():
+    def level_name(self):
         return _("Pass")
 
-    @staticmethod
-    def level_description():
+    def level_description(self):
         return _("Check successfully passed. No problem was detected.")
 
 
@@ -146,12 +118,11 @@ class TryAgainLater(Report):
     Common use for this is when check tracks some trend and has no previous data to conclude any result right now.
     """
 
-    @staticmethod
-    def level():
+    @property
+    def level(self):
         return 15
 
-    @staticmethod
-    def level_name():
+    def level_name(self):
         return _("Try again later")
 
     def level_description(self):
@@ -172,12 +143,10 @@ class SoftwareAdviseReport(SoftwareReport):
     def level(self):
         return LEVEL_ADVICE
 
-    @staticmethod
-    def level_name():
+    def level_name(self):
         return _("Software advise")
 
-    @staticmethod
-    def level_description():
+    def level_description(self):
         return _("Check provides advise regarding software running on router.  Please consider it.")
 
 
@@ -188,8 +157,7 @@ class SoftwareWarningReport(SoftwareReport):
     def level(self):
         return LEVEL_WARNING
 
-    @staticmethod
-    def level_name():
+    def level_name(self):
         return _("Software warning")
 
     def level_description(self):
@@ -206,8 +174,7 @@ class SoftwareErrorReport(SoftwareReport):
     def level(self):
         return LEVEL_ERROR
 
-    @staticmethod
-    def level_name():
+    def level_name(self):
         return _("Software error")
 
     def level_description(self):
@@ -225,12 +192,10 @@ class SoftwareFatalErrorReport(SoftwareReport):
     def level(self):
         return LEVEL_FATAL_ERROR
 
-    @staticmethod
-    def level_name():
+    def level_name(self):
         return _("Software fatal error")
 
-    @staticmethod
-    def level_description():
+    def level_description(self):
         return _("Check detected fatal problem with software. It is causing system to not work properly.")
 
 
@@ -245,8 +210,7 @@ class HardwareWarningReport(HardwareReport):
     def level(self):
         return LEVEL_WARNING + 10
 
-    @staticmethod
-    def level_name():
+    def level_name(self):
         return _("Hardware warning")
 
     def level_description(self):
@@ -263,8 +227,7 @@ class HardwareErrorReport(HardwareReport):
     def level(self):
         return LEVEL_ERROR + 10
 
-    @staticmethod
-    def level_name():
+    def level_name(self):
         return _("Hardware error")
 
     def level_description(self):
@@ -282,12 +245,10 @@ class HardwareFatalErrorReport(HardwareReport):
     def level(self):
         return LEVEL_FATAL_ERROR + 10
 
-    @staticmethod
-    def level_name():
+    def level_name(self):
         return _("Hardware fatal error")
 
-    @staticmethod
-    def level_description():
+    def level_description(self):
         return _("Check detected fatal problem with hardware. It is causing system to not work properly.")
 
 
@@ -302,12 +263,10 @@ class SecurityAdviseReport(SecurityReport):
     def level(self):
         return LEVEL_ADVICE + 5
 
-    @staticmethod
-    def level_name():
+    def level_name(self):
         return _("Security advise")
 
-    @staticmethod
-    def level_description():
+    def level_description(self):
         return _("Check detected possible security concern. It provides advise.  Please consider it.")
 
 
@@ -318,8 +277,7 @@ class SecurityWarningReport(SecurityReport):
     def level(self):
         return LEVEL_WARNING + 5
 
-    @staticmethod
-    def level_name():
+    def level_name(self):
         return _("Security warning")
 
     def level_description(self):

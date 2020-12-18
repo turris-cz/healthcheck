@@ -60,10 +60,11 @@ class HealthCheck(collections.abc.Mapping):
                 str(plugin),
             )
 
-    def __getitem__(self, key: str) -> Plugin:
-        if key in self._plugins:
-            return self._plugins[key]
-        raise KeyError
+    def __getitem__(self, key) -> Plugin:
+        return self._plugins[key]
 
     def __iter__(self) -> typing.Iterator:
         return iter(self._plugins)
+
+    def __len__(self) -> int:
+        return len(self._plugins)

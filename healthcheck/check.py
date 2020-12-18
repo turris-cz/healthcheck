@@ -70,7 +70,7 @@ class Check(config.Configurable, metaclass=abc.ABCMeta):
             ),
         )
 
-    def __call__(self) -> typing.Union[report.Report, typing.Dict[str, report.Report]]:
+    def __call__(self) -> report.Report:
         """Run this check.
 
         Returns instance of Report.

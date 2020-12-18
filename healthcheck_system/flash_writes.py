@@ -76,12 +76,10 @@ class NoFlashDeviceReport(NotApplicableReport):
     """There are no flash devices we track."""
 
     def summary(self):
-        # TODO
-        return _("")
+        return _("There is no flash device detected in system.")
 
     def details(self):
-        # TODO
-        return _("")
+        return _("Check found no flash device in system. This is most likely because there is just no such device.")
 
 
 class _FlashWritesReport(Report):

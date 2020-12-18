@@ -1,0 +1,319 @@
+# Translations template for healthcheck.
+# Copyright (C) 2021 CZ.NIC z.s.p.o
+# This file is distributed under the same license as the healthcheck
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: healthcheck 0.1\n"
+"Report-Msgid-Bugs-To: packaging@turris.cz\n"
+"POT-Creation-Date: 2021-11-16 17:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: healthcheck_system/flash_writes.py:36
+msgid "Checks if system is not writing too much to flash storage."
+msgstr ""
+
+#: healthcheck_system/flash_writes.py:68
+msgid "There is no flash device detected in system."
+msgstr ""
+
+#: healthcheck_system/flash_writes.py:71
+msgid ""
+"Check found no flash device in system. This is most likely because there "
+"is just no such device."
+msgstr ""
+
+#: healthcheck_system/free_ram.py:30
+msgid "watches amount of free ram and reports not enough space."
+msgstr ""
+
+#: healthcheck_system/free_ram.py:68
+msgid "Amount of free memory: "
+msgstr ""
+
+#: healthcheck_system/free_ram.py:69
+msgid "Processes consuming most memory:"
+msgstr ""
+
+#: healthcheck_system/free_ram.py:78
+msgid "System seems to have enough free memory."
+msgstr ""
+
+#: healthcheck_system/free_ram.py:86
+msgid "System seems to have not enough free memory."
+msgstr ""
+
+#: healthcheck_system/free_ram.py:89 healthcheck_system/free_ram.py:100
+msgid ""
+"You might want to check what processes are running on your router and how"
+" much memory they consume."
+msgstr ""
+
+#: healthcheck_system/free_ram.py:97
+msgid "System experiences memory shortage."
+msgstr ""
+
+#: healthcheck_system/free_storage.py:81
+msgid " out of "
+msgstr ""
+
+#: healthcheck_system/free_storage.py:82
+msgid " available on device: "
+msgstr ""
+
+#: healthcheck_system/free_storage.py:86
+msgid "used"
+msgstr ""
+
+#: healthcheck_system/free_storage.py:89
+msgid ""
+"You should remove any unnecessary files and directories in case they were"
+" created by user(s) and not by system (unless you know what you are "
+"doing)."
+msgstr ""
+
+#: healthcheck_system/free_storage.py:92
+msgid ""
+" You can also remove some nonessential software you do not need to free "
+"storage space."
+msgstr ""
+
+#: healthcheck_system/free_storage.py:94
+msgid ""
+" You should also check snapshots and remove unnecessary ones (using "
+"schnapps or by any other way you are using)."
+msgstr ""
+
+#: healthcheck_system/free_storage.py:97
+msgid ""
+" In case of this storage it can also be enough to just reboot device as "
+"content resides in volatile memory."
+msgstr ""
+
+#: healthcheck_system/free_storage.py:100
+msgid ""
+"This applies to permanent storages (hardware storage devices). In case of"
+" memory storages such as 'tmpfs' it might be enough to perform reboot."
+msgstr ""
+
+#: healthcheck_system/free_storage.py:109
+msgid "There is enough of free storage space"
+msgstr ""
+
+#: healthcheck_system/free_storage.py:120
+msgid "Storage space is getting low"
+msgstr ""
+
+#: healthcheck_system/free_storage.py:128
+msgid "Amount of free storage space is getting dangerously low"
+msgstr ""
+
+#: healthcheck_system/free_storage.py:132
+msgid ""
+"Having storage device filled almost to the brim is dangerous as you can "
+"easily run out of of storage space with system updates or when files are "
+"updated or new added. Not only that it also considerably slows down the "
+"storage."
+msgstr ""
+
+#: healthcheck_system/free_storage.py:142
+msgid "Storage is full!"
+msgstr ""
+
+#: healthcheck_system/free_storage.py:146
+msgid ""
+"Storage is pretty much full. It is expected that writing or extending "
+"files can fail and because of services might start failing as well. You "
+"should act now!"
+msgstr ""
+
+#: healthcheck_system/__init__.py:32
+msgid "Basic system stability and endurance checks"
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:47
+msgid "Watches wear of MMC storages plugged in to the router."
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:76
+msgid "There is no MMC device detected in system."
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:79
+msgid ""
+"Check found no MMC block device in system. This is most likely becuase "
+"there is just no such device plugged in."
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:92 healthcheck_system/smart.py:82
+msgid "It is not possible to read extcsd data."
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:96 healthcheck_system/smart.py:86
+msgid "MMC tools (mmc-utils) are missing or not accessible."
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:97 healthcheck_system/smart.py:87
+msgid "Read failed with error: "
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:101 healthcheck_system/smart.py:91
+msgid ""
+"You should install mmc-utils or any other package that provides mmc-"
+"utils's command 'mmc'."
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:116
+msgid "Reserved blocks on memory were depleted!"
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:118
+#, python-format
+msgid "More than 80% of reserved blocks consumed!"
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:119
+msgid "Device's lifespan is depleted at least: "
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:120
+msgid ""
+"MMC storage has limited amount of writes and because of that it has "
+"limited lifespan. This means that this is normal and expected if your "
+"device is cheap or years old. In case of new device it can be either "
+"faulty from factory or more likely it was used very heavily in the past. "
+"Note that most of the manufacturers do not provide warranty if MMC was "
+"used heavily.\n"
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:126
+msgid ""
+"To prolong device lifespan you should minimize amount of writes "
+"(preferably to only system updates). This means moving any write heavy "
+"tasks such as file sharing, databases, containers, logs and others to "
+"some other storage storage device."
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:136
+msgid "Life of MMC is all right."
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:144
+msgid "Life of MMC is getting short."
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:152
+msgid "Life of MMC is getting dangerously short!"
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:160
+msgid "MMC is end of life."
+msgstr ""
+
+#: healthcheck_system/mmc_life.py:163
+msgid ""
+"There is nothing that can be done now. It is too late. MMC is most "
+"probably already not usable. You should stop using it if your data are "
+"dear to you. It should be replaced if possible. Either with same type of "
+"device or with different in case it is MMC soldered to board in device."
+msgstr ""
+
+#: healthcheck_system/pkg_check.py:73
+msgid "Some files from system packages were modified."
+msgstr ""
+
+#: healthcheck_system/services.py:27
+msgid ""
+"Check if there is no disabled service that would be re-enabled with "
+"update."
+msgstr ""
+
+#: healthcheck_system/services.py:35
+msgid "All wanted services are enabled."
+msgstr ""
+
+#: healthcheck_system/services.py:38
+msgid ""
+"Some of the services are automatically activated even if they were "
+"previously disabled. All of such services are enabled and are going to be"
+" started on startup."
+msgstr ""
+
+#: healthcheck_system/services.py:50
+msgid ""
+"Some services currently disabled are going to be enabled with future "
+"updates."
+msgstr ""
+
+#: healthcheck_system/services.py:53
+msgid ""
+"Following disabled services are going to be re-enabled with future "
+"updates: "
+msgstr ""
+
+#: healthcheck_system/services.py:55
+msgid ""
+"These services are automatically enabled even if they were previously "
+"disabled to ensure router's functionality."
+msgstr ""
+
+#: healthcheck_system/services.py:59
+msgid ""
+"To solve this you should configure system to not install software you do "
+"not want."
+msgstr ""
+
+#: healthcheck_system/services.py:87
+msgid ""
+"Checks if currently running services would be automatically strated after"
+" boot."
+msgstr ""
+
+#: healthcheck_system/services.py:95
+msgid "All running services are enabled."
+msgstr ""
+
+#: healthcheck_system/services.py:98
+msgid ""
+"Services are not automatically started on next startup unless they are "
+"activated. All currently running services are enabled so you should not "
+"miss any service after reboot."
+msgstr ""
+
+#: healthcheck_system/services.py:110
+msgid "There are currently running services that are not enabled."
+msgstr ""
+
+#: healthcheck_system/services.py:113
+msgid "Following currently running services are disabled: "
+msgstr ""
+
+#: healthcheck_system/services.py:114
+msgid ""
+"Enabled services are started on startup. You might want to enable these "
+"services."
+msgstr ""
+
+#: healthcheck_system/services.py:117
+msgid "Using either LuCI or SSH enable mentioned services."
+msgstr ""
+
+#: healthcheck_system/smart.py:66
+msgid "There is no ATA/SATA/NVMe device detected in system."
+msgstr ""
+
+#: healthcheck_system/smart.py:69
+msgid ""
+"Check found no ATA/SATA/NVMe block device in system. This is most likely "
+"becuase there is just no such device plugged in."
+msgstr ""
+

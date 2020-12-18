@@ -67,7 +67,7 @@ class MMCLife(Check):
 
     @staticmethod
     def description():
-        return "Watches wear of MMC storages plugged in to the router."
+        return _("Watches wear of MMC storages plugged in to the router.")
 
     @classmethod
     def mmc_extcsd(cls, dev: str) -> typing.Union[str, dict]:

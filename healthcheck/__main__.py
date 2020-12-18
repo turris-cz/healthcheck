@@ -7,6 +7,7 @@ from . import HealthCheck
 from ._gettext import _
 from ._output import ConsoleFormater, JSONFormater, NotificationFormater
 
+logger = logging.getLogger(__name__)
 
 HELP_DESCRIPTION = _("System health checker.")
 
@@ -69,15 +70,13 @@ def main():
     "Main function of healthcheck"
     args = parse_args()
 
-    handler = HealthCheck(args.discovery, args.disable, args.extra)
+    handler = HealthCheck()
 
-    # If plugins list is requested then just list it and exit
     if args.list:
         return list_modules(handler)  # If plugins list is requested then just list it and exit
     if args.config_list:
         return list_config_options(handler)  # If configuration listing is requested then just list it and exit
 
-    # Fork to background if requested
     if args.background:
         if os.fork():
             detach_std()

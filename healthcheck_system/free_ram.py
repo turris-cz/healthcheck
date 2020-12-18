@@ -41,7 +41,7 @@ class FreeRam(Check):
 
     @staticmethod
     def description():
-        return "Watches amount of free ram and reports not enough space."
+        return _("watches amount of free ram and reports not enough space.")
 
     def _level_config(self, confname) -> int:
         try:

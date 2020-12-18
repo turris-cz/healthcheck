@@ -113,7 +113,6 @@ class SmartNVVMe(Check):
         return info["nvme_smart_health_information_log"].get(name)
 
 
-
 class NoSMARTDeviceReport(NotApplicableReport):
     """There is no ATA/SATA/NVMe device so there is nothing to check."""
 

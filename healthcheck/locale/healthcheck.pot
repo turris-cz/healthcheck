@@ -1,0 +1,154 @@
+# Translations template for healthcheck.
+# Copyright (C) 2021 CZ.NIC z.s.p.o
+# This file is distributed under the same license as the healthcheck
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: healthcheck 0.1\n"
+"Report-Msgid-Bugs-To: packaging@turris.cz\n"
+"POT-Creation-Date: 2021-11-16 17:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: healthcheck/report.py:75
+msgid "Inconclusive"
+msgstr ""
+
+#: healthcheck/report.py:78
+msgid ""
+"Check was inconclusive. This means that for some reason check wasn't able"
+" to generate any other report. This is mostly because it failed horribly."
+msgstr ""
+
+#: healthcheck/report.py:91
+msgid "Not applicable"
+msgstr ""
+
+#: healthcheck/report.py:94
+msgid ""
+"Check wasn't applicable. This is most probably because it checks system "
+"attribute that is notinstalled or activated."
+msgstr ""
+
+#: healthcheck/report.py:107
+msgid "Pass"
+msgstr ""
+
+#: healthcheck/report.py:110
+msgid "Check successfully passed. No problem was detected."
+msgstr ""
+
+#: healthcheck/report.py:124
+msgid "Try again later"
+msgstr ""
+
+#: healthcheck/report.py:127
+msgid ""
+"Check can't be finished at the moment but should be able after a while. "
+"This is commonly becuase itlacks data to assess trends from."
+msgstr ""
+
+#: healthcheck/report.py:140
+msgid "Software advise"
+msgstr ""
+
+#: healthcheck/report.py:143
+msgid ""
+"Check provides advise regarding software running on router.  Please "
+"consider it."
+msgstr ""
+
+#: healthcheck/report.py:155
+msgid "Software warning"
+msgstr ""
+
+#: healthcheck/report.py:158
+msgid ""
+"Check detected problem with software. It is far from fatal but it might "
+"be causing some functionalitydegradation now or in future. Please solve "
+"this issue at your convenience."
+msgstr ""
+
+#: healthcheck/report.py:171
+msgid "Software error"
+msgstr ""
+
+#: healthcheck/report.py:174
+msgid ""
+"Check detected dangerous problem with software. It is not immediately "
+"fatal but it possibly causessome functionality degradation and/or it can "
+"progress to be fatal for device functionality. Pleaseresolver this "
+"problem as soon as possible."
+msgstr ""
+
+#: healthcheck/report.py:188
+msgid "Software fatal error"
+msgstr ""
+
+#: healthcheck/report.py:191
+msgid ""
+"Check detected fatal problem with software. It is causing system to not "
+"work properly."
+msgstr ""
+
+#: healthcheck/report.py:203
+msgid "Hardware warning"
+msgstr ""
+
+#: healthcheck/report.py:206
+msgid ""
+"Check detected problem with hardware. It is far from fatal but it might "
+"be causing some functionalitydegradation now or in future. Please solve "
+"this issue at your convenience."
+msgstr ""
+
+#: healthcheck/report.py:219
+msgid "Hardware error"
+msgstr ""
+
+#: healthcheck/report.py:222
+msgid ""
+"Check detected dangerous problem with hardware. It is not immediately "
+"fatal but it possibly causessome functionality degradation and/or it can "
+"progress to be fatal for device. Please resolver thisproblem as soon as "
+"possible."
+msgstr ""
+
+#: healthcheck/report.py:236
+msgid "Hardware fatal error"
+msgstr ""
+
+#: healthcheck/report.py:239
+msgid ""
+"Check detected fatal problem with hardware. It is causing system to not "
+"work properly."
+msgstr ""
+
+#: healthcheck/report.py:251
+msgid "Security advise"
+msgstr ""
+
+#: healthcheck/report.py:254
+msgid ""
+"Check detected possible security concern. It provides advise.  Please "
+"consider it."
+msgstr ""
+
+#: healthcheck/report.py:266
+msgid "Security warning"
+msgstr ""
+
+#: healthcheck/report.py:269
+msgid ""
+"Check detected possible security problem. It is advised to solve it as "
+"soon as possible to mitigatepossible exploit."
+msgstr ""
+

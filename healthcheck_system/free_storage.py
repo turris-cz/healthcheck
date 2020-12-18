@@ -127,17 +127,21 @@ class FreeStorage(Check):
         with open("/proc/mounts", "r") as file:
             for line in file:
                 columns = line.split()
+                if "rw" not in columns[3].split(","):
+                    continue  # only write filesystems are considered
                 ret[columns[1]] = {
                     "device": columns[0],
                     "type": columns[2],
                     # Well we are not interested in mount options and rest so they are ignored
                 }
+        return ret
 
 
 class _FreeStorageReport(Report):
     """Generic report about free space on mounted storage."""
 
-    def __init__(self, free_space, total_space, device, devtype):
+    def __init__(self, mount, free_space, total_space, device, devtype):
+        self.mount = mount
         self.free_space = free_space
         self.total_space = total_space
         self.device = device
@@ -184,16 +188,17 @@ class FreeStoragePass(_FreeStorageReport, PassReport):
     """Storage is not getting short."""
 
     def summary(self):
-        # TODO
-        return _("")
+        return _("There is enough of free storage space") + f" ({self._used()})"
+
+    def suggestion(self):
+        return None
 
 
 class FreeStorageWarning(_FreeStorageReport, SoftwareWarningReport):
     """Warning about not enough free space on file-system."""
 
     def summary(self):
-        # TODO
-        return _("")
+        return _("Storage space is getting low") + f" ({self._used()})"
 
 
 class FreeStorageError(_FreeStorageReport, SoftwareErrorReport):
