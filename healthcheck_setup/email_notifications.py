@@ -7,7 +7,7 @@ from ._gettext import _
 
 
 class EmailNotifications(Check):
-    """Suggest email notification if they are not configured."""
+    """Suggest setting up e-mail notifications if not set up already."""
 
     def _run(self, data, param):
         with EUci() as uci:
@@ -22,19 +22,19 @@ class EmailNotifications(Check):
 
     @staticmethod
     def description():
-        return _("Checks if email notifications are configured.")
+        return _("Checks if e-mail notifications are set up.")
 
 
 class ConfigureEmailNotifications(SoftwareAdviseReport):
-    """Suggest user to enable email notification."""
+    """Suggests the user turn on e-mail notifications."""
 
     def summary(self):
-        return _("You should configure email for notifications to be notified about router events")
+        return _("Set up e-mail notifications to be notified of router events")
 
     def details(self):
         return _(
-            "Turris system contains notification system. Various components, including healthcheck, are using it "
-            "to inform administrator about possible issues."
+            "Turris system has notification system. Various components (including healthcheck) are using it "
+            "to inform the administrator of possible issues."
         )
 
     def suggestion(self):
@@ -42,13 +42,13 @@ class ConfigureEmailNotifications(SoftwareAdviseReport):
 
 
 class EmailNotificationsPass(PassReport):
-    """Email notifications seems to be configured."""
+    """E-mail notifications will be sent out."""
 
     def __init__(self, mails):
         self._mails = mails
 
     def summary(self):
-        return _("Email notifications seems to be configured.")
+        return _("E-mail notifications will be sent out.")
 
     def details(self):
-        return _("Notifications are send to the following mail addresses: ") + ", ".join(self._mails)
+        return _("Notifications are sent to the following e-mail addresses: ") + ", ".join(self._mails)
