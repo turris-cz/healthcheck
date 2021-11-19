@@ -9,70 +9,77 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2021-11-16 17:44+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-11-20 11:50+0000\n"
+"Last-Translator: Atec <dr.atec@gmail.com>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
+"healthcheck-system/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.9.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck_system/flash_writes.py:36
 msgid "Checks if system is not writing too much to flash storage."
-msgstr ""
+msgstr "Kontroluje, či systém príliš veľa nezapisuje do pamäte flash."
 
 #: healthcheck_system/flash_writes.py:68
 msgid "There is no flash device detected in system."
-msgstr ""
+msgstr "V systéme sa nezistilo žiadne flash zariadenie."
 
 #: healthcheck_system/flash_writes.py:71
 msgid ""
 "Check found no flash device in system. This is most likely because there "
 "is just no such device."
 msgstr ""
+"Kontrola nenašla v systéme žiadne zariadenie flash. Zariadenie pravdepodobne "
+"nie je prítomné."
 
 #: healthcheck_system/free_ram.py:30
 msgid "watches amount of free ram and reports not enough space."
-msgstr ""
+msgstr "sleduje množstvo voľnej RAM a hlási nedostatok miesta."
 
 #: healthcheck_system/free_ram.py:68
 msgid "Amount of free memory: "
-msgstr ""
+msgstr "Veľkosť voľnej pamäte: "
 
 #: healthcheck_system/free_ram.py:69
 msgid "Processes consuming most memory:"
-msgstr ""
+msgstr "Procesy využívajúce najviac pamäte:"
 
 #: healthcheck_system/free_ram.py:78
 msgid "System seems to have enough free memory."
-msgstr ""
+msgstr "Zdá sa, že systém má dostatok voľnej pamäte."
 
 #: healthcheck_system/free_ram.py:86
 msgid "System seems to have not enough free memory."
-msgstr ""
+msgstr "Zdá sa, že systém nemá dostatok voľnej pamäte."
 
 #: healthcheck_system/free_ram.py:89 healthcheck_system/free_ram.py:100
 msgid ""
 "You might want to check what processes are running on your router and how"
 " much memory they consume."
 msgstr ""
+"Môžete skontrolovať, aké procesy sú vo vašom routeri spustené a koľko pamäte "
+"využívajú."
 
 #: healthcheck_system/free_ram.py:97
 msgid "System experiences memory shortage."
-msgstr ""
+msgstr "Systém má nedostatok pamäte."
 
 #: healthcheck_system/free_storage.py:81
 msgid " out of "
-msgstr ""
+msgstr " z "
 
 #: healthcheck_system/free_storage.py:82
 msgid " available on device: "
-msgstr ""
+msgstr " dostupné v zariadení: "
 
 #: healthcheck_system/free_storage.py:86
 msgid "used"
-msgstr ""
+msgstr "využité"
 
 #: healthcheck_system/free_storage.py:89
 msgid ""
@@ -80,6 +87,8 @@ msgid ""
 " created by user(s) and not by system (unless you know what you are "
 "doing)."
 msgstr ""
+"Mali by ste odstrániť všetky nepotrebné súbory a adresáre vytvorené "
+"užívateľom a nie systémom (pokiaľ presne neviete, čo robíte)."
 
 #: healthcheck_system/free_storage.py:92
 msgid ""
