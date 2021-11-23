@@ -53,188 +53,135 @@ msgstr ""
 
 #: healthcheck/report.py:78
 msgid ""
-"Check was inconclusive. This means that for some reason check wasn't able"
-" to generate any other report. This is mostly because it failed horribly."
+"Check was inconclusive. This means that for some reason check wasn't able to "
+"generate any other report. This is mostly because it failed horribly."
 msgstr ""
 
-#: healthcheck/report.py:92
+#: healthcheck/report.py:92 healthcheck/report.py:91
 msgid "Not applicable"
 msgstr ""
 
-#: healthcheck/report.py:95
+#: healthcheck/report.py:95 healthcheck/report.py:94
 msgid ""
 "Check wasn't applicable. This is most probably because it checks system "
 "attribute that is notinstalled or activated."
 msgstr ""
 
-#: healthcheck/report.py:109
+#: healthcheck/report.py:107
 msgid "Pass"
-msgstr ""
+msgstr "Úspěch"
 
-#: healthcheck/report.py:112
+#: healthcheck/report.py:110
 msgid "Check successfully passed. No problem was detected."
-msgstr ""
+msgstr "Kontrola byla úspěšně dokončena. Nebyl zjištěn žádný problém."
 
-#: healthcheck/report.py:126
+#: healthcheck/report.py:124
 msgid "Try again later"
-msgstr ""
+msgstr "Zkuste to znovu později"
 
 #: healthcheck/report.py:129
 msgid ""
-"Check can't be finished at the moment but should be able after a while. "
-"This is because becuase it lacks data to assess trends from."
+"Check can't be finished at the moment but should be able after a while. This "
+"is because becuase it lacks data to assess trends from."
 msgstr ""
 
-#: healthcheck/report.py:147
+#: healthcheck/report.py:147 healthcheck/report.py:140
 msgid "Software advise"
 msgstr ""
 
-#: healthcheck/report.py:150
+#: healthcheck/report.py:150 healthcheck/report.py:143
 msgid ""
-"Check provides advise regarding software running on router.  Please "
-"consider it."
+"Check provides advise regarding software running on router.  Please consider "
+"it."
 msgstr ""
 
-#: healthcheck/report.py:161
+#: healthcheck/report.py:161 healthcheck/report.py:155
 msgid "Software warning"
 msgstr ""
 
-#: healthcheck/report.py:164
+#: healthcheck/report.py:164 healthcheck/report.py:158
 msgid ""
-"Check detected problem with software. It is far from fatal but it might "
-"be causing some functionalitydegradation now or in future. Please solve "
-"this issue at your convenience."
+"Check detected problem with software. It is far from fatal but it might be "
+"causing some functionalitydegradation now or in future. Please solve this "
+"issue at your convenience."
 msgstr ""
 
-#: healthcheck/report.py:178
+#: healthcheck/report.py:178 healthcheck/report.py:171
 msgid "Software error"
 msgstr ""
 
-#: healthcheck/report.py:181
+#: healthcheck/report.py:181 healthcheck/report.py:174
 msgid ""
-"Check detected dangerous problem with software. It is not immediately "
-"fatal but it possibly causessome functionality degradation and/or it can "
-"progress to be fatal for device functionality. Pleaseresolver this "
-"problem as soon as possible."
-msgstr ""
-
-#: healthcheck/report.py:196
-msgid "Software fatal error"
-msgstr ""
-
-#: healthcheck/report.py:199
-msgid ""
-"Check detected fatal problem with software. It is causing system to not "
-"work properly."
-msgstr ""
-
-#: healthcheck/report.py:214
-msgid "Hardware warning"
-msgstr ""
-
-#: healthcheck/report.py:217
-msgid ""
-"Check detected problem with hardware. It is far from fatal but it might "
-"be causing some functionalitydegradation now or in future. Please solve "
-"this issue at your convenience."
-msgstr ""
-
-#: healthcheck/report.py:231
-msgid "Hardware error"
-msgstr ""
-
-#: healthcheck/report.py:234
-msgid ""
-"Check detected dangerous problem with hardware. It is not immediately "
-"fatal but it possibly causessome functionality degradation and/or it can "
-"progress to be fatal for device. Please resolver thisproblem as soon as "
+"Check detected dangerous problem with software. It is not immediately fatal "
+"but it possibly causessome functionality degradation and/or it can progress "
+"to be fatal for device functionality. Pleaseresolver this problem as soon as "
 "possible."
 msgstr ""
 
-#: healthcheck/report.py:249
+#: healthcheck/report.py:196 healthcheck/report.py:188
+msgid "Software fatal error"
+msgstr ""
+
+#: healthcheck/report.py:199 healthcheck/report.py:191
+msgid ""
+"Check detected fatal problem with software. It is causing system to not work "
+"properly."
+msgstr ""
+
+#: healthcheck/report.py:214 healthcheck/report.py:203
+msgid "Hardware warning"
+msgstr ""
+
+#: healthcheck/report.py:217 healthcheck/report.py:206
+msgid ""
+"Check detected problem with hardware. It is far from fatal but it might be "
+"causing some functionalitydegradation now or in future. Please solve this "
+"issue at your convenience."
+msgstr ""
+
+#: healthcheck/report.py:231 healthcheck/report.py:219
+msgid "Hardware error"
+msgstr ""
+
+#: healthcheck/report.py:234 healthcheck/report.py:222
+msgid ""
+"Check detected dangerous problem with hardware. It is not immediately fatal "
+"but it possibly causessome functionality degradation and/or it can progress "
+"to be fatal for device. Please resolver thisproblem as soon as possible."
+msgstr ""
+
+#: healthcheck/report.py:249 healthcheck/report.py:236
 msgid "Hardware fatal error"
 msgstr ""
 
-#: healthcheck/report.py:252
+#: healthcheck/report.py:252 healthcheck/report.py:239
 msgid ""
-"Check detected fatal problem with hardware. It is causing system to not "
-"work properly."
+"Check detected fatal problem with hardware. It is causing system to not work "
+"properly."
 msgstr ""
 
-#: healthcheck/report.py:267
+#: healthcheck/report.py:267 healthcheck/report.py:251
 msgid "Security advise"
 msgstr ""
 
-#: healthcheck/report.py:270
+#: healthcheck/report.py:270 healthcheck/report.py:254
 msgid ""
 "Check detected possible security concern. It provides advise.  Please "
 "consider it."
 msgstr ""
 
-#: healthcheck/report.py:281
+#: healthcheck/report.py:281 healthcheck/report.py:266
 msgid "Security warning"
 msgstr ""
 
-#: healthcheck/report.py:284
+#: healthcheck/report.py:284 healthcheck/report.py:269
 msgid ""
-"Check detected possible security problem. It is advised to solve it as "
-"soon as possible to mitigatepossible exploit."
+"Check detected possible security problem. It is advised to solve it as soon "
+"as possible to mitigatepossible exploit."
 msgstr ""
 
-#~ msgid ""
-#~ "Check wasn't applicable. This is most"
-#~ " probably because it checks system "
-#~ "attribute that is not installed or "
-#~ "activated."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Check can't be finished at the "
-#~ "moment but should be able after a"
-#~ " while. This is commonly because it"
-#~ " lacks data to assess trends from."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Check detected problem with software. It"
-#~ " is far from fatal but it might"
-#~ " be causing some functionality degradation"
-#~ " now or in future. Please solve "
-#~ "this issue at your convenience."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Check detected dangerous problem with "
-#~ "software. It is not immediately fatal"
-#~ " but it possibly causes some "
-#~ "functionality degradation and/or it can "
-#~ "progress to be fatal for device "
-#~ "functionality. Please resolve this problem "
-#~ "as soon as possible."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Check detected problem with hardware. It"
-#~ " is far from fatal but it might"
-#~ " be causing some functionality degradation"
-#~ " now or in future. Please solve "
-#~ "this issue at your convenience."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Check detected dangerous problem with "
-#~ "hardware. It is not immediately fatal"
-#~ " but it possibly causes some "
-#~ "functionality degradation and/or it can "
-#~ "progress to be fatal for device. "
-#~ "Please resolve this problem as soon "
-#~ "as possible."
-#~ msgstr ""
-
-#~ msgid ""
-#~ "Check detected possible security problem. "
-#~ "It is advised to solve it as "
-#~ "soon as possible to mitigate potential"
-#~ " exploit."
-#~ msgstr ""
-
+#: healthcheck/report.py:127
+msgid ""
+"Check can't be finished at the moment but should be able after a while. This "
+"is commonly becuase itlacks data to assess trends from."
+msgstr ""
