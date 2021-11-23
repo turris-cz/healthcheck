@@ -104,84 +104,91 @@ msgstr "Množství volné paměti: "
 msgid "Processes consuming the most memory:"
 msgstr ""
 
-#: healthcheck_system/free_ram.py:93 healthcheck_system/free_ram.py:78
+#: healthcheck_system/free_ram.py:78
 msgid "System seems to have enough free memory."
-msgstr ""
+msgstr "Zdá se, že systém má dostatek volné paměti."
 
-#: healthcheck_system/free_ram.py:100 healthcheck_system/free_ram.py:86
+#: healthcheck_system/free_ram.py:86
 msgid "System seems to have not enough free memory."
-msgstr ""
+msgstr "Zdá se, že systém nemá dostatek volné paměti."
 
-#: healthcheck_system/free_ram.py:103 healthcheck_system/free_ram.py:113
 #: healthcheck_system/free_ram.py:89 healthcheck_system/free_ram.py:100
 msgid ""
 "You might want to check what processes are running on your router and how "
 "much memory they consume."
 msgstr ""
+"Možná budete chtít zkontrolovat, jaké procesy jsou na vašem routeru spuštěny "
+"a kolik paměti spotřebovávají."
 
-#: healthcheck_system/free_ram.py:110 healthcheck_system/free_ram.py:97
+#: healthcheck_system/free_ram.py:97
 msgid "System experiences memory shortage."
-msgstr ""
+msgstr "Systém trpí nedostatkem paměti."
 
 #: healthcheck_system/free_storage.py:110 healthcheck_system/free_storage.py:81
 msgid " out of "
 msgstr ""
 
-#: healthcheck_system/free_storage.py:112 healthcheck_system/free_storage.py:82
+#: healthcheck_system/free_storage.py:82
 msgid " available on device: "
-msgstr ""
+msgstr " k dispozici na zařízení: "
 
-#: healthcheck_system/free_storage.py:118 healthcheck_system/free_storage.py:86
+#: healthcheck_system/free_storage.py:86
 msgid "used"
-msgstr ""
+msgstr "použito"
 
-#: healthcheck_system/free_storage.py:121 healthcheck_system/free_storage.py:89
+#: healthcheck_system/free_storage.py:89
 msgid ""
 "You should remove any unnecessary files and directories in case they were "
 "created by user(s) and not by system (unless you know what you are doing)."
 msgstr ""
+"Měli byste odstranit všechny nepotřebné soubory a adresáře v případě, že "
+"byly vytvořeny uživatelem (uživateli), nikoli systémem (pokud nevíte, co "
+"děláte)."
 
-#: healthcheck_system/free_storage.py:126 healthcheck_system/free_storage.py:92
+#: healthcheck_system/free_storage.py:92
 msgid ""
 " You can also remove some nonessential software you do not need to free "
 "storage space."
 msgstr ""
+" Můžete také odebrat některý nepodstatný software, který nepotřebujete, "
+"abyste uvolnili úložný prostor."
 
-#: healthcheck_system/free_storage.py:128 healthcheck_system/free_storage.py:94
+#: healthcheck_system/free_storage.py:94
 msgid ""
 " You should also check snapshots and remove unnecessary ones (using schnapps "
 "or by any other way you are using)."
 msgstr ""
+" Měli byste také zkontrolovat snímky a odstranit nepotřebné (pomocí schnapps "
+"nebo jakýmkoli jiným způsobem, který používáte)."
 
-#: healthcheck_system/free_storage.py:133 healthcheck_system/free_storage.py:97
+#: healthcheck_system/free_storage.py:97
 msgid ""
 " In case of this storage it can also be enough to just reboot device as "
 "content resides in volatile memory."
 msgstr ""
+" V případě tohoto úložiště může také stačit pouze restartovat zařízení, "
+"protože obsah se nachází v nestálé paměti."
 
-#: healthcheck_system/free_storage.py:138
 #: healthcheck_system/free_storage.py:100
 msgid ""
 "This applies to permanent storages (hardware storage devices). In case of "
 "memory storages such as 'tmpfs' it might be enough to perform reboot."
 msgstr ""
+"To platí pro trvalá úložiště (hardwarová úložná zařízení). V případě "
+"paměťových úložišť, jako je \"tmpfs\", může stačit provést restart."
 
-#: healthcheck_system/free_storage.py:148
 #: healthcheck_system/free_storage.py:109
 msgid "There is enough of free storage space"
-msgstr ""
+msgstr "K dispozici je dostatek volného úložného prostoru"
 
-#: healthcheck_system/free_storage.py:158
 #: healthcheck_system/free_storage.py:120
 msgid "Storage space is getting low"
-msgstr ""
+msgstr "Úložný prostor se vyčerpává"
 
-#: healthcheck_system/free_storage.py:165
 #: healthcheck_system/free_storage.py:128
 msgid "Amount of free storage space is getting dangerously low"
-msgstr ""
+msgstr "Množství volného úložného prostoru se nebezpečně zmenšuje"
 
-#: healthcheck_system/free_storage.py:171
 #: healthcheck_system/free_storage.py:132
 msgid ""
 "Having storage device filled almost to the brim is dangerous as you can "
@@ -189,11 +196,13 @@ msgid ""
 "updated or new added. Not only that it also considerably slows down the "
 "storage."
 msgstr ""
+"Mít úložné zařízení zaplněné téměř po okraj je nebezpečné, protože při "
+"aktualizacích systému nebo při aktualizaci či přidávání nových souborů může "
+"snadno dojít místo v úložišti. Navíc to také výrazně zpomaluje ukládání."
 
-#: healthcheck_system/free_storage.py:183
 #: healthcheck_system/free_storage.py:142
 msgid "Storage is full!"
-msgstr ""
+msgstr "Úložiště je plné!"
 
 #: healthcheck_system/free_storage.py:189
 msgid ""
