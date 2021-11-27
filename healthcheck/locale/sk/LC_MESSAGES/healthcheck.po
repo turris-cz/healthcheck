@@ -12,8 +12,8 @@ msgstr ""
 "PO-Revision-Date: 2021-11-20 11:50+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
 "Language: sk\n"
-"Language-Team: Slovak "
-"<https://hosted.weblate.org/projects/turris/healthcheck/sk/>\n"
+"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
+"healthcheck/sk/>\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -38,14 +38,13 @@ msgstr ""
 
 #: healthcheck/check.py:124
 msgid ""
-"Both plugin as check itself are disabled in configuration. You are "
-"rigorous I give you that."
+"Both plugin as check itself are disabled in configuration. You are rigorous "
+"I give you that."
 msgstr ""
 
 #: healthcheck/check.py:126
 msgid ""
-"The plugin check is part of is explicitly disabled as whole in "
-"configuration."
+"The plugin check is part of is explicitly disabled as whole in configuration."
 msgstr ""
 
 #: healthcheck/check.py:127
@@ -54,39 +53,39 @@ msgstr ""
 
 #: healthcheck/__main__.py:12
 msgid "System health checker."
-msgstr ""
+msgstr "Kontrola stavu systému."
 
 #: healthcheck/__main__.py:18
 msgid "List all available checks"
-msgstr ""
+msgstr "Zoznam všetkých dostupných kontrol"
 
 #: healthcheck/__main__.py:20
 msgid "List all available UCI configuration options"
 msgstr ""
 
-#: healthcheck/__main__.py:22
+#: healthcheck/__main__.py:19
 msgid "Output in JSON data format"
-msgstr ""
+msgstr "Výstup v dátovom formáte JSON"
 
-#: healthcheck/__main__.py:23
+#: healthcheck/__main__.py:20
 msgid "Run healthcheck in background"
-msgstr ""
+msgstr "Vykonať kontrolu stavu systému na pozadí"
 
 #: healthcheck/__main__.py:25
 msgid "Periodic check that sends notifications when issues are found"
 msgstr ""
 
-#: healthcheck/__main__.py:30
+#: healthcheck/__main__.py:24
 msgid "Check to be executed. If not specified then all checks are executed."
-msgstr ""
+msgstr "Kontroly na vykonanie. Ak nie sú zadané, vykonajú sa všetky kontroly."
 
-#: healthcheck/__main__.py:92
+#: healthcheck/__main__.py:67
 msgid "No such plugin"
-msgstr ""
+msgstr "Taký plugin neexistuje"
 
-#: healthcheck/__main__.py:100
+#: healthcheck/__main__.py:75
 msgid "No such check in plugin"
-msgstr ""
+msgstr "Takáto kontrola v plugine neexistuje"
 
 #: healthcheck/_output.py:245
 msgid "#### Healthcheck detected the following new or deteriorated issues ####"
@@ -106,33 +105,33 @@ msgstr ""
 
 #: healthcheck/_output.py:283
 msgid ""
-"Minimal priority for notification to be generated. This is number from 0 "
-"to 100 where higher means more significant. In default this is set to: "
+"Minimal priority for notification to be generated. This is number from 0 to "
+"100 where higher means more significant. In default this is set to: "
 msgstr ""
 
 #: healthcheck/_output.py:293
 msgid ""
-"Minimal priority for hardware related notifications to be generated. This"
-" is number as well as for level. In default this is set to: "
+"Minimal priority for hardware related notifications to be generated. This is "
+"number as well as for level. In default this is set to: "
 msgstr ""
 
 #: healthcheck/_output.py:303
 msgid ""
-"Minimal priority for software related notifications to be generated. This"
-" is number as well as for level. In default this is set to: "
+"Minimal priority for software related notifications to be generated. This is "
+"number as well as for level. In default this is set to: "
 msgstr ""
 
 #: healthcheck/_output.py:313
 msgid ""
-"Notification period specified in cron format. This specifies how often "
-"and when should notification about persistent issues be send. In deafult "
-"it is set to: "
+"Notification period specified in cron format. This specifies how often and "
+"when should notification about persistent issues be send. In deafult it is "
+"set to: "
 msgstr ""
 
 #: healthcheck/plugin.py:60
 msgid ""
-"Can be used to disable all checks from this plugin. It has to be a "
-"boolean value."
+"Can be used to disable all checks from this plugin. It has to be a boolean "
+"value."
 msgstr ""
 
 #: healthcheck/report.py:75
@@ -141,176 +140,169 @@ msgstr "Bez výsledku"
 
 #: healthcheck/report.py:78
 msgid ""
-"Check was inconclusive. This means that for some reason check wasn't able"
-" to generate any other report. This is mostly because it failed horribly."
+"Check was inconclusive. This means that for some reason check wasn't able to "
+"generate any other report. This is mostly because it failed horribly."
 msgstr ""
-"Kontrola neposkytla výsledok. Znamená to, že z nejakého dôvodu nebolo "
-"možné vytvoriť žiadnu správu. Príčinou je obvykle zásadné zlyhanie "
-"kontroly."
+"Kontrola neposkytla výsledok. Znamená to, že z nejakého dôvodu nebolo možné "
+"vytvoriť žiadnu správu. Príčinou je obvykle zásadné zlyhanie kontroly."
 
-#: healthcheck/report.py:92
+#: healthcheck/report.py:92 healthcheck/report.py:91
 msgid "Not applicable"
 msgstr "Nepoužiteľné"
 
-#: healthcheck/report.py:95
+#: healthcheck/report.py:95 healthcheck/report.py:94
 msgid ""
 "Check wasn't applicable. This is most probably because it checks system "
 "attribute that is notinstalled or activated."
 msgstr ""
-"Kontrola je nepoužiteľná. Pravdepodobne kontroluje systémový atribút, "
-"ktorý nie je nainštalovaný alebo aktivovaný."
+"Kontrola je nepoužiteľná. Pravdepodobne kontroluje systémový atribút, ktorý "
+"nie je nainštalovaný alebo aktivovaný."
 
-#: healthcheck/report.py:109
+#: healthcheck/report.py:109 healthcheck/report.py:107
 msgid "Pass"
 msgstr "Úspešné"
 
-#: healthcheck/report.py:112
+#: healthcheck/report.py:112 healthcheck/report.py:110
 msgid "Check successfully passed. No problem was detected."
 msgstr "Kontrola prebehla úspešne. Nezistil sa žiadny problém."
 
-#: healthcheck/report.py:126
+#: healthcheck/report.py:126 healthcheck/report.py:124
 msgid "Try again later"
 msgstr "Skúste neskôr"
 
 #: healthcheck/report.py:129
-#, fuzzy
 msgid ""
-"Check can't be finished at the moment but should be able after a while. "
-"This is because becuase it lacks data to assess trends from."
+"Check can't be finished at the moment but should be able after a while. This "
+"is because becuase it lacks data to assess trends from."
 msgstr ""
-"Kontrola sa momentálne nedá dokončiť, ale po chvíli by už mala byť možná."
-" Je to obyčajne preto, lebo chýbajú údaje, na základe ktorých by sa dali "
+"Kontrola sa momentálne nedá dokončiť, ale po chvíli by už mala byť možná. Je "
+"to obyčajne preto, lebo chýbajú údaje, na základe ktorých by sa dali "
 "vyhodnotiť trendy."
 
-#: healthcheck/report.py:147
+#: healthcheck/report.py:147 healthcheck/report.py:140
 msgid "Software advise"
 msgstr "Softwarové upozornenie"
 
-#: healthcheck/report.py:150
+#: healthcheck/report.py:150 healthcheck/report.py:143
 msgid ""
-"Check provides advise regarding software running on router.  Please "
-"consider it."
+"Check provides advise regarding software running on router.  Please consider "
+"it."
 msgstr ""
 "Kontrola poskytuje rady týkajúce sa softwaru spusteného na routeri.   "
 "Prosím, zvážte ich."
 
-#: healthcheck/report.py:161
+#: healthcheck/report.py:161 healthcheck/report.py:155
 msgid "Software warning"
 msgstr "Softwarová výstraha"
 
-#: healthcheck/report.py:164
+#: healthcheck/report.py:164 healthcheck/report.py:158
 msgid ""
-"Check detected problem with software. It is far from fatal but it might "
-"be causing some functionalitydegradation now or in future. Please solve "
-"this issue at your convenience."
+"Check detected problem with software. It is far from fatal but it might be "
+"causing some functionalitydegradation now or in future. Please solve this "
+"issue at your convenience."
 msgstr ""
-"Kontrola zistila problém so softwarom. Nie je kritický, ale teraz alebo v"
-" budúcnosti môže spôsobovať určité zhoršenie funkčnosti. Prosím, vyriešte"
-" tento problém podľa svojich možností."
+"Kontrola zistila problém so softwarom. Nie je kritický, ale teraz alebo v "
+"budúcnosti môže spôsobovať určité zhoršenie funkčnosti. Prosím, vyriešte "
+"tento problém podľa svojich možností."
 
-#: healthcheck/report.py:178
+#: healthcheck/report.py:178 healthcheck/report.py:171
 msgid "Software error"
 msgstr "Softwarová chyba"
 
-#: healthcheck/report.py:181
+#: healthcheck/report.py:181 healthcheck/report.py:174
 msgid ""
-"Check detected dangerous problem with software. It is not immediately "
-"fatal but it possibly causessome functionality degradation and/or it can "
-"progress to be fatal for device functionality. Pleaseresolver this "
-"problem as soon as possible."
+"Check detected dangerous problem with software. It is not immediately fatal "
+"but it possibly causessome functionality degradation and/or it can progress "
+"to be fatal for device functionality. Pleaseresolver this problem as soon as "
+"possible."
 msgstr ""
 "Kontrola zistila nebezpečný problém so softwarom. Nie je bezprostredne "
 "kritický, ale môže spôsobiť určité zhoršenie funkčnosti a/alebo sa môže "
-"vyvinúť do závažných dôsledkov pre funkčnosť zariadenia. Prosím, vyriešte"
-" tento problém čo najskôr."
+"vyvinúť do závažných dôsledkov pre funkčnosť zariadenia. Prosím, vyriešte "
+"tento problém čo najskôr."
 
-#: healthcheck/report.py:196
+#: healthcheck/report.py:196 healthcheck/report.py:188
 msgid "Software fatal error"
 msgstr "Softwarová kritická chyba"
 
-#: healthcheck/report.py:199
+#: healthcheck/report.py:199 healthcheck/report.py:191
 msgid ""
-"Check detected fatal problem with software. It is causing system to not "
-"work properly."
+"Check detected fatal problem with software. It is causing system to not work "
+"properly."
 msgstr ""
 "Kontrola zistila kritický problém so softwarom. Spôsobuje, že systém "
 "nepracuje správne."
 
-#: healthcheck/report.py:214
+#: healthcheck/report.py:214 healthcheck/report.py:203
 msgid "Hardware warning"
 msgstr "Hardwarová výstraha"
 
-#: healthcheck/report.py:217
+#: healthcheck/report.py:217 healthcheck/report.py:206
 msgid ""
-"Check detected problem with hardware. It is far from fatal but it might "
-"be causing some functionalitydegradation now or in future. Please solve "
-"this issue at your convenience."
+"Check detected problem with hardware. It is far from fatal but it might be "
+"causing some functionalitydegradation now or in future. Please solve this "
+"issue at your convenience."
 msgstr ""
-"Kontrola zistila problém s hardwarom. Nie je kritický, ale môže "
-"spôsobovať určité zhoršenie funkčnosti teraz alebo v budúcnosti. Prosím, "
-"vyriešte tento problém podľa svojich možností."
+"Kontrola zistila problém s hardwarom. Nie je kritický, ale môže spôsobovať "
+"určité zhoršenie funkčnosti teraz alebo v budúcnosti. Prosím, vyriešte tento "
+"problém podľa svojich možností."
 
-#: healthcheck/report.py:231
+#: healthcheck/report.py:231 healthcheck/report.py:219
 msgid "Hardware error"
 msgstr "Hardwarová chyba"
 
-#: healthcheck/report.py:234
+#: healthcheck/report.py:234 healthcheck/report.py:222
 msgid ""
-"Check detected dangerous problem with hardware. It is not immediately "
-"fatal but it possibly causessome functionality degradation and/or it can "
-"progress to be fatal for device. Please resolver thisproblem as soon as "
-"possible."
+"Check detected dangerous problem with hardware. It is not immediately fatal "
+"but it possibly causessome functionality degradation and/or it can progress "
+"to be fatal for device. Please resolver thisproblem as soon as possible."
 msgstr ""
 "Kontrola zistila nebezpečný problém s hardwarom. Nie je bezprostredne "
 "kritický, ale môže spôsobiť určité zhoršenie funkčnosti a/alebo sa môže "
-"zhoršiť a stať sa pre zariadenie závažným. Prosím, vyriešte tento problém"
-" čo najskôr."
+"zhoršiť a stať sa pre zariadenie závažným. Prosím, vyriešte tento problém čo "
+"najskôr."
 
-#: healthcheck/report.py:249
+#: healthcheck/report.py:249 healthcheck/report.py:236
 msgid "Hardware fatal error"
 msgstr "Hardwarová kritická chyba"
 
-#: healthcheck/report.py:252
+#: healthcheck/report.py:252 healthcheck/report.py:239
 msgid ""
-"Check detected fatal problem with hardware. It is causing system to not "
-"work properly."
+"Check detected fatal problem with hardware. It is causing system to not work "
+"properly."
 msgstr ""
 "Kontrola zistila kritický problém s hardvérom. Spôsobuje, že systém "
 "nepracuje správne."
 
-#: healthcheck/report.py:267
+#: healthcheck/report.py:267 healthcheck/report.py:251
 msgid "Security advise"
 msgstr "Bezpečnostné upozornenie"
 
-#: healthcheck/report.py:270
+#: healthcheck/report.py:270 healthcheck/report.py:254
 msgid ""
 "Check detected possible security concern. It provides advise.  Please "
 "consider it."
 msgstr ""
-"Kontrola zistila možné problémy s bezpečnosťou.   Prosím, zvážte "
-"poskytnuté rady."
+"Kontrola zistila možné problémy s bezpečnosťou.   Prosím, zvážte poskytnuté "
+"rady."
 
-#: healthcheck/report.py:281
+#: healthcheck/report.py:281 healthcheck/report.py:266
 msgid "Security warning"
 msgstr "Bezpečnostná výstraha"
 
-#: healthcheck/report.py:284
+#: healthcheck/report.py:284 healthcheck/report.py:269
 msgid ""
-"Check detected possible security problem. It is advised to solve it as "
-"soon as possible to mitigatepossible exploit."
+"Check detected possible security problem. It is advised to solve it as soon "
+"as possible to mitigatepossible exploit."
 msgstr ""
 "Kontrola zistila možný bezpečnostný problém. Odporúča sa ho vyriešiť čo "
 "najskôr, aby sa zabránilo prípadnému zneužitiu."
 
-#~ msgid ""
-#~ "Check can't be finished at the "
-#~ "moment but should be able after a"
-#~ " while. This is commonly becuase "
-#~ "itlacks data to assess trends from."
-#~ msgstr ""
-#~ "Kontrola sa teraz nedá dokončiť, ale "
-#~ "po chvíli by už mala byť možná."
-#~ " Príčinou sú obyčajne chýbajúce údaje, "
-#~ "na základe ktorých by sa dali "
-#~ "vyhodnotiť trendy."
-
+#: healthcheck/report.py:127
+msgid ""
+"Check can't be finished at the moment but should be able after a while. This "
+"is commonly becuase itlacks data to assess trends from."
+msgstr ""
+"Kontrola sa teraz nedá dokončiť, ale po chvíli by už mala byť možná. "
+"Príčinou sú obyčajne chýbajúce údaje, na základe ktorých by sa dali "
+"vyhodnotiť trendy."
