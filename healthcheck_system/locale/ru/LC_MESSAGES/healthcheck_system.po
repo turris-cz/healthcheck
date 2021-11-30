@@ -9,28 +9,34 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2021-11-26 13:14+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-12-01 06:52+0000\n"
+"Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/turris/"
+"healthcheck-system/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.10-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck_system/flash_writes.py:54
 msgid "Checks if system is not writing too much to flash storage."
-msgstr ""
+msgstr "Проверяет, не записывает ли система слишком много на флэш-память."
 
 #: healthcheck_system/flash_writes.py:74
 msgid "There is no flash device detected in system."
-msgstr ""
+msgstr "В системе не обнаружено флеш-накопителей."
 
 #: healthcheck_system/flash_writes.py:77
 msgid ""
 "Check found no flash device in system. This is most likely because there "
 "is just no such device."
 msgstr ""
+"Проверка не обнаружила в системе флеш-накопителей. Скорее всего потому, что "
+"такого устройства просто нет."
 
 #: healthcheck_system/flash_writes.py:90
 msgid ""
@@ -40,18 +46,23 @@ msgid ""
 "the excessive writes to MMC can shorten lifespan to just a year or two. "
 "The that excessive writes are not regularly covered by warranty."
 msgstr ""
+"Количество операций записи в хранилища MMC неразрывно связано с "
+"продолжительностью их жизни. По сравнению с некоторыми другими традиционными "
+"хранилищами, чрезмерное количество операций записи в MMC может сократить "
+"срок службы до одного-двух лет. На чрезмерное количество записей гарантия не "
+"распространяется."
 
 #: healthcheck_system/flash_writes.py:97
 msgid "The calculation is since boot up that was {} ago."
-msgstr ""
+msgstr "Расчет ведется с момента загрузки, которая была {} назад."
 
 #: healthcheck_system/flash_writes.py:99
 msgid "The amount of recorded sector writes is {}."
-msgstr ""
+msgstr "Количество записанных секторов записи составляет {}."
 
 #: healthcheck_system/flash_writes.py:101
 msgid "That is {} sector writes per hour."
-msgstr ""
+msgstr "Это {} секторов записи в час."
 
 #: healthcheck_system/flash_writes.py:105
 msgid ""
@@ -60,76 +71,88 @@ msgid ""
 "in SD slot). These are but not limited to services for file sharing and "
 "caching as well as databases or other data collectors."
 msgstr ""
+"Выполняйте тяжелые операции записи на других типах накопителей, особенно "
+"если память MMC не может быть заменена (например, припаяна на плате, а не "
+"вставлена в слот SD). Это, помимо прочего, службы для обмена файлами и "
+"кэширования, а также базы данных или другие службы сбора данных."
 
 #: healthcheck_system/flash_writes.py:116
 msgid "Number of writes to MMC storage does not exceed limits"
-msgstr ""
+msgstr "Количество записей в накопителе MMC не превышает ограничений"
 
 #: healthcheck_system/flash_writes.py:126
 msgid ""
 "The amount of writes is hight but it is too soon after boot to reliably "
 "assess the impact"
 msgstr ""
+"Количество записей велико, но это они прошли после загрузки, влияние надежно "
+"не оценить"
 
 #: healthcheck_system/flash_writes.py:130
 msgid ""
 "It is possible that this is just write happenig right after the boot and "
 "all will settle down in a while."
 msgstr ""
+"Возможно, что это просто запись, произошедшая сразу после загрузки, и через "
+"некоторое время все уменьшится."
 
 #: healthcheck_system/flash_writes.py:142
 msgid "The amount of writes is considerably high"
-msgstr ""
+msgstr "Количество записей очень велико"
 
 #: healthcheck_system/flash_writes.py:149
 msgid "The amount of writes is really high!"
-msgstr ""
+msgstr "Количество записей действительно велико!"
 
 #: healthcheck_system/flash_writes.py:152
 msgid "You should act now to prevent permanent hardware damage!"
 msgstr ""
+"Вы должны действовать сейчас, чтобы предотвратить необратимое повреждение "
+"оборудования!"
 
 #: healthcheck_system/free_ram.py:32
 msgid "watches amount of free ram and reports not enough space."
-msgstr ""
+msgstr "следит за количеством свободного места и сообщает о нехватке места."
 
 #: healthcheck_system/free_ram.py:76
 msgid "Amount of free memory: "
-msgstr ""
+msgstr "Объем свободной памяти: "
 
 #: healthcheck_system/free_ram.py:79
 msgid "Processes consuming the most memory:"
-msgstr ""
+msgstr "Процессы, потребляющие больше всего памяти:"
 
 #: healthcheck_system/free_ram.py:93
 msgid "System seems to have enough free memory."
-msgstr ""
+msgstr "В системе достаточно свободной памяти."
 
 #: healthcheck_system/free_ram.py:100
 msgid "System seems to have not enough free memory."
-msgstr ""
+msgstr "В системе не хватает свободной памяти."
 
 #: healthcheck_system/free_ram.py:103 healthcheck_system/free_ram.py:113
 msgid ""
 "You might want to check what processes are running on your router and how"
 " much memory they consume."
 msgstr ""
+"Возможно, вы захотите проверить, какие процессы выполняются на вашем "
+"маршрутизаторе и сколько памяти они потребляют."
 
 #: healthcheck_system/free_ram.py:110
 msgid "System experiences memory shortage."
-msgstr ""
+msgstr "Система испытывает нехватку памяти."
 
 #: healthcheck_system/free_storage.py:110
 msgid " out of "
-msgstr ""
+msgstr " из "
 
 #: healthcheck_system/free_storage.py:112
 msgid " available on device: "
-msgstr ""
+msgstr " доступно на устройстве: "
 
 #: healthcheck_system/free_storage.py:118
 msgid "used"
-msgstr ""
+msgstr "используется"
 
 #: healthcheck_system/free_storage.py:121
 msgid ""
@@ -137,42 +160,54 @@ msgid ""
 " created by user(s) and not by system (unless you know what you are "
 "doing)."
 msgstr ""
+"Вы должны удалить все ненужные файлы и каталоги, если они были созданы "
+"пользователем (-ми), а не системой (если вы не знаете, что делаете)."
 
 #: healthcheck_system/free_storage.py:126
 msgid ""
 " You can also remove some nonessential software you do not need to free "
 "storage space."
 msgstr ""
+" Вы также можете удалить программное обеспечение, которое не используется, "
+"чтобы освободить место для хранения."
 
 #: healthcheck_system/free_storage.py:128
 msgid ""
 " You should also check snapshots and remove unnecessary ones (using "
 "schnapps or by any other way you are using)."
 msgstr ""
+" Вы также должны проверить образы системы и удалить ненужные (с помощью "
+"шнапса или любым другим способом, который вы используете)."
 
 #: healthcheck_system/free_storage.py:133
 msgid ""
 " In case of this storage it can also be enough to just reboot device as "
 "content resides in volatile memory."
 msgstr ""
+" При использовании этого хранилища также может быть достаточно просто "
+"перезагрузить устройство, поскольку контент находится в энергозависимой "
+"памяти."
 
 #: healthcheck_system/free_storage.py:138
 msgid ""
 "This applies to permanent storages (hardware storage devices). In case of"
 " memory storages such as 'tmpfs' it might be enough to perform reboot."
 msgstr ""
+"Это касается постоянных хранилищ (аппаратных запоминающих устройств). В "
+"случае хранилищ памяти, таких как \"tmpfs\", может быть достаточно выполнить "
+"перезагрузку."
 
 #: healthcheck_system/free_storage.py:148
 msgid "There is enough of free storage space"
-msgstr ""
+msgstr "Достаточно свободного места для хранения"
 
 #: healthcheck_system/free_storage.py:158
 msgid "Storage space is getting low"
-msgstr ""
+msgstr "Место для хранения уменьшается"
 
 #: healthcheck_system/free_storage.py:165
 msgid "Amount of free storage space is getting dangerously low"
-msgstr ""
+msgstr "Объем свободного места для хранения становится опасно низким"
 
 #: healthcheck_system/free_storage.py:171
 msgid ""
@@ -181,10 +216,14 @@ msgid ""
 "updated or new added. Not only that it also considerably slows down the "
 "storage."
 msgstr ""
+"Заполнение хранилища почти полностью опасно, поскольку вы можете легко "
+"исчерпать пространство для хранения при обновлении системы, при обновлении "
+"файлов или добавлении новых. Мало того, это также значительно замедляет "
+"хранилище."
 
 #: healthcheck_system/free_storage.py:183
 msgid "Storage is full!"
-msgstr ""
+msgstr "Хранилище заполнено!"
 
 #: healthcheck_system/free_storage.py:189
 msgid ""
@@ -192,19 +231,22 @@ msgid ""
 "files can fail and services might start failing as well. You should act "
 "now!"
 msgstr ""
+"Хранилище почти заполнено. Ожидается, что сохранение или запись в файлы "
+"может завершиться ошибкой, а службы тоже могут перестать работать. Вы должны "
+"действовать прямо сейчас!"
 
 #: healthcheck_system/__init__.py:38
 msgid "Basic system stability and endurance checks"
-msgstr ""
+msgstr "Основные проверки стабильности системы"
 
 #: healthcheck_system/merge_conffiles.py:52
 msgid "Notifies about updates of the configuration files in packages."
-msgstr ""
+msgstr "Уведомляет об обновлениях файлов конфигурации в пакетах."
 
 #: healthcheck_system/merge_conffiles.py:65
 #: healthcheck_system/resolver_conf.py:27
 msgid "There are no configuration files with need for merge."
-msgstr ""
+msgstr "Нет файлов конфигурации, требующих слияния."
 
 #: healthcheck_system/merge_conffiles.py:68
 #: healthcheck_system/resolver_conf.py:30
@@ -216,6 +258,11 @@ msgid ""
 "current configuration file. Right now there are no configuration files "
 "that would require merging."
 msgstr ""
+"Файлы конфигурации обновляются автоматически, только если за это время они "
+"не были изменены. После изменения они никогда не заменяются автоматически. "
+"Новая версия всегда помещается в файл с суффиксом -opkg с ожиданием, что "
+"пользователь собирается вручную обновить свой текущий файл конфигурации. На "
+"данный момент нет файлов конфигурации, которые требовали бы слияния."
 
 #: healthcheck_system/merge_conffiles.py:83
 #: healthcheck_system/resolver_conf.py:45
@@ -223,11 +270,13 @@ msgid ""
 "There are some configuration files with updated defaults that should be "
 "reviewed and merged."
 msgstr ""
+"Есть некоторые файлы конфигурации с обновленными значениями по умолчанию, "
+"которые следует просмотреть и объединить."
 
 #: healthcheck_system/merge_conffiles.py:86
 #: healthcheck_system/resolver_conf.py:48
 msgid "The following configuration files from these packages should be merged:"
-msgstr ""
+msgstr "Следующие файлы конфигурации из этих пакетов должны быть объединены:"
 
 #: healthcheck_system/merge_conffiles.py:91
 #: healthcheck_system/resolver_conf.py:53
@@ -237,39 +286,45 @@ msgid ""
 "'*-opkg' file (the original file name with '-opkg' appended and update "
 "your configuration accordingly. Then you can remove '*-opkg' file."
 msgstr ""
+"Эти файлы конфигурации были изменены либо вами, либо вашим приложением. "
+"Проверьте новое состояние по умолчанию, сохраненное в файле '* -opkg' ("
+"исходное имя файла с добавленным '-opkg'), и обновите конфигурацию. Затем вы "
+"можете удалить файл '* -opkg'."
 
 #: healthcheck_system/mmc_life.py:66
 msgid "Watches wear of MMC storages plugged in to the router."
-msgstr ""
+msgstr "Наблюдает за износом накопителей MMC, подключенных к маршрутизатору."
 
 #: healthcheck_system/mmc_life.py:86
 msgid "There is no MMC device detected in system."
-msgstr ""
+msgstr "В системе не обнаружено хранилищ MMC."
 
 #: healthcheck_system/mmc_life.py:89
 msgid ""
 "Check found no MMC block device in system. This is most likely because "
 "there is just no such device plugged in."
 msgstr ""
+"Проверка не обнаружила в системе блочного устройства MMC. Скорее всего, это "
+"потому, что такое устройства не подключено."
 
 #: healthcheck_system/mmc_life.py:104 healthcheck_system/smart.py:127
 #: healthcheck_system/smart.py:148
 msgid "It is not possible to read extcsd data."
-msgstr ""
+msgstr "Невозможно прочитать данные extcsd."
 
 #: healthcheck_system/mmc_life.py:108 healthcheck_system/smart.py:131
 #: healthcheck_system/smart.py:152
 msgid "MMC tools (mmc-utils) are missing or not accessible."
-msgstr ""
+msgstr "Инструменты MMC (mmc-utils) отсутствуют или недоступны."
 
 #: healthcheck_system/mmc_life.py:110 healthcheck_system/smart.py:132
 #: healthcheck_system/smart.py:153
 msgid "Read failed with error: "
-msgstr ""
+msgstr "Не удалось прочитать с ошибкой: "
 
 #: healthcheck_system/mmc_life.py:111
 msgid "MMC does not provide information about its lifespan."
-msgstr ""
+msgstr "MMC не предоставляет информацию о сроке службы."
 
 #: healthcheck_system/mmc_life.py:115 healthcheck_system/smart.py:136
 #: healthcheck_system/smart.py:157
@@ -277,19 +332,21 @@ msgid ""
 "You should install mmc-utils or any other package that provides mmc-"
 "utils's command 'mmc'."
 msgstr ""
+"Вам следует установить mmc-utils или любой другой пакет, который "
+"предоставляет команду mmc-utils «mmc»."
 
 #: healthcheck_system/mmc_life.py:129
 msgid "Reserved blocks on memory were depleted!"
-msgstr ""
+msgstr "Зарезервированные блоки в памяти исчерпаны!"
 
 #: healthcheck_system/mmc_life.py:131
 #, python-format
 msgid "More than 80% of reserved blocks consumed!"
-msgstr ""
+msgstr "Использовано более 80% o зарезервированных блоков!"
 
 #: healthcheck_system/mmc_life.py:132
 msgid "Device's lifespan is depleted at least: "
-msgstr ""
+msgstr "Срок службы устройства исчерпан: "
 
 #: healthcheck_system/mmc_life.py:133
 msgid ""
@@ -300,6 +357,13 @@ msgid ""
 "very heavily in the past. Note that the manufacturers do not provide "
 "warranty if MMC was used heavily.\n"
 msgstr ""
+"Хранилище MMC имеет ограниченное количество операций записи и из-за этого "
+"имеет ограниченный срок службы. Это означает, что количество "
+"зарезервированных блоков будет низким, если вашему устройству исполнилось "
+"несколько лет. В случае нового устройства оно может быть неисправным на "
+"заводе или, что более вероятно, очень интенсивно использовалось в прошлом. "
+"Обратите внимание, что производители не предоставляют гарантию, если MMC "
+"использовалась интенсивно.\n"
 
 #: healthcheck_system/mmc_life.py:141
 msgid ""
@@ -308,22 +372,27 @@ msgid ""
 "tasks such as file sharing, databases, containers, logs and others to "
 "some other storage device."
 msgstr ""
+"Чтобы продлить срок службы устройства, вы должны минимизировать количество "
+"операций записи (желательно только для обновлений системы). Это означает "
+"перемещение любых сложных задач записи, таких как совместное использование "
+"файлов, базы данных, контейнеры, журналы и другие, на какое-либо другое "
+"устройство хранения."
 
 #: healthcheck_system/mmc_life.py:152
 msgid "Life of MMC is all right."
-msgstr ""
+msgstr "Хранилище MMC в порядке."
 
 #: healthcheck_system/mmc_life.py:159
 msgid "Life of MMC is getting short."
-msgstr ""
+msgstr "Срок использования MMC укорачивается."
 
 #: healthcheck_system/mmc_life.py:166
 msgid "Life of MMC is getting dangerously short!"
-msgstr ""
+msgstr "Срок использования MMC подходит к концу!"
 
 #: healthcheck_system/mmc_life.py:173
 msgid "MMC is end of life."
-msgstr ""
+msgstr "Срок использования MMC окончен."
 
 #: healthcheck_system/mmc_life.py:176
 msgid ""
@@ -332,32 +401,42 @@ msgid ""
 "dear to you. It should be replaced if possible. Either with same type of "
 "device or with different in case it is MMC soldered to board in device."
 msgstr ""
+"Ничего не поделаешь. Слишком поздно. MMC, скорее всего, уже нельзя "
+"использовать. Вам следует прекратить его использовать, если ваши данные вам "
+"дороги. Если возможно, его следует заменить. Либо с таким же типом "
+"устройства, либо с другим, если MMC припаяна к плате в устройстве."
 
 #: healthcheck_system/pkg_check.py:41
 msgid ""
 "Verify that none of the user's modifications in files provided by "
 "packages would be removed by update."
 msgstr ""
+"Убедитесь, что никакие изменения пользователя в файлах, предоставленных "
+"пакетами, не будут удалены при обновлении."
 
 #: healthcheck_system/pkg_check.py:61
 msgid "All files provided by packages are in their original state"
-msgstr ""
+msgstr "Все файлы, предоставляемые пакетами, находятся в исходном состоянии"
 
 #: healthcheck_system/pkg_check.py:64
 msgid ""
 "No files from packages were modified and thus there is no danger that "
 "subsequent update would erase these changes."
 msgstr ""
+"Никакие файлы из пакетов не были изменены, поэтому нет опасности, что "
+"последующее обновление удалит эти изменения."
 
 #: healthcheck_system/pkg_check.py:76
 msgid "Some files from system packages were modified."
-msgstr ""
+msgstr "Были изменены некоторые файлы из системных пакетов."
 
 #: healthcheck_system/pkg_check.py:80
 msgid ""
 "The changes in these files from these packages are going to be wiped with"
 " subsequent updates:"
 msgstr ""
+"Изменения в этих файлах из этих пакетов будут удалены с последующими "
+"обновлениями:"
 
 #: healthcheck_system/pkg_check.py:86
 msgid ""
@@ -370,16 +449,24 @@ msgid ""
 "If you are modifying some sort of the script you should think about "
 "sending your change to the upstream. It is open-source non the less."
 msgstr ""
+"Вам следует отменить изменения, переустановив затронутые пакеты, и изучить "
+"альтернативный подход для всего, что вы пытаетесь достичь. Большинство "
+"пакетов предоставляют способ добавления конфигурации без изменения корневого "
+"файла конфигурации. Ищите каталоги с суффиксом '.d'. Если вы модифицируете "
+"какой-либо сценарий, вам следует подумать об отправке вашего изменения в "
+"вышестоящую группу. Тем не менее, это открытый исходный код."
 
 #: healthcheck_system/services.py:28
 msgid ""
 "Check if there is no disabled service that would be re-enabled with "
 "update."
 msgstr ""
+"Проверьте, нет ли отключенной службы, которая будет повторно включена с "
+"обновлением."
 
 #: healthcheck_system/services.py:35
 msgid "All wanted services are enabled."
-msgstr ""
+msgstr "Все требуемые службы включены."
 
 #: healthcheck_system/services.py:38
 msgid ""
@@ -387,40 +474,51 @@ msgid ""
 "previously disabled. All of such services are enabled and are going to be"
 " started on startup."
 msgstr ""
+"Некоторые службы активируются автоматически, даже если они были ранее "
+"отключены. Все такие службы включены и будут запускаться при загрузке."
 
 #: healthcheck_system/services.py:51
 msgid ""
 "Some services currently disabled are going to be enabled with future "
 "updates."
 msgstr ""
+"Некоторые отключенные в настоящее время службы будут включены в будущих "
+"обновлениях."
 
 #: healthcheck_system/services.py:55
 msgid ""
 "Following disabled services are going to be re-enabled with future "
 "updates: "
 msgstr ""
+"Следующие отключенные службы будут повторно включены в будущих обновлениях: "
 
 #: healthcheck_system/services.py:58
 msgid ""
 "These services are automatically enabled even if they were previously "
 "disabled to ensure router's functionality."
 msgstr ""
+"Эти службы включаются автоматически, даже если они были ранее отключены, "
+"чтобы гарантировать работоспособность маршрутизатора."
 
 #: healthcheck_system/services.py:65
 msgid ""
 "To solve this you should configure system to not install software you do "
 "not want."
 msgstr ""
+"Чтобы решить эту проблему, вам следует настроить систему так, чтобы не "
+"устанавливать ненужное вам программное обеспечение."
 
 #: healthcheck_system/services.py:101
 msgid ""
 "Checks if currently running services would be automatically strated after"
 " boot."
 msgstr ""
+"Проверяет, будут ли работающие в данный момент службы автоматически "
+"запускаться после загрузки."
 
 #: healthcheck_system/services.py:108
 msgid "All running services are enabled."
-msgstr ""
+msgstr "Все запущенные службы включены."
 
 #: healthcheck_system/services.py:111
 msgid ""
@@ -428,31 +526,38 @@ msgid ""
 "activated. All currently running services are enabled so you should not "
 "miss any service after reboot."
 msgstr ""
+"Службы не запускаются автоматически при следующем запуске, если они не "
+"активированы. Все запущенные в данный момент службы включены, поэтому вы не "
+"должны пропустить ни одной службы после перезагрузки."
 
 #: healthcheck_system/services.py:124
 msgid "There are currently running services that are not enabled."
-msgstr ""
+msgstr "В настоящее время есть запущенные службы, которые не включены."
 
 #: healthcheck_system/services.py:128
 msgid "Following currently running services are disabled: "
-msgstr ""
+msgstr "Следующие запущенные в данный момент службы отключены: "
 
 #: healthcheck_system/services.py:131
 msgid ""
 "Enabled services are started on startup. You might want to enable these "
 "services."
 msgstr ""
+"Включенные службы запускаются при запуске. Возможно, вы захотите включить "
+"эти службы."
 
 #: healthcheck_system/services.py:135
 msgid "Using either LuCI or SSH enable mentioned services."
-msgstr ""
+msgstr "Использование LuCI или SSH включает указанные службы."
 
 #: healthcheck_system/smart.py:110
 msgid "There is no ATA/SATA/NVMe device detected in system."
-msgstr ""
+msgstr "В системе не обнаружено устройств ATA/SATA/NVMe."
 
 #: healthcheck_system/smart.py:113
 msgid ""
 "Check found no ATA/SATA/NVMe block device in system. This is most likely "
 "because there is just no such device plugged in."
 msgstr ""
+"Проверка не обнаружила в системе блочных устройств ATA/SATA/NVMe. Скорее "
+"всего, это потому, что устройство не подключено."
