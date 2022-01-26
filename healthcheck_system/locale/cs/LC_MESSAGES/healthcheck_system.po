@@ -19,87 +19,98 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: healthcheck_system/flash_writes.py:58
+#: healthcheck_system/flash_writes.py:58 healthcheck_system/flash_writes.py:36
 msgid "Checks if system is not writing too much to flash storage."
 msgstr "Kontroluje, zda systém do flashového úložiště nezapisuje příliš mnoho."
 
-#: healthcheck_system/flash_writes.py:78
+#: healthcheck_system/flash_writes.py:78 healthcheck_system/flash_writes.py:68
 msgid "There is no flash device detected in system."
 msgstr "V systému nebylo detekováno žádné flashové zařízení."
 
-#: healthcheck_system/flash_writes.py:81
+#: healthcheck_system/flash_writes.py:81 healthcheck_system/flash_writes.py:71
 msgid ""
-"Check found no flash device in system. This is most likely because there "
-"is just no such device."
+"Check found no flash device in system. This is most likely because there is "
+"just no such device."
 msgstr ""
-"Kontrola nenalezla v systému žádné flashové zařízení. Je to pravděpodobně"
-" proto, že tu žádné takové zařízení prostě není."
+"Kontrola nenalezla v systému žádné flashové zařízení. Je to pravděpodobně "
+"proto, že tu žádné takové zařízení prostě není."
 
-#: healthcheck_system/flash_writes.py:94
+#: healthcheck_system/flash_writes.py:90
 msgid ""
 "Number of writes on MMC storages is inherently linked to lifespan of it. "
-"Compared to some other regular storages where excessive writes are "
-"expected and lifespan still can regularly meet lifespan of the device, "
-"the excessive writes to MMC can shorten lifespan to just a year or two. "
-"The that excessive writes are not regularly covered by warranty."
+"Compared to some other regular storages where excessive writes are expected "
+"and lifespan still can regularly meet lifespan of the device, the excessive "
+"writes to MMC can shorten lifespan to just a year or two. The that excessive "
+"writes are not regularly covered by warranty."
 msgstr ""
+"Počet zápisů na úložiště MMC je neodmyslitelně spojen s jeho životností. Ve "
+"srovnání s některými jinými běžnými úložišti, kde se nadměrné zápisy "
+"očekávají a životnost stále může pravidelně odpovídat životnosti zařízení, "
+"může nadměrný počet zápisů na MMC zkrátit životnost na pouhý rok nebo dva. "
+"Na tyto nadměrné zápisy se běžně nevztahuje záruka."
+
+#: healthcheck_system/flash_writes.py:97
+msgid "The calculation is since boot up that was {} ago."
+msgstr "Výpočet je od spuštění systému, které bylo před {}."
+
+#: healthcheck_system/flash_writes.py:99
+msgid "The amount of recorded sector writes is {}."
+msgstr "Počet zaznamenaných zápisů sektorů je {}."
 
 #: healthcheck_system/flash_writes.py:101
-msgid "The calculation is since boot up that was {} ago."
-msgstr ""
-
-#: healthcheck_system/flash_writes.py:103
-msgid "The amount of recorded sector writes is {}."
-msgstr ""
+msgid "That is {} sector writes per hour."
+msgstr "To je {} zápisů sektorů za hodinu."
 
 #: healthcheck_system/flash_writes.py:105
-msgid "That is {} sector writes per hour."
-msgstr ""
-
-#: healthcheck_system/flash_writes.py:109
 msgid ""
 "Keep write heavy operations on other storage types, specially if the MMC "
-"storage can't be replaced (such as being soldered on board not inserted "
-"in SD slot). These are but not limited to services for file sharing and "
-"caching as well as databases or other data collectors."
+"storage can't be replaced (such as being soldered on board not inserted in "
+"SD slot). These are but not limited to services for file sharing and caching "
+"as well as databases or other data collectors."
 msgstr ""
+"Náročné zápisové operace provádějte na jiných typech úložišť, zvlášť pokud "
+"úložiště MMC nelze vyměnit (např. je připájené na desce a ne vložené do "
+"slotu SD). Jedná se kromě jiného o služby pro sdílení souborů a cachování "
+"nebo o databáze a jiné nástroje pro sběr dat."
 
-#: healthcheck_system/flash_writes.py:120
+#: healthcheck_system/flash_writes.py:116
 msgid "Number of writes to MMC storage does not exceed limits"
-msgstr ""
+msgstr "Počet zápisů do úložiště MMC nepřekračuje limity"
 
-#: healthcheck_system/flash_writes.py:130
+#: healthcheck_system/flash_writes.py:126
 msgid ""
 "The amount of writes is hight but it is too soon after boot to reliably "
 "assess the impact"
 msgstr ""
+"Množství zápisů je vysoké, ale je příliš brzy po spuštění na spolehlivé "
+"posouzení dopadu"
 
-#: healthcheck_system/flash_writes.py:134
+#: healthcheck_system/flash_writes.py:130
 msgid ""
-"It is possible that this is just write happenig right after the boot and "
-"all will settle down in a while."
-msgstr ""
+"It is possible that this is just write happenig right after the boot and all "
+"will settle down in a while."
+msgstr "Je možné, že k zápisům došlo těsně po startu a vše se za chvíli usadí."
 
-#: healthcheck_system/flash_writes.py:146
+#: healthcheck_system/flash_writes.py:142
 msgid "The amount of writes is considerably high"
-msgstr ""
+msgstr "Množství zápisů je značně vysoké"
 
-#: healthcheck_system/flash_writes.py:153
+#: healthcheck_system/flash_writes.py:149
 msgid "The amount of writes is really high!"
-msgstr ""
+msgstr "Množství zápisů je opravdu vysoké!"
 
-#: healthcheck_system/flash_writes.py:156
+#: healthcheck_system/flash_writes.py:152
 msgid "You should act now to prevent permanent hardware damage!"
-msgstr ""
+msgstr "Měli byste jednat ihned, abyste zabránili trvalému poškození hardwaru!"
 
-#: healthcheck_system/free_ram.py:38
+#: healthcheck_system/free_ram.py:38 healthcheck_system/free_ram.py:30
 msgid "watches amount of free ram and reports not enough space."
 msgstr "sleduje množství volné paměti RAM a hlásí nedostatek místa."
 
 #: healthcheck_system/free_ram.py:57
 msgid ""
-"Amount of memory or less that triggers error. The format is number and "
-"unit (such as '80MB')"
+"Amount of memory or less that triggers error. The format is number and unit "
+"(such as '80MB')"
 msgstr ""
 
 #: healthcheck_system/free_ram.py:64
@@ -108,31 +119,32 @@ msgid ""
 "unit (such as '160MB')"
 msgstr ""
 
-#: healthcheck_system/free_ram.py:113
+#: healthcheck_system/free_ram.py:113 healthcheck_system/free_ram.py:68
 msgid "Amount of free memory: "
 msgstr "Množství volné paměti: "
 
-#: healthcheck_system/free_ram.py:116
+#: healthcheck_system/free_ram.py:79
 msgid "Processes consuming the most memory:"
-msgstr ""
+msgstr "Procesy spotřebovávající nejvíce paměti:"
 
-#: healthcheck_system/free_ram.py:130
+#: healthcheck_system/free_ram.py:130 healthcheck_system/free_ram.py:78
 msgid "System seems to have enough free memory."
 msgstr "Zdá se, že systém má dostatek volné paměti."
 
-#: healthcheck_system/free_ram.py:137
+#: healthcheck_system/free_ram.py:137 healthcheck_system/free_ram.py:86
 msgid "System seems to have not enough free memory."
 msgstr "Zdá se, že systém nemá dostatek volné paměti."
 
 #: healthcheck_system/free_ram.py:140 healthcheck_system/free_ram.py:150
+#: healthcheck_system/free_ram.py:89 healthcheck_system/free_ram.py:100
 msgid ""
-"You might want to check what processes are running on your router and how"
-" much memory they consume."
+"You might want to check what processes are running on your router and how "
+"much memory they consume."
 msgstr ""
-"Možná budete chtít zkontrolovat, jaké procesy jsou na vašem routeru "
-"spuštěny a kolik paměti spotřebovávají."
+"Možná budete chtít zkontrolovat, jaké procesy jsou na vašem routeru spuštěny "
+"a kolik paměti spotřebovávají."
 
-#: healthcheck_system/free_ram.py:147
+#: healthcheck_system/free_ram.py:147 healthcheck_system/free_ram.py:97
 msgid "System experiences memory shortage."
 msgstr "Systém trpí nedostatkem paměti."
 
@@ -149,28 +161,28 @@ msgid "File Systems type to be ignored (such as 'sysfs')."
 msgstr ""
 
 #: healthcheck_system/free_storage.py:146
+#: healthcheck_system/free_storage.py:110 healthcheck_system/free_storage.py:81
 msgid " out of "
 msgstr ""
 
-#: healthcheck_system/free_storage.py:148
+#: healthcheck_system/free_storage.py:148 healthcheck_system/free_storage.py:82
 msgid " available on device: "
 msgstr " k dispozici na zařízení: "
 
-#: healthcheck_system/free_storage.py:154
+#: healthcheck_system/free_storage.py:154 healthcheck_system/free_storage.py:86
 msgid "used"
 msgstr "použito"
 
-#: healthcheck_system/free_storage.py:157
+#: healthcheck_system/free_storage.py:157 healthcheck_system/free_storage.py:89
 msgid ""
-"You should remove any unnecessary files and directories in case they were"
-" created by user(s) and not by system (unless you know what you are "
-"doing)."
+"You should remove any unnecessary files and directories in case they were "
+"created by user(s) and not by system (unless you know what you are doing)."
 msgstr ""
 "Měli byste odstranit všechny nepotřebné soubory a adresáře v případě, že "
 "byly vytvořeny uživatelem (uživateli), nikoli systémem (pokud nevíte, co "
 "děláte)."
 
-#: healthcheck_system/free_storage.py:162
+#: healthcheck_system/free_storage.py:162 healthcheck_system/free_storage.py:92
 msgid ""
 " You can also remove some nonessential software you do not need to free "
 "storage space."
@@ -178,15 +190,15 @@ msgstr ""
 " Můžete také odebrat některý nepodstatný software, který nepotřebujete, "
 "abyste uvolnili úložný prostor."
 
-#: healthcheck_system/free_storage.py:164
+#: healthcheck_system/free_storage.py:164 healthcheck_system/free_storage.py:94
 msgid ""
-" You should also check snapshots and remove unnecessary ones (using "
-"schnapps or by any other way you are using)."
+" You should also check snapshots and remove unnecessary ones (using schnapps "
+"or by any other way you are using)."
 msgstr ""
-" Měli byste také zkontrolovat snímky a odstranit nepotřebné (pomocí "
-"schnapps nebo jakýmkoli jiným způsobem, který používáte)."
+" Měli byste také zkontrolovat snímky a odstranit nepotřebné (pomocí schnapps "
+"nebo jakýmkoli jiným způsobem, který používáte)."
 
-#: healthcheck_system/free_storage.py:169
+#: healthcheck_system/free_storage.py:169 healthcheck_system/free_storage.py:97
 msgid ""
 " In case of this storage it can also be enough to just reboot device as "
 "content resides in volatile memory."
@@ -195,26 +207,31 @@ msgstr ""
 "protože obsah se nachází v nestálé paměti."
 
 #: healthcheck_system/free_storage.py:174
+#: healthcheck_system/free_storage.py:100
 msgid ""
-"This applies to permanent storages (hardware storage devices). In case of"
-" memory storages such as 'tmpfs' it might be enough to perform reboot."
+"This applies to permanent storages (hardware storage devices). In case of "
+"memory storages such as 'tmpfs' it might be enough to perform reboot."
 msgstr ""
 "To platí pro trvalá úložiště (hardwarová úložná zařízení). V případě "
 "paměťových úložišť, jako je \"tmpfs\", může stačit provést restart."
 
 #: healthcheck_system/free_storage.py:184
+#: healthcheck_system/free_storage.py:109
 msgid "There is enough of free storage space"
 msgstr "K dispozici je dostatek volného úložného prostoru"
 
 #: healthcheck_system/free_storage.py:194
+#: healthcheck_system/free_storage.py:120
 msgid "Storage space is getting low"
 msgstr "Úložný prostor se vyčerpává"
 
 #: healthcheck_system/free_storage.py:201
+#: healthcheck_system/free_storage.py:128
 msgid "Amount of free storage space is getting dangerously low"
 msgstr "Množství volného úložného prostoru se nebezpečně zmenšuje"
 
 #: healthcheck_system/free_storage.py:207
+#: healthcheck_system/free_storage.py:132
 msgid ""
 "Having storage device filled almost to the brim is dangerous as you can "
 "easily run out of of storage space with system updates or when files are "
@@ -222,332 +239,402 @@ msgid ""
 "storage."
 msgstr ""
 "Mít úložné zařízení zaplněné téměř po okraj je nebezpečné, protože při "
-"aktualizacích systému nebo při aktualizaci či přidávání nových souborů "
-"může snadno dojít místo v úložišti. Navíc to také výrazně zpomaluje "
-"ukládání."
+"aktualizacích systému nebo při aktualizaci či přidávání nových souborů může "
+"snadno dojít místo v úložišti. Navíc to také výrazně zpomaluje ukládání."
 
 #: healthcheck_system/free_storage.py:219
+#: healthcheck_system/free_storage.py:142
 msgid "Storage is full!"
 msgstr "Úložiště je plné!"
 
-#: healthcheck_system/free_storage.py:225
+#: healthcheck_system/free_storage.py:189
 msgid ""
-"Storage is pretty much full. It is expected that writing or extending "
-"files can fail and services might start failing as well. You should act "
-"now!"
+"Storage is pretty much full. It is expected that writing or extending files "
+"can fail and services might start failing as well. You should act now!"
 msgstr ""
+"Úložiště je téměř plné. Očekává se, že zápis nebo rozšiřování souborů může "
+"selhat a také mohou začít selhávat služby. Měli byste jednat ihned!"
 
-#: healthcheck_system/__init__.py:44
+#: healthcheck_system/__init__.py:38 healthcheck_system/__init__.py:32
 msgid "Basic system stability and endurance checks"
-msgstr ""
+msgstr "Základní kontroly stability a odolnosti systému"
 
-#: healthcheck_system/merge_conffiles.py:56
+#: healthcheck_system/merge_conffiles.py:52
 msgid "Notifies about updates of the configuration files in packages."
-msgstr ""
+msgstr "Upozorňuje na aktualizace konfiguračních souborů v balíčcích."
 
-#: healthcheck_system/merge_conffiles.py:69
-#: healthcheck_system/resolver_conf.py:31
+#: healthcheck_system/merge_conffiles.py:65
+#: healthcheck_system/resolver_conf.py:27
 msgid "There are no configuration files with need for merge."
-msgstr ""
+msgstr "Neexistují žádné konfigurační soubory vyžadující sloučení."
 
-#: healthcheck_system/merge_conffiles.py:72
-#: healthcheck_system/resolver_conf.py:34
+#: healthcheck_system/merge_conffiles.py:68
+#: healthcheck_system/resolver_conf.py:30
 msgid ""
 "The configuration files are updated automatically only if they were not "
-"modified in the meantime. They are never automatically replaced once they"
-" are modified. The new version is always placed to the file with '-opkg' "
-"suffix with expectation that user is going to manually update their "
-"current configuration file. Right now there are no configuration files "
-"that would require merging."
+"modified in the meantime. They are never automatically replaced once they "
+"are modified. The new version is always placed to the file with '-opkg' "
+"suffix with expectation that user is going to manually update their current "
+"configuration file. Right now there are no configuration files that would "
+"require merging."
 msgstr ""
+"Konfigurační soubory se automaticky aktualizují pouze v případě, že nebyly "
+"mezitím změněny. Nikdy nejsou automaticky nahrazeny, pokud byly změněny. "
+"Nová verze je vždy umístěna do souboru s příponou '-opkg' s očekáváním, že "
+"uživatel bude svůj aktuální konfigurační soubor aktualizovat ručně. V tuto "
+"chvíli neexistují žádné konfigurační soubory, které by vyžadovaly sloučení."
 
-#: healthcheck_system/merge_conffiles.py:87
-#: healthcheck_system/resolver_conf.py:49
+#: healthcheck_system/merge_conffiles.py:83
+#: healthcheck_system/resolver_conf.py:45
 msgid ""
 "There are some configuration files with updated defaults that should be "
 "reviewed and merged."
 msgstr ""
+"Existuje několik konfiguračních souborů s aktualizovanými výchozími "
+"nastaveními, které by měly být zkontrolovány a sloučeny."
 
-#: healthcheck_system/merge_conffiles.py:90
-#: healthcheck_system/resolver_conf.py:52
+#: healthcheck_system/merge_conffiles.py:86
+#: healthcheck_system/resolver_conf.py:48
 msgid "The following configuration files from these packages should be merged:"
 msgstr ""
+"Následující konfigurační soubory z těchto balíčků by měly být sloučeny:"
 
-#: healthcheck_system/merge_conffiles.py:95
-#: healthcheck_system/resolver_conf.py:57
+#: healthcheck_system/merge_conffiles.py:91
+#: healthcheck_system/resolver_conf.py:53
 msgid ""
 "These configuration files were modified either directly by you or by "
-"application you used. You want to check the new default state saved in "
-"'*-opkg' file (the original file name with '-opkg' appended and update "
-"your configuration accordingly. Then you can remove '*-opkg' file."
+"application you used. You want to check the new default state saved in '*-"
+"opkg' file (the original file name with '-opkg' appended and update your "
+"configuration accordingly. Then you can remove '*-opkg' file."
 msgstr ""
+"Tyto konfigurační soubory byly upraveny buď přímo vámi, nebo vámi použitou "
+"aplikací. Chcete zkontrolovat nový výchozí stav uložený v souboru '*-"
+"opkg' (původní název souboru s připojeným '-opkg' a podle toho aktualizovat "
+"konfiguraci. Poté můžete soubor '*-opkg' odstranit."
 
-#: healthcheck_system/mmc_life.py:70
+#: healthcheck_system/mmc_life.py:66 healthcheck_system/mmc_life.py:47
 msgid "Watches wear of MMC storages plugged in to the router."
-msgstr ""
+msgstr "Sleduje opotřebení úložišť MMC připojených k routeru."
 
-#: healthcheck_system/mmc_life.py:88
+#: healthcheck_system/mmc_life.py:86 healthcheck_system/mmc_life.py:76
 msgid "There is no MMC device detected in system."
-msgstr ""
+msgstr "V systému nebylo zjištěno žádné zařízení MMC."
 
-#: healthcheck_system/mmc_life.py:91
+#: healthcheck_system/mmc_life.py:89
 msgid ""
-"Check found no MMC block device in system. This is most likely because "
-"there is just no such device plugged in."
+"Check found no MMC block device in system. This is most likely because there "
+"is just no such device plugged in."
 msgstr ""
+"Kontrola nenalezla v systému žádné blokové zařízení MMC. Je to pravděpodobně "
+"proto, že žádné takové zařízení prostě není připojeno."
 
-#: healthcheck_system/mmc_life.py:106 healthcheck_system/smart.py:137
-#: healthcheck_system/smart.py:158
+#: healthcheck_system/mmc_life.py:104 healthcheck_system/smart.py:127
+#: healthcheck_system/smart.py:148 healthcheck_system/mmc_life.py:92
+#: healthcheck_system/smart.py:82
 msgid "It is not possible to read extcsd data."
-msgstr ""
+msgstr "Nelze číst data extcsd."
 
-#: healthcheck_system/mmc_life.py:110 healthcheck_system/smart.py:141
-#: healthcheck_system/smart.py:162
+#: healthcheck_system/mmc_life.py:108 healthcheck_system/smart.py:131
+#: healthcheck_system/smart.py:152 healthcheck_system/mmc_life.py:96
+#: healthcheck_system/smart.py:86
 msgid "MMC tools (mmc-utils) are missing or not accessible."
-msgstr ""
+msgstr "Nástroje MMC (mmc-utils) chybí nebo nejsou přístupné."
 
-#: healthcheck_system/mmc_life.py:112 healthcheck_system/smart.py:142
-#: healthcheck_system/smart.py:163
+#: healthcheck_system/mmc_life.py:110 healthcheck_system/smart.py:132
+#: healthcheck_system/smart.py:153 healthcheck_system/mmc_life.py:97
+#: healthcheck_system/smart.py:87
 msgid "Read failed with error: "
-msgstr ""
+msgstr "Čtení se nezdařilo s chybou: "
 
-#: healthcheck_system/mmc_life.py:113
+#: healthcheck_system/mmc_life.py:111
 msgid "MMC does not provide information about its lifespan."
-msgstr ""
+msgstr "MMC neposkytuje informace o své životnosti."
 
-#: healthcheck_system/mmc_life.py:117 healthcheck_system/smart.py:146
-#: healthcheck_system/smart.py:167
+#: healthcheck_system/mmc_life.py:115 healthcheck_system/smart.py:136
+#: healthcheck_system/smart.py:157 healthcheck_system/mmc_life.py:101
+#: healthcheck_system/smart.py:91
 msgid ""
-"You should install mmc-utils or any other package that provides mmc-"
-"utils's command 'mmc'."
+"You should install mmc-utils or any other package that provides mmc-utils's "
+"command 'mmc'."
 msgstr ""
+"Měli byste si nainstalovat mmc-utils nebo jiný balíček, který poskytuje "
+"příkaz 'mmc' z mmc-utils."
 
-#: healthcheck_system/mmc_life.py:131
+#: healthcheck_system/mmc_life.py:129 healthcheck_system/mmc_life.py:116
 msgid "Reserved blocks on memory were depleted!"
-msgstr ""
+msgstr "Rezervované bloky paměti byly vyčerpány!"
+
+#: healthcheck_system/mmc_life.py:133 healthcheck_system/mmc_life.py:131
+#: healthcheck_system/mmc_life.py:118
+#, fuzzy, python-format
+msgid "More than 80% of reserved blocks consumed!"
+msgstr "Spotřebováno více než 80 % rezervovaných bloků!"
+
+#: healthcheck_system/mmc_life.py:132 healthcheck_system/mmc_life.py:119
+msgid "Device's lifespan is depleted at least: "
+msgstr "Životnost zařízení je vyčerpána alespoň: "
 
 #: healthcheck_system/mmc_life.py:133
-#, python-format
-msgid "More than 80% of reserved blocks consumed!"
-msgstr ""
-
-#: healthcheck_system/mmc_life.py:134
-msgid "Device's lifespan is depleted at least: "
-msgstr ""
-
-#: healthcheck_system/mmc_life.py:135
 msgid ""
-"MMC storage has limited amount of writes and because of that it has "
-"limited lifespan. This means that it is normal and expected that reserved"
-" blocks are going to be low if your device is years old. In case of new "
-"device it can be either faulty from factory or more likely it was used "
-"very heavily in the past. Note that the manufacturers do not provide "
-"warranty if MMC was used heavily.\n"
+"MMC storage has limited amount of writes and because of that it has limited "
+"lifespan. This means that it is normal and expected that reserved blocks are "
+"going to be low if your device is years old. In case of new device it can be "
+"either faulty from factory or more likely it was used very heavily in the "
+"past. Note that the manufacturers do not provide warranty if MMC was used "
+"heavily.\n"
 msgstr ""
+"Úložiště MMC má omezené množství zápisů a proto má omezenou životnost. To "
+"znamená, že je normální a očekávané, že počet rezervovaných bloků budou "
+"nízký, pokud je vaše zařízení staré několik let. V případě nového zařízení "
+"může být buď vadné z výroby, nebo s větší pravděpodobností bylo v minulosti "
+"velmi intenzivně používáno. Všimněte si, že výrobci neposkytují záruku, "
+"pokud bylo úložiště MMC intenzivně používáno.\n"
 
-#: healthcheck_system/mmc_life.py:143
+#: healthcheck_system/mmc_life.py:141
 msgid ""
-"To prolong device lifespan you should minimize amount of writes "
-"(preferably to only system updates). This means moving any write heavy "
-"tasks such as file sharing, databases, containers, logs and others to "
-"some other storage device."
+"To prolong device lifespan you should minimize amount of writes (preferably "
+"to only system updates). This means moving any write heavy tasks such as "
+"file sharing, databases, containers, logs and others to some other storage "
+"device."
 msgstr ""
+"Chcete-li prodloužit životnost zařízení, měli byste minimalizovat množství "
+"zápisů (nejlépe pouze na aktualizace systému). To znamená přesunout všechny "
+"úlohy náročné na zápis, jako je sdílení souborů, databáze, kontejnery, "
+"protokoly a další, na jiné úložné zařízení."
 
-#: healthcheck_system/mmc_life.py:154
+#: healthcheck_system/mmc_life.py:152 healthcheck_system/mmc_life.py:136
 msgid "Life of MMC is all right."
-msgstr ""
+msgstr "Životnost MMC je v pořádku."
 
-#: healthcheck_system/mmc_life.py:161
+#: healthcheck_system/mmc_life.py:159 healthcheck_system/mmc_life.py:144
 msgid "Life of MMC is getting short."
-msgstr ""
+msgstr "Životnost MMC se krátí."
 
-#: healthcheck_system/mmc_life.py:168
+#: healthcheck_system/mmc_life.py:166 healthcheck_system/mmc_life.py:152
 msgid "Life of MMC is getting dangerously short!"
-msgstr ""
+msgstr "Životnost MMC se nebezpečně krátí!"
 
-#: healthcheck_system/mmc_life.py:175
+#: healthcheck_system/mmc_life.py:173 healthcheck_system/mmc_life.py:160
 msgid "MMC is end of life."
-msgstr ""
+msgstr "MMC je na konci životnosti."
 
-#: healthcheck_system/mmc_life.py:178
+#: healthcheck_system/mmc_life.py:176 healthcheck_system/mmc_life.py:163
 msgid ""
-"There is nothing that can be done now. It is too late. MMC is most "
-"probably already not usable. You should stop using it if your data are "
-"dear to you. It should be replaced if possible. Either with same type of "
-"device or with different in case it is MMC soldered to board in device."
+"There is nothing that can be done now. It is too late. MMC is most probably "
+"already not usable. You should stop using it if your data are dear to you. "
+"It should be replaced if possible. Either with same type of device or with "
+"different in case it is MMC soldered to board in device."
 msgstr ""
+"Teď už se nedá nic dělat. Je příliš pozdě. Úložiště MMC je s největší "
+"pravděpodobností již nepoužitelné. Pokud jsou vám vaše data drahá, měli "
+"byste jej přestat používat. Je-li to možné, úložiště by mělo být vyměněno "
+"buď za stejný typ zařízení, nebo za jiný v případě, že je připájeno k desce "
+"v zařízení."
 
-#: healthcheck_system/pkg_check.py:48
+#: healthcheck_system/pkg_check.py:41
 msgid ""
-"Verify that none of the user's modifications in files provided by "
-"packages would be removed by update."
+"Verify that none of the user's modifications in files provided by packages "
+"would be removed by update."
 msgstr ""
+"Ověřte, že aktualizace neodstraní žádnou z uživatelských změn v souborech "
+"poskytovaných balíčky."
 
-#: healthcheck_system/pkg_check.py:71
+#: healthcheck_system/pkg_check.py:61
 msgid "All files provided by packages are in their original state"
-msgstr ""
+msgstr "Všechny soubory poskytované balíčky jsou v původním stavu"
 
-#: healthcheck_system/pkg_check.py:74
+#: healthcheck_system/pkg_check.py:64
 msgid ""
 "No files from packages were modified and thus there is no danger that "
 "subsequent update would erase these changes."
 msgstr ""
+"Žádné soubory z balíčků nebyly změněny, proto nehrozí, že by následná "
+"aktualizace tyto změny vymazala."
+
+#: healthcheck_system/pkg_check.py:76 healthcheck_system/pkg_check.py:73
+msgid "Some files from system packages were modified."
+msgstr "Některé soubory ze systémových balíčků byly upraveny."
+
+#: healthcheck_system/pkg_check.py:80
+msgid ""
+"The changes in these files from these packages are going to be wiped with "
+"subsequent updates:"
+msgstr ""
+"Změny v těchto souborech z těchto balíčků budou při následných aktualizacích "
+"vymazány:"
 
 #: healthcheck_system/pkg_check.py:86
-msgid "Some files from system packages were modified."
-msgstr ""
-
-#: healthcheck_system/pkg_check.py:90
-msgid ""
-"The changes in these files from these packages are going to be wiped with"
-" subsequent updates:"
-msgstr ""
-
-#: healthcheck_system/pkg_check.py:96
 msgid ""
 "You should revert changes by reinstalling the affected packages and "
 "investigate the alternative approach for anything you are trying to "
 "achieve.\n"
-"Most of the packages provide a way to add configuration without having to"
-" modify the root configuration file. Look for directories with '.d' "
-"suffix.\n"
-"If you are modifying some sort of the script you should think about "
-"sending your change to the upstream. It is open-source non the less."
+"Most of the packages provide a way to add configuration without having to "
+"modify the root configuration file. Look for directories with '.d' suffix.\n"
+"If you are modifying some sort of the script you should think about sending "
+"your change to the upstream. It is open-source non the less."
 msgstr ""
+"Měli byste vrátit změny přeinstalováním dotčených balíčků a prozkoumat "
+"alternativní přístup k čemukoli, čeho se snažíte dosáhnout.\n"
+"Většina balíčků poskytuje způsob, jak přidat konfiguraci, aniž by bylo nutné "
+"měnit kořenový konfigurační soubor. Hledejte adresáře s příponou '.d'.\n"
+"Pokud upravujete nějaký druh skriptu, měli byste uvažovat o zaslání své "
+"změny do upstreamu. V každém případě se jedná o open-source."
 
-#: healthcheck_system/services.py:32
+#: healthcheck_system/services.py:28 healthcheck_system/services.py:27
 msgid ""
-"Check if there is no disabled service that would be re-enabled with "
-"update."
+"Check if there is no disabled service that would be re-enabled with update."
 msgstr ""
+"Zkontrolujte, zda není zakázána služba, která by byla aktualizací znovu "
+"povolena."
 
-#: healthcheck_system/services.py:39
+#: healthcheck_system/services.py:35
 msgid "All wanted services are enabled."
-msgstr ""
+msgstr "Všechny požadované služby jsou povoleny."
 
-#: healthcheck_system/services.py:42
+#: healthcheck_system/services.py:38
 msgid ""
 "Some of the services are automatically activated even if they were "
-"previously disabled. All of such services are enabled and are going to be"
-" started on startup."
+"previously disabled. All of such services are enabled and are going to be "
+"started on startup."
 msgstr ""
+"Některé služby se aktivují automaticky, i když byly dříve zakázány. Všechny "
+"tyto služby jsou povoleny a budou spuštěny při startu."
 
-#: healthcheck_system/services.py:55
+#: healthcheck_system/services.py:51 healthcheck_system/services.py:50
 msgid ""
-"Some services currently disabled are going to be enabled with future "
-"updates."
+"Some services currently disabled are going to be enabled with future updates."
 msgstr ""
+"Některé aktuálně zakázané služby budou v budoucích aktualizacích povoleny."
 
-#: healthcheck_system/services.py:59
+#: healthcheck_system/services.py:55 healthcheck_system/services.py:53
 msgid ""
-"Following disabled services are going to be re-enabled with future "
-"updates: "
+"Following disabled services are going to be re-enabled with future updates: "
 msgstr ""
+"Následující zakázané služby budou v budoucích aktualizacích znovu povoleny: "
 
-#: healthcheck_system/services.py:62
+#: healthcheck_system/services.py:58 healthcheck_system/services.py:55
 msgid ""
 "These services are automatically enabled even if they were previously "
 "disabled to ensure router's functionality."
 msgstr ""
+"Tyto služby jsou automaticky povoleny, i když byly dříve zakázány, aby byla "
+"zajištěna funkčnost routeru."
 
-#: healthcheck_system/services.py:69
+#: healthcheck_system/services.py:65 healthcheck_system/services.py:59
 msgid ""
-"To solve this you should configure system to not install software you do "
-"not want."
+"To solve this you should configure system to not install software you do not "
+"want."
 msgstr ""
+"Chcete-li to vyřešit, měli byste systém nakonfigurovat tak, aby neinstaloval "
+"software, který nechcete."
 
-#: healthcheck_system/services.py:106
+#: healthcheck_system/services.py:101 healthcheck_system/services.py:87
 msgid ""
-"Checks if currently running services would be automatically strated after"
-" boot."
+"Checks if currently running services would be automatically strated after "
+"boot."
 msgstr ""
+"Zkontroluje, zda budou aktuálně běžící služby po spuštění automaticky "
+"startovány."
 
-#: healthcheck_system/services.py:113
+#: healthcheck_system/services.py:108 healthcheck_system/services.py:95
 msgid "All running services are enabled."
-msgstr ""
+msgstr "Všechny běžící služby jsou povoleny."
 
-#: healthcheck_system/services.py:116
+#: healthcheck_system/services.py:111 healthcheck_system/services.py:98
 msgid ""
 "Services are not automatically started on next startup unless they are "
-"activated. All currently running services are enabled so you should not "
-"miss any service after reboot."
+"activated. All currently running services are enabled so you should not miss "
+"any service after reboot."
 msgstr ""
+"Služby se při dalším spuštění automaticky nespustí, pokud nejsou aktivovány. "
+"Všechny aktuálně spuštěné služby jsou aktivovány, takže by vám po restartu "
+"neměla žádná služba chybět."
 
-#: healthcheck_system/services.py:129
+#: healthcheck_system/services.py:124 healthcheck_system/services.py:110
 msgid "There are currently running services that are not enabled."
-msgstr ""
+msgstr "V současné době jsou spuštěny služby, které nejsou povoleny."
 
-#: healthcheck_system/services.py:133
+#: healthcheck_system/services.py:128 healthcheck_system/services.py:113
 msgid "Following currently running services are disabled: "
-msgstr ""
+msgstr "Následující aktuálně spuštěné služby jsou zakázány: "
 
-#: healthcheck_system/services.py:136
+#: healthcheck_system/services.py:131 healthcheck_system/services.py:114
 msgid ""
 "Enabled services are started on startup. You might want to enable these "
 "services."
 msgstr ""
+"Povolené služby jsou spouštěny při startu systému. Možná budete chtít tyto "
+"služby povolit."
 
-#: healthcheck_system/services.py:140
+#: healthcheck_system/services.py:135 healthcheck_system/services.py:117
 msgid "Using either LuCI or SSH enable mentioned services."
-msgstr ""
+msgstr "Zmíněné služby povolte pomocí LuCI nebo SSH."
 
-#: healthcheck_system/smart.py:120
+#: healthcheck_system/smart.py:110 healthcheck_system/smart.py:66
 msgid "There is no ATA/SATA/NVMe device detected in system."
-msgstr ""
+msgstr "V systému nebylo zjištěno žádné zařízení ATA/SATA/NVMe."
 
-#: healthcheck_system/smart.py:123
+#: healthcheck_system/smart.py:113
 msgid ""
 "Check found no ATA/SATA/NVMe block device in system. This is most likely "
 "because there is just no such device plugged in."
 msgstr ""
+"Kontrola nezjistila v systému žádné blokové zařízení ATA/SATA/NVMe. Je to "
+"pravděpodobně proto, že žádné takové zařízení není připojeno."
 
-#~ msgid "Processes consuming most memory:"
-#~ msgstr "Procesy spotřebovávající nejvíce paměti:"
+#: healthcheck_system/free_ram.py:69
+msgid "Processes consuming most memory:"
+msgstr "Procesy spotřebovávající nejvíce paměti:"
 
-#~ msgid ""
-#~ "Storage is pretty much full. It is"
-#~ " expected that writing or extending "
-#~ "files can fail and because of "
-#~ "services might start failing as well."
-#~ " You should act now!"
-#~ msgstr ""
+#: healthcheck_system/free_storage.py:146
+msgid ""
+"Storage is pretty much full. It is expected that writing or extending files "
+"can fail and because of services might start failing as well. You should act "
+"now!"
+msgstr ""
+"Úložiště je téměř plné. Očekává se, že může dojít k selhání zápisu nebo "
+"rozšiřování souborů a že kvůli tomu mohou začít selhávat i služby. Měli "
+"byste jednat ihned!"
 
-#~ msgid ""
-#~ "Check found no MMC block device in"
-#~ " system. This is most likely becuase"
-#~ " there is just no such device "
-#~ "plugged in."
-#~ msgstr ""
+#: healthcheck_system/mmc_life.py:79
+msgid ""
+"Check found no MMC block device in system. This is most likely becuase there "
+"is just no such device plugged in."
+msgstr ""
+"Kontrola nenalezla v systému žádné blokové zařízení MMC. To je s největší "
+"pravděpodobností proto, že takové zařízení není připojeno."
 
-#~ msgid ""
-#~ "MMC storage has limited amount of "
-#~ "writes and because of that it has"
-#~ " limited lifespan. This means that "
-#~ "this is normal and expected if "
-#~ "your device is cheap or years old."
-#~ " In case of new device it can"
-#~ " be either faulty from factory or "
-#~ "more likely it was used very "
-#~ "heavily in the past. Note that "
-#~ "most of the manufacturers do not "
-#~ "provide warranty if MMC was used "
-#~ "heavily.\n"
-#~ msgstr ""
+#: healthcheck_system/mmc_life.py:120
+msgid ""
+"MMC storage has limited amount of writes and because of that it has limited "
+"lifespan. This means that this is normal and expected if your device is "
+"cheap or years old. In case of new device it can be either faulty from "
+"factory or more likely it was used very heavily in the past. Note that most "
+"of the manufacturers do not provide warranty if MMC was used heavily.\n"
+msgstr ""
+"Úložiště MMC má omezené množství zápisů a proto má omezenou životnost. To "
+"znamená, že je to normální a očekávané, pokud je vaše zařízení levné nebo "
+"roky staré. V případě nového zařízení může být buď vadné z výroby, nebo s "
+"větší pravděpodobností bylo v minulosti velmi intenzivně používáno. Všimněte "
+"si, že většina výrobců neposkytuje záruku, pokud bylo úložiště MMC "
+"intenzivně používáno.\n"
 
-#~ msgid ""
-#~ "To prolong device lifespan you should"
-#~ " minimize amount of writes (preferably "
-#~ "to only system updates). This means "
-#~ "moving any write heavy tasks such "
-#~ "as file sharing, databases, containers, "
-#~ "logs and others to some other "
-#~ "storage storage device."
-#~ msgstr ""
+#: healthcheck_system/mmc_life.py:126
+msgid ""
+"To prolong device lifespan you should minimize amount of writes (preferably "
+"to only system updates). This means moving any write heavy tasks such as "
+"file sharing, databases, containers, logs and others to some other storage "
+"storage device."
+msgstr ""
+"Chcete-li prodloužit životnost zařízení, měli byste minimalizovat množství "
+"zápisů (nejlépe pouze na aktualizace systému). To znamená přesunout všechny "
+"úlohy náročné na zápis, jako je sdílení souborů, databáze, kontejnery, "
+"protokoly a další, na jiné úložné zařízení."
 
-#~ msgid ""
-#~ "Check found no ATA/SATA/NVMe block "
-#~ "device in system. This is most "
-#~ "likely becuase there is just no "
-#~ "such device plugged in."
-#~ msgstr ""
-
+#: healthcheck_system/smart.py:69
+msgid ""
+"Check found no ATA/SATA/NVMe block device in system. This is most likely "
+"becuase there is just no such device plugged in."
+msgstr ""
+"Kontrola nezjistila v systému žádné blokové zařízení ATA/SATA/NVMe. Je to "
+"pravděpodobně proto, že žádné takové zařízení není připojeno."
