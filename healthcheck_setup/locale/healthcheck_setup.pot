@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
-"POT-Creation-Date: 2021-11-16 17:44+0100\n"
+"POT-Creation-Date: 2021-11-26 13:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,21 +30,21 @@ msgid ""
 " healthcheck, are using it to inform administrator about possible issues."
 msgstr ""
 
-#: healthcheck_setup/email_notifications.py:35
+#: healthcheck_setup/email_notifications.py:37
 msgid ""
-"In Foris navigate to Maintenance setting and configure email "
+"In reForis navigate to Maintenance setting and configure email "
 "notifications there."
 msgstr ""
 
-#: healthcheck_setup/email_notifications.py:46
+#: healthcheck_setup/email_notifications.py:47
 msgid "Email notifications seems to be configured."
 msgstr ""
 
-#: healthcheck_setup/email_notifications.py:49
-msgid "Notifications are send to following mail addresses: "
+#: healthcheck_setup/email_notifications.py:50
+msgid "Notifications are send to the following mail addresses: "
 msgstr ""
 
-#: healthcheck_setup/__init__.py:19
+#: healthcheck_setup/__init__.py:21
 msgid "Suggestion for router setup."
 msgstr ""
 

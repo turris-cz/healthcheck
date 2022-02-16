@@ -1,4 +1,4 @@
-# Translations template for healthcheck.
+# Slovak translations for healthcheck.
 # Copyright (C) 2021 CZ.NIC z.s.p.o
 # This file is distributed under the same license as the healthcheck
 # project.
@@ -8,18 +8,45 @@ msgid ""
 msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
-"POT-Creation-Date: 2021-11-16 17:44+0100\n"
+"POT-Creation-Date: 2021-11-26 13:14+0100\n"
 "PO-Revision-Date: 2021-11-20 11:50+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
-"Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
-"healthcheck/sk/>\n"
 "Language: sk\n"
+"Language-Team: Slovak "
+"<https://hosted.weblate.org/projects/turris/healthcheck/sk/>\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9.1\n"
 "Generated-By: Babel 2.9.1\n"
+
+#: healthcheck/__main__.py:12
+msgid "System health checker."
+msgstr ""
+
+#: healthcheck/__main__.py:18
+msgid "List all available checks"
+msgstr ""
+
+#: healthcheck/__main__.py:19
+msgid "Output in JSON data format"
+msgstr ""
+
+#: healthcheck/__main__.py:20
+msgid "Run healthcheck in background"
+msgstr ""
+
+#: healthcheck/__main__.py:24
+msgid "Check to be executed. If not specified then all checks are executed."
+msgstr ""
+
+#: healthcheck/__main__.py:67
+msgid "No such plugin"
+msgstr ""
+
+#: healthcheck/__main__.py:75
+msgid "No such check in plugin"
+msgstr ""
 
 #: healthcheck/report.py:75
 msgid "Inconclusive"
@@ -30,14 +57,16 @@ msgid ""
 "Check was inconclusive. This means that for some reason check wasn't able"
 " to generate any other report. This is mostly because it failed horribly."
 msgstr ""
-"Kontrola neposkytla výsledok. Znamená to, že z nejakého dôvodu nebolo možné "
-"vygenerovať žiadnu správu. Príčinou je obvykle jej zásadné zlyhanie."
+"Kontrola neposkytla výsledok. Znamená to, že z nejakého dôvodu nebolo "
+"možné vygenerovať žiadnu správu. Príčinou je obvykle jej zásadné "
+"zlyhanie."
 
-#: healthcheck/report.py:91
+#: healthcheck/report.py:92
 msgid "Not applicable"
 msgstr "Nepoužiteľné"
 
-#: healthcheck/report.py:94
+#: healthcheck/report.py:95
+#, fuzzy
 msgid ""
 "Check wasn't applicable. This is most probably because it checks system "
 "attribute that is notinstalled or activated."
@@ -45,44 +74,46 @@ msgstr ""
 "Kontrola nebola použiteľná. Je to pravdepodobne preto, že kontroluje "
 "systémový atribút, ktorý nie je nainštalovaný alebo aktivovaný."
 
-#: healthcheck/report.py:107
+#: healthcheck/report.py:109
 msgid "Pass"
 msgstr "Úspešné"
 
-#: healthcheck/report.py:110
+#: healthcheck/report.py:112
 msgid "Check successfully passed. No problem was detected."
 msgstr "Kontrola úspešne prebehla. Nebol zistený žiadny problém."
 
-#: healthcheck/report.py:124
+#: healthcheck/report.py:126
 msgid "Try again later"
 msgstr "Skúsiť neskôr"
 
-#: healthcheck/report.py:127
+#: healthcheck/report.py:129
+#, fuzzy
 msgid ""
 "Check can't be finished at the moment but should be able after a while. "
-"This is commonly becuase itlacks data to assess trends from."
+"This is because becuase it lacks data to assess trends from."
 msgstr ""
-"Kontrola sa momentálne nedá dokončiť, ale po chvíli by už mala byť možná. Je "
-"to obyčajne preto, lebo chýbajú údaje, na základe ktorých by sa dali "
+"Kontrola sa momentálne nedá dokončiť, ale po chvíli by už mala byť možná."
+" Je to obyčajne preto, lebo chýbajú údaje, na základe ktorých by sa dali "
 "vyhodnotiť trendy."
 
-#: healthcheck/report.py:140
+#: healthcheck/report.py:147
 msgid "Software advise"
 msgstr "Softwarové upozornenie"
 
-#: healthcheck/report.py:143
+#: healthcheck/report.py:150
 msgid ""
 "Check provides advise regarding software running on router.  Please "
 "consider it."
 msgstr ""
-"Kontrola poskytuje rady týkajúce sa softwaru spusteného na routeri.  Prosím, "
-"zvážte ich."
+"Kontrola poskytuje rady týkajúce sa softwaru spusteného na routeri.  "
+"Prosím, zvážte ich."
 
-#: healthcheck/report.py:155
+#: healthcheck/report.py:161
 msgid "Software warning"
 msgstr "Softwarová výstraha"
 
-#: healthcheck/report.py:158
+#: healthcheck/report.py:164
+#, fuzzy
 msgid ""
 "Check detected problem with software. It is far from fatal but it might "
 "be causing some functionalitydegradation now or in future. Please solve "
@@ -92,11 +123,12 @@ msgstr ""
 "budúcnosti môže spôsobovať určité zhoršenie funkčnosti. Prosím, vyriešte "
 "tento problém podľa svojich možností."
 
-#: healthcheck/report.py:171
+#: healthcheck/report.py:178
 msgid "Software error"
 msgstr "Softwarová chyba"
 
-#: healthcheck/report.py:174
+#: healthcheck/report.py:181
+#, fuzzy
 msgid ""
 "Check detected dangerous problem with software. It is not immediately "
 "fatal but it possibly causessome functionality degradation and/or it can "
@@ -105,14 +137,14 @@ msgid ""
 msgstr ""
 "Kontrola zistila nebezpečný problém so softwarom. Nie je bezprostredne "
 "fatálny, ale môže spôsobiť určité zhoršenie funkčnosti a/alebo sa môže "
-"vyvinúť do fatálnych následkov pre funkčnosť zariadenia. Prosím, vyriešte "
-"tento problém čo najskôr."
+"vyvinúť do fatálnych následkov pre funkčnosť zariadenia. Prosím, vyriešte"
+" tento problém čo najskôr."
 
-#: healthcheck/report.py:188
+#: healthcheck/report.py:196
 msgid "Software fatal error"
 msgstr "Softwarová fatálna chyba"
 
-#: healthcheck/report.py:191
+#: healthcheck/report.py:199
 msgid ""
 "Check detected fatal problem with software. It is causing system to not "
 "work properly."
@@ -120,25 +152,27 @@ msgstr ""
 "Kontrola zistila fatálny problém so softwarom. Spôsobuje, že systém "
 "nepracuje správne."
 
-#: healthcheck/report.py:203
+#: healthcheck/report.py:214
 msgid "Hardware warning"
 msgstr "Hardwarová výstraha"
 
-#: healthcheck/report.py:206
+#: healthcheck/report.py:217
+#, fuzzy
 msgid ""
 "Check detected problem with hardware. It is far from fatal but it might "
 "be causing some functionalitydegradation now or in future. Please solve "
 "this issue at your convenience."
 msgstr ""
-"Kontrola zistila problém s hardwarom. Nie je fatálny, ale môže spôsobovať "
-"určité zhoršenie funkčnosti teraz alebo v budúcnosti. Prosím, vyriešte tento "
-"problém podľa svojich možností."
+"Kontrola zistila problém s hardwarom. Nie je fatálny, ale môže spôsobovať"
+" určité zhoršenie funkčnosti teraz alebo v budúcnosti. Prosím, vyriešte "
+"tento problém podľa svojich možností."
 
-#: healthcheck/report.py:219
+#: healthcheck/report.py:231
 msgid "Hardware error"
 msgstr "Hardwarová chyba"
 
-#: healthcheck/report.py:222
+#: healthcheck/report.py:234
+#, fuzzy
 msgid ""
 "Check detected dangerous problem with hardware. It is not immediately "
 "fatal but it possibly causessome functionality degradation and/or it can "
@@ -147,41 +181,43 @@ msgid ""
 msgstr ""
 "Kontrola zistila nebezpečný problém s hardwarom. Nie je bezprostredne "
 "fatálny, ale môže spôsobiť určité zhoršenie funkčnosti a/alebo sa môže "
-"zhoršiť a stať sa pre zariadenie fatálny. Prosím, vyriešte tento problém čo "
-"najskôr."
+"zhoršiť a stať sa pre zariadenie fatálny. Prosím, vyriešte tento problém "
+"čo najskôr."
 
-#: healthcheck/report.py:236
+#: healthcheck/report.py:249
 msgid "Hardware fatal error"
 msgstr "Hardwarová fatálna chyba"
 
-#: healthcheck/report.py:239
+#: healthcheck/report.py:252
 msgid ""
 "Check detected fatal problem with hardware. It is causing system to not "
 "work properly."
 msgstr ""
-"Kontrola zistila fatálny problém s hardvérom. Spôsobuje, že systém nepracuje "
-"správne."
+"Kontrola zistila fatálny problém s hardvérom. Spôsobuje, že systém "
+"nepracuje správne."
 
-#: healthcheck/report.py:251
+#: healthcheck/report.py:267
 msgid "Security advise"
 msgstr "Bezpečnostné upozornenie"
 
-#: healthcheck/report.py:254
+#: healthcheck/report.py:270
 msgid ""
 "Check detected possible security concern. It provides advise.  Please "
 "consider it."
 msgstr ""
-"Kontrola zistila možné problémy s bezpečnosťo.   Prosím, zvážte poskytnuté "
-"rady."
+"Kontrola zistila možné problémy s bezpečnosťo.   Prosím, zvážte "
+"poskytnuté rady."
 
-#: healthcheck/report.py:266
+#: healthcheck/report.py:281
 msgid "Security warning"
 msgstr "Bezpečnostná výstraha"
 
-#: healthcheck/report.py:269
+#: healthcheck/report.py:284
+#, fuzzy
 msgid ""
 "Check detected possible security problem. It is advised to solve it as "
 "soon as possible to mitigatepossible exploit."
 msgstr ""
 "Kontrola zistila možný bezpečnostný problém. Odporúča sa ho vyriešiť čo "
 "najskôr, aby sa zabránilo možnému zneužitiu."
+
