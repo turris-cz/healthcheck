@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
-"POT-Creation-Date: 2021-11-26 13:14+0100\n"
+"POT-Creation-Date: 2021-12-10 17:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,33 +18,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: healthcheck_setup/email_notifications.py:28
+#: healthcheck_setup/email_notifications.py:25
+msgid "Checks if email notifications are configured."
+msgstr ""
+
+#: healthcheck_setup/email_notifications.py:32
 msgid ""
 "You should configure email for notifications to be notified about router "
 "events"
 msgstr ""
 
-#: healthcheck_setup/email_notifications.py:31
+#: healthcheck_setup/email_notifications.py:35
 msgid ""
 "Turris system contains notification system. Various components, including"
 " healthcheck, are using it to inform administrator about possible issues."
 msgstr ""
 
-#: healthcheck_setup/email_notifications.py:37
+#: healthcheck_setup/email_notifications.py:41
 msgid ""
 "In reForis navigate to Maintenance setting and configure email "
 "notifications there."
 msgstr ""
 
-#: healthcheck_setup/email_notifications.py:47
+#: healthcheck_setup/email_notifications.py:51
 msgid "Email notifications seems to be configured."
 msgstr ""
 
-#: healthcheck_setup/email_notifications.py:50
+#: healthcheck_setup/email_notifications.py:54
 msgid "Notifications are send to the following mail addresses: "
 msgstr ""
 
-#: healthcheck_setup/__init__.py:21
+#: healthcheck_setup/__init__.py:22
 msgid "Suggestion for router setup."
 msgstr ""
 

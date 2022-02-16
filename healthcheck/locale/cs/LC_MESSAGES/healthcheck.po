@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
-"POT-Creation-Date: 2021-11-26 13:14+0100\n"
+"POT-Creation-Date: 2021-12-10 17:12+0100\n"
 "PO-Revision-Date: 2021-11-16 17:47+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: cs\n"
@@ -19,6 +19,38 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
+#: healthcheck/check.py:67
+msgid "Can be used to disable check execution. It has to be a boolean value."
+msgstr ""
+
+#: healthcheck/check.py:103
+msgid "Check execution failed with exception: "
+msgstr ""
+
+#: healthcheck/check.py:109
+msgid "Traceback:"
+msgstr ""
+
+#: healthcheck/check.py:120
+msgid "Check execution is disabled"
+msgstr ""
+
+#: healthcheck/check.py:124
+msgid ""
+"Both plugin as check itself are disabled in configuration. You are "
+"rigorous I give you that."
+msgstr ""
+
+#: healthcheck/check.py:126
+msgid ""
+"The plugin check is part of is explicitly disabled as whole in "
+"configuration."
+msgstr ""
+
+#: healthcheck/check.py:127
+msgid "The check is explicitly disabled in configuration."
+msgstr ""
+
 #: healthcheck/__main__.py:12
 msgid "System health checker."
 msgstr ""
@@ -27,24 +59,79 @@ msgstr ""
 msgid "List all available checks"
 msgstr ""
 
-#: healthcheck/__main__.py:19
+#: healthcheck/__main__.py:20
+msgid "List all available UCI configuration options"
+msgstr ""
+
+#: healthcheck/__main__.py:22
 msgid "Output in JSON data format"
 msgstr ""
 
-#: healthcheck/__main__.py:20
+#: healthcheck/__main__.py:23
 msgid "Run healthcheck in background"
 msgstr ""
 
-#: healthcheck/__main__.py:24
+#: healthcheck/__main__.py:25
+msgid "Periodic check that sends notifications when issues are found"
+msgstr ""
+
+#: healthcheck/__main__.py:30
 msgid "Check to be executed. If not specified then all checks are executed."
 msgstr ""
 
-#: healthcheck/__main__.py:67
+#: healthcheck/__main__.py:92
 msgid "No such plugin"
 msgstr ""
 
-#: healthcheck/__main__.py:75
+#: healthcheck/__main__.py:100
 msgid "No such check in plugin"
+msgstr ""
+
+#: healthcheck/_output.py:245
+msgid "#### Healthcheck detected the following new or deteriorated issues ####"
+msgstr ""
+
+#: healthcheck/_output.py:248
+msgid "#### Healthcheck detected improvement on following issues ####"
+msgstr ""
+
+#: healthcheck/_output.py:251
+msgid "#### Healthcheck still reports the following issues ####"
+msgstr ""
+
+#: healthcheck/_output.py:277
+msgid "Can be used to disable notifications."
+msgstr ""
+
+#: healthcheck/_output.py:283
+msgid ""
+"Minimal priority for notification to be generated. This is number from 0 "
+"to 100 where higher means more significant. In default this is set to: "
+msgstr ""
+
+#: healthcheck/_output.py:293
+msgid ""
+"Minimal priority for hardware related notifications to be generated. This"
+" is number as well as for level. In default this is set to: "
+msgstr ""
+
+#: healthcheck/_output.py:303
+msgid ""
+"Minimal priority for software related notifications to be generated. This"
+" is number as well as for level. In default this is set to: "
+msgstr ""
+
+#: healthcheck/_output.py:313
+msgid ""
+"Notification period specified in cron format. This specifies how often "
+"and when should notification about persistent issues be send. In deafult "
+"it is set to: "
+msgstr ""
+
+#: healthcheck/plugin.py:60
+msgid ""
+"Can be used to disable all checks from this plugin. It has to be a "
+"boolean value."
 msgstr ""
 
 #: healthcheck/report.py:75
@@ -53,135 +140,138 @@ msgstr ""
 
 #: healthcheck/report.py:78
 msgid ""
-"Check was inconclusive. This means that for some reason check wasn't able to "
-"generate any other report. This is mostly because it failed horribly."
+"Check was inconclusive. This means that for some reason check wasn't able"
+" to generate any other report. This is mostly because it failed horribly."
 msgstr ""
 
-#: healthcheck/report.py:92 healthcheck/report.py:91
+#: healthcheck/report.py:92
 msgid "Not applicable"
 msgstr ""
 
-#: healthcheck/report.py:95 healthcheck/report.py:94
+#: healthcheck/report.py:95
 msgid ""
 "Check wasn't applicable. This is most probably because it checks system "
 "attribute that is notinstalled or activated."
 msgstr ""
 
-#: healthcheck/report.py:107
+#: healthcheck/report.py:109
 msgid "Pass"
 msgstr "Úspěch"
 
-#: healthcheck/report.py:110
+#: healthcheck/report.py:112
 msgid "Check successfully passed. No problem was detected."
 msgstr "Kontrola byla úspěšně dokončena. Nebyl zjištěn žádný problém."
 
-#: healthcheck/report.py:124
+#: healthcheck/report.py:126
 msgid "Try again later"
 msgstr "Zkuste to znovu později"
 
 #: healthcheck/report.py:129
 msgid ""
-"Check can't be finished at the moment but should be able after a while. This "
-"is because becuase it lacks data to assess trends from."
+"Check can't be finished at the moment but should be able after a while. "
+"This is because becuase it lacks data to assess trends from."
 msgstr ""
 
-#: healthcheck/report.py:147 healthcheck/report.py:140
+#: healthcheck/report.py:147
 msgid "Software advise"
 msgstr ""
 
-#: healthcheck/report.py:150 healthcheck/report.py:143
+#: healthcheck/report.py:150
 msgid ""
-"Check provides advise regarding software running on router.  Please consider "
-"it."
+"Check provides advise regarding software running on router.  Please "
+"consider it."
 msgstr ""
 
-#: healthcheck/report.py:161 healthcheck/report.py:155
+#: healthcheck/report.py:161
 msgid "Software warning"
 msgstr ""
 
-#: healthcheck/report.py:164 healthcheck/report.py:158
+#: healthcheck/report.py:164
 msgid ""
-"Check detected problem with software. It is far from fatal but it might be "
-"causing some functionalitydegradation now or in future. Please solve this "
-"issue at your convenience."
+"Check detected problem with software. It is far from fatal but it might "
+"be causing some functionalitydegradation now or in future. Please solve "
+"this issue at your convenience."
 msgstr ""
 
-#: healthcheck/report.py:178 healthcheck/report.py:171
+#: healthcheck/report.py:178
 msgid "Software error"
 msgstr ""
 
-#: healthcheck/report.py:181 healthcheck/report.py:174
+#: healthcheck/report.py:181
 msgid ""
-"Check detected dangerous problem with software. It is not immediately fatal "
-"but it possibly causessome functionality degradation and/or it can progress "
-"to be fatal for device functionality. Pleaseresolver this problem as soon as "
-"possible."
+"Check detected dangerous problem with software. It is not immediately "
+"fatal but it possibly causessome functionality degradation and/or it can "
+"progress to be fatal for device functionality. Pleaseresolver this "
+"problem as soon as possible."
 msgstr ""
 
-#: healthcheck/report.py:196 healthcheck/report.py:188
+#: healthcheck/report.py:196
 msgid "Software fatal error"
 msgstr ""
 
-#: healthcheck/report.py:199 healthcheck/report.py:191
+#: healthcheck/report.py:199
 msgid ""
-"Check detected fatal problem with software. It is causing system to not work "
-"properly."
+"Check detected fatal problem with software. It is causing system to not "
+"work properly."
 msgstr ""
 
-#: healthcheck/report.py:214 healthcheck/report.py:203
+#: healthcheck/report.py:214
 msgid "Hardware warning"
 msgstr ""
 
-#: healthcheck/report.py:217 healthcheck/report.py:206
+#: healthcheck/report.py:217
 msgid ""
-"Check detected problem with hardware. It is far from fatal but it might be "
-"causing some functionalitydegradation now or in future. Please solve this "
-"issue at your convenience."
+"Check detected problem with hardware. It is far from fatal but it might "
+"be causing some functionalitydegradation now or in future. Please solve "
+"this issue at your convenience."
 msgstr ""
 
-#: healthcheck/report.py:231 healthcheck/report.py:219
+#: healthcheck/report.py:231
 msgid "Hardware error"
 msgstr ""
 
-#: healthcheck/report.py:234 healthcheck/report.py:222
+#: healthcheck/report.py:234
 msgid ""
-"Check detected dangerous problem with hardware. It is not immediately fatal "
-"but it possibly causessome functionality degradation and/or it can progress "
-"to be fatal for device. Please resolver thisproblem as soon as possible."
+"Check detected dangerous problem with hardware. It is not immediately "
+"fatal but it possibly causessome functionality degradation and/or it can "
+"progress to be fatal for device. Please resolver thisproblem as soon as "
+"possible."
 msgstr ""
 
-#: healthcheck/report.py:249 healthcheck/report.py:236
+#: healthcheck/report.py:249
 msgid "Hardware fatal error"
 msgstr ""
 
-#: healthcheck/report.py:252 healthcheck/report.py:239
+#: healthcheck/report.py:252
 msgid ""
-"Check detected fatal problem with hardware. It is causing system to not work "
-"properly."
+"Check detected fatal problem with hardware. It is causing system to not "
+"work properly."
 msgstr ""
 
-#: healthcheck/report.py:267 healthcheck/report.py:251
+#: healthcheck/report.py:267
 msgid "Security advise"
 msgstr ""
 
-#: healthcheck/report.py:270 healthcheck/report.py:254
+#: healthcheck/report.py:270
 msgid ""
 "Check detected possible security concern. It provides advise.  Please "
 "consider it."
 msgstr ""
 
-#: healthcheck/report.py:281 healthcheck/report.py:266
+#: healthcheck/report.py:281
 msgid "Security warning"
 msgstr ""
 
-#: healthcheck/report.py:284 healthcheck/report.py:269
+#: healthcheck/report.py:284
 msgid ""
-"Check detected possible security problem. It is advised to solve it as soon "
-"as possible to mitigatepossible exploit."
+"Check detected possible security problem. It is advised to solve it as "
+"soon as possible to mitigatepossible exploit."
 msgstr ""
 
-#: healthcheck/report.py:127
-msgid ""
-"Check can't be finished at the moment but should be able after a while. This "
-"is commonly becuase itlacks data to assess trends from."
-msgstr ""
+#~ msgid ""
+#~ "Check can't be finished at the "
+#~ "moment but should be able after a"
+#~ " while. This is commonly becuase "
+#~ "itlacks data to assess trends from."
+#~ msgstr ""
+

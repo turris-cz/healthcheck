@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
-"POT-Creation-Date: 2021-11-26 13:14+0100\n"
+"POT-Creation-Date: 2021-12-10 17:12+0100\n"
 "PO-Revision-Date: 2021-11-18 14:49+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language: nb_NO\n"
@@ -20,16 +20,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: healthcheck_system/flash_writes.py:54
+#: healthcheck_system/flash_writes.py:58
 #, fuzzy
 msgid "Checks if system is not writing too much to flash storage."
 msgstr "Sjekker om systemet skriver for mye til flash-minne."
 
-#: healthcheck_system/flash_writes.py:74
+#: healthcheck_system/flash_writes.py:78
 msgid "There is no flash device detected in system."
 msgstr "Fant ingen flash-enhet for systemet."
 
-#: healthcheck_system/flash_writes.py:77
+#: healthcheck_system/flash_writes.py:81
 msgid ""
 "Check found no flash device in system. This is most likely because there "
 "is just no such device."
@@ -37,7 +37,7 @@ msgstr ""
 "Sjekken fant ingen flash-enhet for systemet. Det finnes antagelig ingen "
 "slik tilknyttet enhet."
 
-#: healthcheck_system/flash_writes.py:90
+#: healthcheck_system/flash_writes.py:94
 msgid ""
 "Number of writes on MMC storages is inherently linked to lifespan of it. "
 "Compared to some other regular storages where excessive writes are "
@@ -46,19 +46,19 @@ msgid ""
 "The that excessive writes are not regularly covered by warranty."
 msgstr ""
 
-#: healthcheck_system/flash_writes.py:97
+#: healthcheck_system/flash_writes.py:101
 msgid "The calculation is since boot up that was {} ago."
 msgstr ""
 
-#: healthcheck_system/flash_writes.py:99
+#: healthcheck_system/flash_writes.py:103
 msgid "The amount of recorded sector writes is {}."
 msgstr ""
 
-#: healthcheck_system/flash_writes.py:101
+#: healthcheck_system/flash_writes.py:105
 msgid "That is {} sector writes per hour."
 msgstr ""
 
-#: healthcheck_system/flash_writes.py:105
+#: healthcheck_system/flash_writes.py:109
 msgid ""
 "Keep write heavy operations on other storage types, specially if the MMC "
 "storage can't be replaced (such as being soldered on board not inserted "
@@ -66,59 +66,71 @@ msgid ""
 "caching as well as databases or other data collectors."
 msgstr ""
 
-#: healthcheck_system/flash_writes.py:116
+#: healthcheck_system/flash_writes.py:120
 msgid "Number of writes to MMC storage does not exceed limits"
 msgstr ""
 
-#: healthcheck_system/flash_writes.py:126
+#: healthcheck_system/flash_writes.py:130
 msgid ""
 "The amount of writes is hight but it is too soon after boot to reliably "
 "assess the impact"
 msgstr ""
 
-#: healthcheck_system/flash_writes.py:130
+#: healthcheck_system/flash_writes.py:134
 msgid ""
 "It is possible that this is just write happenig right after the boot and "
 "all will settle down in a while."
 msgstr ""
 
-#: healthcheck_system/flash_writes.py:142
+#: healthcheck_system/flash_writes.py:146
 msgid "The amount of writes is considerably high"
 msgstr ""
 
-#: healthcheck_system/flash_writes.py:149
+#: healthcheck_system/flash_writes.py:153
 msgid "The amount of writes is really high!"
 msgstr ""
 
-#: healthcheck_system/flash_writes.py:152
+#: healthcheck_system/flash_writes.py:156
 msgid "You should act now to prevent permanent hardware damage!"
 msgstr ""
 
-#: healthcheck_system/free_ram.py:32
+#: healthcheck_system/free_ram.py:38
 #, fuzzy
 msgid "watches amount of free ram and reports not enough space."
 msgstr ""
 "holder øye med mengden ledig minne og rapporterer utilstrekkelig "
 "lagringsplass."
 
-#: healthcheck_system/free_ram.py:76
+#: healthcheck_system/free_ram.py:57
+msgid ""
+"Amount of memory or less that triggers error. The format is number and "
+"unit (such as '80MB')"
+msgstr ""
+
+#: healthcheck_system/free_ram.py:64
+msgid ""
+"Amount of memory or less that triggers warning. The format is number and "
+"unit (such as '160MB')"
+msgstr ""
+
+#: healthcheck_system/free_ram.py:113
 msgid "Amount of free memory: "
 msgstr "Ledig minne: "
 
-#: healthcheck_system/free_ram.py:79
+#: healthcheck_system/free_ram.py:116
 #, fuzzy
 msgid "Processes consuming the most memory:"
 msgstr "Prosesser som bruker mest minne:"
 
-#: healthcheck_system/free_ram.py:93
+#: healthcheck_system/free_ram.py:130
 msgid "System seems to have enough free memory."
 msgstr "Systemet ser ut til å ha nok ledig minne."
 
-#: healthcheck_system/free_ram.py:100
+#: healthcheck_system/free_ram.py:137
 msgid "System seems to have not enough free memory."
 msgstr "Systemet ser ikke ut til å ha nok ledig minne."
 
-#: healthcheck_system/free_ram.py:103 healthcheck_system/free_ram.py:113
+#: healthcheck_system/free_ram.py:140 healthcheck_system/free_ram.py:150
 msgid ""
 "You might want to check what processes are running on your router and how"
 " much memory they consume."
@@ -126,23 +138,35 @@ msgstr ""
 "Det kan hende du vil holde øye med hvilke prosesser som kjører på ruteren"
 " din og hvor mye minne de bruker."
 
-#: healthcheck_system/free_ram.py:110
+#: healthcheck_system/free_ram.py:147
 msgid "System experiences memory shortage."
 msgstr "Systemet har sluppet opp for minne."
 
-#: healthcheck_system/free_storage.py:110
+#: healthcheck_system/free_storage.py:73
+msgid "Checks amount of free space on mounted filesystems."
+msgstr ""
+
+#: healthcheck_system/free_storage.py:98
+msgid "Specific mount point to be ignored (such as '/home')."
+msgstr ""
+
+#: healthcheck_system/free_storage.py:103
+msgid "File Systems type to be ignored (such as 'sysfs')."
+msgstr ""
+
+#: healthcheck_system/free_storage.py:146
 msgid " out of "
 msgstr " av "
 
-#: healthcheck_system/free_storage.py:112
+#: healthcheck_system/free_storage.py:148
 msgid " available on device: "
 msgstr " tilgjengelig på enheten: "
 
-#: healthcheck_system/free_storage.py:118
+#: healthcheck_system/free_storage.py:154
 msgid "used"
 msgstr "brukt"
 
-#: healthcheck_system/free_storage.py:121
+#: healthcheck_system/free_storage.py:157
 msgid ""
 "You should remove any unnecessary files and directories in case they were"
 " created by user(s) and not by system (unless you know what you are "
@@ -151,13 +175,13 @@ msgstr ""
 "Du bør fjerne unødvendige filer og mapper laget av bruker(ne) og ikke dem"
 " som tilhører systemet (med mindre du vet hva du gjør)."
 
-#: healthcheck_system/free_storage.py:126
+#: healthcheck_system/free_storage.py:162
 msgid ""
 " You can also remove some nonessential software you do not need to free "
 "storage space."
 msgstr " Du kan også fjerne unødvendig programvare for å frigjøre plass."
 
-#: healthcheck_system/free_storage.py:128
+#: healthcheck_system/free_storage.py:164
 msgid ""
 " You should also check snapshots and remove unnecessary ones (using "
 "schnapps or by any other way you are using)."
@@ -165,7 +189,7 @@ msgstr ""
 " Du kan også opprette øyeblikksavtrykk og fjerne de som er unødvendige "
 "(ved bruk av schnapps eller annen metode)."
 
-#: healthcheck_system/free_storage.py:133
+#: healthcheck_system/free_storage.py:169
 msgid ""
 " In case of this storage it can also be enough to just reboot device as "
 "content resides in volatile memory."
@@ -173,7 +197,7 @@ msgstr ""
 " For denne lagringen kan det være nok å utføre en omstart av enheten, "
 "siden innholdet befinner seg i flyktig minne."
 
-#: healthcheck_system/free_storage.py:138
+#: healthcheck_system/free_storage.py:174
 msgid ""
 "This applies to permanent storages (hardware storage devices). In case of"
 " memory storages such as 'tmpfs' it might be enough to perform reboot."
@@ -181,19 +205,19 @@ msgstr ""
 "Dette har innvirkning på permanent lagring (maskinvarelagringsenheter). "
 "For minnelagring som «tmpfs» kan det være nok med en omstart."
 
-#: healthcheck_system/free_storage.py:148
+#: healthcheck_system/free_storage.py:184
 msgid "There is enough of free storage space"
 msgstr "Det er nok ledig lagringsplass"
 
-#: healthcheck_system/free_storage.py:158
+#: healthcheck_system/free_storage.py:194
 msgid "Storage space is getting low"
 msgstr "Du er i ferd med å slippe opp for lagringsplass"
 
-#: healthcheck_system/free_storage.py:165
+#: healthcheck_system/free_storage.py:201
 msgid "Amount of free storage space is getting dangerously low"
 msgstr "Mengden ledig lagringsplass er snart kritisk lav"
 
-#: healthcheck_system/free_storage.py:171
+#: healthcheck_system/free_storage.py:207
 #, fuzzy
 msgid ""
 "Having storage device filled almost to the brim is dangerous as you can "
@@ -205,11 +229,11 @@ msgstr ""
 "slippe opp for lagringsplass med systemoppgraderinger eller når filer "
 "oppdateres eller legges til. Det gjør også lagringen betydelig tregere."
 
-#: healthcheck_system/free_storage.py:183
+#: healthcheck_system/free_storage.py:219
 msgid "Storage is full!"
 msgstr "All lagringsplassen er brukt opp!"
 
-#: healthcheck_system/free_storage.py:189
+#: healthcheck_system/free_storage.py:225
 msgid ""
 "Storage is pretty much full. It is expected that writing or extending "
 "files can fail and services might start failing as well. You should act "
@@ -219,21 +243,21 @@ msgstr ""
 "filer kan misslykkes fordi også tjenester kan slutte å fungere. Du bør "
 "frigjøre plass nå."
 
-#: healthcheck_system/__init__.py:38
+#: healthcheck_system/__init__.py:44
 msgid "Basic system stability and endurance checks"
 msgstr "Grunnleggende stabilitet- og standhaftighetstester."
 
-#: healthcheck_system/merge_conffiles.py:52
+#: healthcheck_system/merge_conffiles.py:56
 msgid "Notifies about updates of the configuration files in packages."
 msgstr ""
 
-#: healthcheck_system/merge_conffiles.py:65
-#: healthcheck_system/resolver_conf.py:27
+#: healthcheck_system/merge_conffiles.py:69
+#: healthcheck_system/resolver_conf.py:31
 msgid "There are no configuration files with need for merge."
 msgstr ""
 
-#: healthcheck_system/merge_conffiles.py:68
-#: healthcheck_system/resolver_conf.py:30
+#: healthcheck_system/merge_conffiles.py:72
+#: healthcheck_system/resolver_conf.py:34
 msgid ""
 "The configuration files are updated automatically only if they were not "
 "modified in the meantime. They are never automatically replaced once they"
@@ -243,20 +267,20 @@ msgid ""
 "that would require merging."
 msgstr ""
 
-#: healthcheck_system/merge_conffiles.py:83
-#: healthcheck_system/resolver_conf.py:45
+#: healthcheck_system/merge_conffiles.py:87
+#: healthcheck_system/resolver_conf.py:49
 msgid ""
 "There are some configuration files with updated defaults that should be "
 "reviewed and merged."
 msgstr ""
 
-#: healthcheck_system/merge_conffiles.py:86
-#: healthcheck_system/resolver_conf.py:48
+#: healthcheck_system/merge_conffiles.py:90
+#: healthcheck_system/resolver_conf.py:52
 msgid "The following configuration files from these packages should be merged:"
 msgstr ""
 
-#: healthcheck_system/merge_conffiles.py:91
-#: healthcheck_system/resolver_conf.py:53
+#: healthcheck_system/merge_conffiles.py:95
+#: healthcheck_system/resolver_conf.py:57
 msgid ""
 "These configuration files were modified either directly by you or by "
 "application you used. You want to check the new default state saved in "
@@ -264,15 +288,15 @@ msgid ""
 "your configuration accordingly. Then you can remove '*-opkg' file."
 msgstr ""
 
-#: healthcheck_system/mmc_life.py:66
+#: healthcheck_system/mmc_life.py:70
 msgid "Watches wear of MMC storages plugged in to the router."
 msgstr "Holder oppsyn med slitasje på MMC-lagring tilkoblet ruteren."
 
-#: healthcheck_system/mmc_life.py:86
+#: healthcheck_system/mmc_life.py:88
 msgid "There is no MMC device detected in system."
 msgstr "Ingen MMC-enhet oppdaget på systemet."
 
-#: healthcheck_system/mmc_life.py:89
+#: healthcheck_system/mmc_life.py:91
 msgid ""
 "Check found no MMC block device in system. This is most likely because "
 "there is just no such device plugged in."
@@ -280,27 +304,27 @@ msgstr ""
 "En sjekk fant ingen MMC-blokkenhet i systemet. Dette er antagelig fordi "
 "ingen slik enhet er plugget inn."
 
-#: healthcheck_system/mmc_life.py:104 healthcheck_system/smart.py:127
-#: healthcheck_system/smart.py:148
+#: healthcheck_system/mmc_life.py:106 healthcheck_system/smart.py:137
+#: healthcheck_system/smart.py:158
 msgid "It is not possible to read extcsd data."
 msgstr "Det er ikke mulig å lese extcsd-data."
 
-#: healthcheck_system/mmc_life.py:108 healthcheck_system/smart.py:131
-#: healthcheck_system/smart.py:152
+#: healthcheck_system/mmc_life.py:110 healthcheck_system/smart.py:141
+#: healthcheck_system/smart.py:162
 msgid "MMC tools (mmc-utils) are missing or not accessible."
 msgstr "MMC-verktøy (mmc-utis) mangler, eller kan ikke brukes."
 
-#: healthcheck_system/mmc_life.py:110 healthcheck_system/smart.py:132
-#: healthcheck_system/smart.py:153
+#: healthcheck_system/mmc_life.py:112 healthcheck_system/smart.py:142
+#: healthcheck_system/smart.py:163
 msgid "Read failed with error: "
 msgstr "Lesefeil med feilmelding: "
 
-#: healthcheck_system/mmc_life.py:111
+#: healthcheck_system/mmc_life.py:113
 msgid "MMC does not provide information about its lifespan."
 msgstr ""
 
-#: healthcheck_system/mmc_life.py:115 healthcheck_system/smart.py:136
-#: healthcheck_system/smart.py:157
+#: healthcheck_system/mmc_life.py:117 healthcheck_system/smart.py:146
+#: healthcheck_system/smart.py:167
 msgid ""
 "You should install mmc-utils or any other package that provides mmc-"
 "utils's command 'mmc'."
@@ -308,21 +332,21 @@ msgstr ""
 "Du bær installere «mmc-utils» eller en annen pakke som har mmc-utils-"
 "kommandoen «mmc»."
 
-#: healthcheck_system/mmc_life.py:129
+#: healthcheck_system/mmc_life.py:131
 #, fuzzy
 msgid "Reserved blocks on memory were depleted!"
 msgstr "Reserverte blokker på systemet ble utarmet!"
 
-#: healthcheck_system/mmc_life.py:131
+#: healthcheck_system/mmc_life.py:133
 #, python-format
 msgid "More than 80% of reserved blocks consumed!"
 msgstr "Mer enn 80% av de reserverte blokkene er i bruk!"
 
-#: healthcheck_system/mmc_life.py:132
+#: healthcheck_system/mmc_life.py:134
 msgid "Device's lifespan is depleted at least: "
 msgstr "Enhetens livssyklus er forringet med minst: "
 
-#: healthcheck_system/mmc_life.py:133
+#: healthcheck_system/mmc_life.py:135
 msgid ""
 "MMC storage has limited amount of writes and because of that it has "
 "limited lifespan. This means that it is normal and expected that reserved"
@@ -332,7 +356,7 @@ msgid ""
 "warranty if MMC was used heavily.\n"
 msgstr ""
 
-#: healthcheck_system/mmc_life.py:141
+#: healthcheck_system/mmc_life.py:143
 #, fuzzy
 msgid ""
 "To prolong device lifespan you should minimize amount of writes "
@@ -345,23 +369,23 @@ msgstr ""
 "flytter skriveintensive operasjoner som fildelig, databaser, containere, "
 "logger og annet til en annen form for lagringsenhet."
 
-#: healthcheck_system/mmc_life.py:152
+#: healthcheck_system/mmc_life.py:154
 msgid "Life of MMC is all right."
 msgstr "Levetiden på MMC-en er god."
 
-#: healthcheck_system/mmc_life.py:159
+#: healthcheck_system/mmc_life.py:161
 msgid "Life of MMC is getting short."
 msgstr "Forventet levetid på MMC er nær sin slutt."
 
-#: healthcheck_system/mmc_life.py:166
+#: healthcheck_system/mmc_life.py:168
 msgid "Life of MMC is getting dangerously short!"
 msgstr "Forventet levetid for MMC er nær ved å utløpe!"
 
-#: healthcheck_system/mmc_life.py:173
+#: healthcheck_system/mmc_life.py:175
 msgid "MMC is end of life."
 msgstr "MMC har gått over sin forventede levetid."
 
-#: healthcheck_system/mmc_life.py:176
+#: healthcheck_system/mmc_life.py:178
 #, fuzzy
 msgid ""
 "There is nothing that can be done now. It is too late. MMC is most "
@@ -374,33 +398,33 @@ msgstr ""
 "for deg. Den bør erstattes hvis det er mulig. Enten med samme type enhet,"
 " eller en annen hvis det er MMC loddet til kortet på enheten."
 
-#: healthcheck_system/pkg_check.py:41
+#: healthcheck_system/pkg_check.py:48
 msgid ""
 "Verify that none of the user's modifications in files provided by "
 "packages would be removed by update."
 msgstr ""
 
-#: healthcheck_system/pkg_check.py:61
+#: healthcheck_system/pkg_check.py:71
 msgid "All files provided by packages are in their original state"
 msgstr ""
 
-#: healthcheck_system/pkg_check.py:64
+#: healthcheck_system/pkg_check.py:74
 msgid ""
 "No files from packages were modified and thus there is no danger that "
 "subsequent update would erase these changes."
 msgstr ""
 
-#: healthcheck_system/pkg_check.py:76
+#: healthcheck_system/pkg_check.py:86
 msgid "Some files from system packages were modified."
 msgstr "Noen filer fra systempakker ble endret."
 
-#: healthcheck_system/pkg_check.py:80
+#: healthcheck_system/pkg_check.py:90
 msgid ""
 "The changes in these files from these packages are going to be wiped with"
 " subsequent updates:"
 msgstr ""
 
-#: healthcheck_system/pkg_check.py:86
+#: healthcheck_system/pkg_check.py:96
 msgid ""
 "You should revert changes by reinstalling the affected packages and "
 "investigate the alternative approach for anything you are trying to "
@@ -412,7 +436,7 @@ msgid ""
 "sending your change to the upstream. It is open-source non the less."
 msgstr ""
 
-#: healthcheck_system/services.py:28
+#: healthcheck_system/services.py:32
 msgid ""
 "Check if there is no disabled service that would be re-enabled with "
 "update."
@@ -420,11 +444,11 @@ msgstr ""
 "Sjekk om det ingen avskrudde tjenester som ville blitt skrud på igjen "
 "under oppdatering."
 
-#: healthcheck_system/services.py:35
+#: healthcheck_system/services.py:39
 msgid "All wanted services are enabled."
 msgstr "Alle ønskede tjenester er påskrudd."
 
-#: healthcheck_system/services.py:38
+#: healthcheck_system/services.py:42
 msgid ""
 "Some of the services are automatically activated even if they were "
 "previously disabled. All of such services are enabled and are going to be"
@@ -434,7 +458,7 @@ msgstr ""
 "avskrudd. Alle slike tjenester er påskrudd og vil bli startet ved "
 "oppstart."
 
-#: healthcheck_system/services.py:51
+#: healthcheck_system/services.py:55
 msgid ""
 "Some services currently disabled are going to be enabled with future "
 "updates."
@@ -442,7 +466,7 @@ msgstr ""
 "Noen tjenester som er avskrudd vil bli skrudd på igjen ved fremtidige "
 "oppdateringer."
 
-#: healthcheck_system/services.py:55
+#: healthcheck_system/services.py:59
 msgid ""
 "Following disabled services are going to be re-enabled with future "
 "updates: "
@@ -450,7 +474,7 @@ msgstr ""
 "Følgende avskrudde tjenester vil bli skrudd på igjen ved fremtidige "
 "oppdateringer: "
 
-#: healthcheck_system/services.py:58
+#: healthcheck_system/services.py:62
 msgid ""
 "These services are automatically enabled even if they were previously "
 "disabled to ensure router's functionality."
@@ -458,7 +482,7 @@ msgstr ""
 "Disse tjenestene blir skrudd på automatisk selv når de tidligere er "
 "avskrudd for å sikre ruterens funksjonalitet."
 
-#: healthcheck_system/services.py:65
+#: healthcheck_system/services.py:69
 msgid ""
 "To solve this you should configure system to not install software you do "
 "not want."
@@ -466,7 +490,7 @@ msgstr ""
 "For å løse dette bør du sette opp systemet slik at det ikke installerer "
 "programvare du ikke ønsker."
 
-#: healthcheck_system/services.py:101
+#: healthcheck_system/services.py:106
 #, fuzzy
 msgid ""
 "Checks if currently running services would be automatically strated after"
@@ -475,11 +499,11 @@ msgstr ""
 "Sjekker om de tjenestene som nå kjører vil bli startet automatisk etter "
 "oppstart."
 
-#: healthcheck_system/services.py:108
+#: healthcheck_system/services.py:113
 msgid "All running services are enabled."
 msgstr "Alle kjørende tjenester er påskrudd."
 
-#: healthcheck_system/services.py:111
+#: healthcheck_system/services.py:116
 msgid ""
 "Services are not automatically started on next startup unless they are "
 "activated. All currently running services are enabled so you should not "
@@ -489,15 +513,15 @@ msgstr ""
 "aktiveres. Alle tjenester som nå kjører er påskrudd slik at du ikke "
 "mangler noen av dem etter neste oppstart."
 
-#: healthcheck_system/services.py:124
+#: healthcheck_system/services.py:129
 msgid "There are currently running services that are not enabled."
 msgstr "Det finnes kjørende tjenester som ikke er påskrudde."
 
-#: healthcheck_system/services.py:128
+#: healthcheck_system/services.py:133
 msgid "Following currently running services are disabled: "
 msgstr "Følgende tjenster som kjører er avskrudde: "
 
-#: healthcheck_system/services.py:131
+#: healthcheck_system/services.py:136
 msgid ""
 "Enabled services are started on startup. You might want to enable these "
 "services."
@@ -505,17 +529,17 @@ msgstr ""
 "Påskrudde tjenester startes ved oppstart. Det kan hende du vil skru på "
 "disse."
 
-#: healthcheck_system/services.py:135
+#: healthcheck_system/services.py:140
 #, fuzzy
 msgid "Using either LuCI or SSH enable mentioned services."
 msgstr "Bruk enten LuCI eller SSH for å skru på nevnte tjenester."
 
-#: healthcheck_system/smart.py:110
+#: healthcheck_system/smart.py:120
 #, fuzzy
 msgid "There is no ATA/SATA/NVMe device detected in system."
 msgstr "Ingen ATA/S-ATA/NVMe-enhet oppdaget på systemet."
 
-#: healthcheck_system/smart.py:113
+#: healthcheck_system/smart.py:123
 msgid ""
 "Check found no ATA/SATA/NVMe block device in system. This is most likely "
 "because there is just no such device plugged in."

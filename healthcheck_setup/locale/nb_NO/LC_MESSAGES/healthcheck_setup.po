@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
-"POT-Creation-Date: 2021-11-26 13:14+0100\n"
+"POT-Creation-Date: 2021-12-10 17:12+0100\n"
 "PO-Revision-Date: 2021-11-18 14:49+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language: nb_NO\n"
@@ -20,7 +20,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.1\n"
 
-#: healthcheck_setup/email_notifications.py:28
+#: healthcheck_setup/email_notifications.py:25
+#, fuzzy
+msgid "Checks if email notifications are configured."
+msgstr "E-postmerknader har blitt satt opp."
+
+#: healthcheck_setup/email_notifications.py:32
 msgid ""
 "You should configure email for notifications to be notified about router "
 "events"
@@ -28,7 +33,7 @@ msgstr ""
 "Du bør sette opp en e-postadresse for merknader slik at du får tilsendt "
 "ruterhendelser"
 
-#: healthcheck_setup/email_notifications.py:31
+#: healthcheck_setup/email_notifications.py:35
 msgid ""
 "Turris system contains notification system. Various components, including"
 " healthcheck, are using it to inform administrator about possible issues."
@@ -37,7 +42,7 @@ msgstr ""
 "(inkludert helsesjekk) bruker det til å informere administrator om mulige"
 " problemer."
 
-#: healthcheck_setup/email_notifications.py:37
+#: healthcheck_setup/email_notifications.py:41
 #, fuzzy
 msgid ""
 "In reForis navigate to Maintenance setting and configure email "
@@ -46,16 +51,16 @@ msgstr ""
 "I foris går du til vedlikeholdsinnstillingen og setter opp "
 "e-postmerknader der."
 
-#: healthcheck_setup/email_notifications.py:47
+#: healthcheck_setup/email_notifications.py:51
 msgid "Email notifications seems to be configured."
 msgstr "E-postmerknader har blitt satt opp."
 
-#: healthcheck_setup/email_notifications.py:50
+#: healthcheck_setup/email_notifications.py:54
 #, fuzzy
 msgid "Notifications are send to the following mail addresses: "
 msgstr "Merknader blir sendt til følgende e-postadresser: "
 
-#: healthcheck_setup/__init__.py:21
+#: healthcheck_setup/__init__.py:22
 msgid "Suggestion for router setup."
 msgstr "Forslag for ruteroppsett."
 
