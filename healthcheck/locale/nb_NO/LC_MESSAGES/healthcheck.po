@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
-"POT-Creation-Date: 2021-12-10 17:12+0100\n"
+"POT-Creation-Date: 2022-02-16 10:37+0100\n"
 "PO-Revision-Date: 2021-11-20 11:50+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language: nb_NO\n"
@@ -141,9 +141,11 @@ msgid "Inconclusive"
 msgstr "Uavgjort konklusjon"
 
 #: healthcheck/report.py:78
+#, fuzzy
 msgid ""
-"Check was inconclusive. This means that for some reason check wasn't able"
-" to generate any other report. This is mostly because it failed horribly."
+"The check was inconclusive. This means that for some reason the check "
+"wasn't able to generate any other report. This highly suggests it failed "
+"horribly."
 msgstr ""
 "Sjekken ga ikke noe klart svar. Det betyr at av noen grunn kunne ikke en "
 "sjekk generere noen rapport. Dette mest antagelig fordi den feilet stygt."
@@ -155,8 +157,8 @@ msgstr "Ikke anvendbart"
 #: healthcheck/report.py:95
 #, fuzzy
 msgid ""
-"Check wasn't applicable. This is most probably because it checks system "
-"attribute that is notinstalled or activated."
+"The check wasn't applicable. This is most probably because it checks a "
+"system attribute that is not installed or activated."
 msgstr ""
 "Sjekken hadde ingen misjon. Dette er antagelig fordi den sjekker en "
 "attributt som ikke er installert eller aktivert."
@@ -166,7 +168,8 @@ msgid "Pass"
 msgstr "Vellykket"
 
 #: healthcheck/report.py:112
-msgid "Check successfully passed. No problem was detected."
+#, fuzzy
+msgid "Check passed. No problem was detected."
 msgstr "Testen kjørte som den skulle. Ingen problemer ble funnet."
 
 #: healthcheck/report.py:126
@@ -176,8 +179,8 @@ msgstr "Prøv igjen senere"
 #: healthcheck/report.py:129
 #, fuzzy
 msgid ""
-"Check can't be finished at the moment but should be able after a while. "
-"This is because becuase it lacks data to assess trends from."
+"The Check can't finish at the moment, but should be able after a while. "
+"This is commonly becuase it lacks data to assess trends from."
 msgstr ""
 "En sjekk kan ikke fullføres for øyeblikket fordi det bør skje etter en "
 "stund. Dette er vanligvis fordi den mangler data for å strukturere "
@@ -188,9 +191,10 @@ msgid "Software advise"
 msgstr "Programvareråd"
 
 #: healthcheck/report.py:150
+#, fuzzy
 msgid ""
-"Check provides advise regarding software running on router.  Please "
-"consider it."
+"The check provides advice regarding the software running on the router. "
+"Please consider it."
 msgstr ""
 "Sjekk som gir råd om programvare som kjører på ruteren. Overvei å følge "
 "det."
@@ -202,24 +206,24 @@ msgstr "Programvareadvarsel"
 #: healthcheck/report.py:164
 #, fuzzy
 msgid ""
-"Check detected problem with software. It is far from fatal but it might "
-"be causing some functionalitydegradation now or in future. Please solve "
-"this issue at your convenience."
+"A check detected a problem with the software.It is far from fatal, but it"
+" might be causing some functionality degradation now or in future.Please "
+"solve this issue at your convenience."
 msgstr ""
 "En sjekk oppdaget et programvareproblem. Det er langt fra fatalt, men det"
 " kan forårsake funksjonalitetstap nå eller i fremtiden. Løs dette "
 "problemet når det passer deg."
 
-#: healthcheck/report.py:178
+#: healthcheck/report.py:179
 msgid "Software error"
 msgstr "Programvarefeil"
 
-#: healthcheck/report.py:181
+#: healthcheck/report.py:182
 #, fuzzy
 msgid ""
-"Check detected dangerous problem with software. It is not immediately "
-"fatal but it possibly causessome functionality degradation and/or it can "
-"progress to be fatal for device functionality. Pleaseresolver this "
+"A check detected a dangerous problem with the software. It is not "
+"immediately fatal, but itpossibly causes some functionality degradation "
+"and/or it can turn fatal for device functionality.Please resolve this "
 "problem as soon as possible."
 msgstr ""
 "En sjekk oppdaget et farlig programvareproblem. Det er ikke umiddelbart "
@@ -227,43 +231,44 @@ msgstr ""
 " kan bli fatalt for enhetens funksjonalitet. Løs dette problemet så snart"
 " som mulig."
 
-#: healthcheck/report.py:196
+#: healthcheck/report.py:197
 msgid "Software fatal error"
 msgstr "Fatal programvarefeil"
 
-#: healthcheck/report.py:199
+#: healthcheck/report.py:200
+#, fuzzy
 msgid ""
-"Check detected fatal problem with software. It is causing system to not "
-"work properly."
+"A check detected a fatal problem with the software. It is causing the "
+"system not to work properly."
 msgstr ""
 "En sjekk oppdaget et fatalt programvareproblem. Det forårsaket at "
 "systemet ikke fungerer ordentlig."
 
-#: healthcheck/report.py:214
+#: healthcheck/report.py:215
 msgid "Hardware warning"
 msgstr "Maskinvareadvarsel"
 
-#: healthcheck/report.py:217
+#: healthcheck/report.py:218
 #, fuzzy
 msgid ""
-"Check detected problem with hardware. It is far from fatal but it might "
-"be causing some functionalitydegradation now or in future. Please solve "
-"this issue at your convenience."
+"A check detected a problem with the hardware. It is far from fatal, but "
+"might be causing some functionalitydegradation now or in future. Please "
+"solve this issue at your convenience."
 msgstr ""
 "En sjekk oppdaget et maskinvareproblem. Det er langt fra fatalt, men det "
 "kan forårsake funksjonalitetstap nå eller i fremtiden. Løs problemet når "
 "det passer deg."
 
-#: healthcheck/report.py:231
+#: healthcheck/report.py:232
 msgid "Hardware error"
 msgstr "Maskinvarefeil"
 
-#: healthcheck/report.py:234
+#: healthcheck/report.py:235
 #, fuzzy
 msgid ""
-"Check detected dangerous problem with hardware. It is not immediately "
-"fatal but it possibly causessome functionality degradation and/or it can "
-"progress to be fatal for device. Please resolver thisproblem as soon as "
+"A check detected a dangerous problem with hardware. It is not immediately"
+" fatal, but possibly causessome functionality degradation and/or it can "
+"turn fatal for the device.Please resolver this problem as soon as "
 "possible."
 msgstr ""
 "En sjekk oppdaget et farlig maskinvareproblem. Det er ikke umiddelbart "
@@ -271,40 +276,47 @@ msgstr ""
 " seg til å bli fatalt for enheten. Løs dette problemet så snart som "
 "mulig."
 
-#: healthcheck/report.py:249
-msgid "Hardware fatal error"
-msgstr "Fatal maskinvarefeil"
+#: healthcheck/report.py:250
+#, fuzzy
+msgid "Fatal hardware error"
+msgstr "Maskinvarefeil"
 
-#: healthcheck/report.py:252
+#: healthcheck/report.py:253
+#, fuzzy
 msgid ""
-"Check detected fatal problem with hardware. It is causing system to not "
-"work properly."
+"A check detected a fatal problem with the hardware. It is causing the "
+"system to not work properly."
 msgstr ""
 "En sjekk oppdaget et fatalt maskinvareproblem. Det forårsaket at systemet"
 " ikke virker ordentlig."
 
-#: healthcheck/report.py:267
-msgid "Security advise"
+#: healthcheck/report.py:268
+#, fuzzy
+msgid "Security advice"
 msgstr "Sikkerhetsråd"
 
-#: healthcheck/report.py:270
+#: healthcheck/report.py:271
+#, fuzzy
 msgid ""
-"Check detected possible security concern. It provides advise.  Please "
+"A check detected a possible security concern. It provides advice. Please "
 "consider it."
 msgstr ""
 "En sjekk oppdaget et mulig sikkerhetshensyn å ta. Råd gis, og det "
 "anbefales å følge det."
 
-#: healthcheck/report.py:281
+#: healthcheck/report.py:282
 msgid "Security warning"
 msgstr "Sikkerhetsadvarsel"
 
-#: healthcheck/report.py:284
+#: healthcheck/report.py:285
 #, fuzzy
 msgid ""
-"Check detected possible security problem. It is advised to solve it as "
-"soon as possible to mitigatepossible exploit."
+"A check detected a possible security problem. It is advised to solve it "
+"as soon as possible to mitigateany possible exploit."
 msgstr ""
 "En sjekk oppdaget et mulig sikkerhetsproblem. Det anbefales å løse det så"
 " snart som mulig for å unngå en mulig sårbarhet."
+
+#~ msgid "Hardware fatal error"
+#~ msgstr "Fatal maskinvarefeil"
 

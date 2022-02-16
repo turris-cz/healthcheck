@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
-"POT-Creation-Date: 2021-12-10 17:12+0100\n"
+"POT-Creation-Date: 2022-02-16 10:37+0100\n"
 "PO-Revision-Date: 2021-11-18 14:49+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language: nb_NO\n"
@@ -22,21 +22,21 @@ msgstr ""
 
 #: healthcheck_setup/email_notifications.py:25
 #, fuzzy
-msgid "Checks if email notifications are configured."
+msgid "Checks if e-mail notifications are set up."
 msgstr "E-postmerknader har blitt satt opp."
 
 #: healthcheck_setup/email_notifications.py:32
-msgid ""
-"You should configure email for notifications to be notified about router "
-"events"
+#, fuzzy
+msgid "Set up e-mail notifications to be notified of router events"
 msgstr ""
 "Du bør sette opp en e-postadresse for merknader slik at du får tilsendt "
 "ruterhendelser"
 
 #: healthcheck_setup/email_notifications.py:35
+#, fuzzy
 msgid ""
-"Turris system contains notification system. Various components, including"
-" healthcheck, are using it to inform administrator about possible issues."
+"Turris system has notification system. Various components (including "
+"healthcheck) are using it to inform the administrator of possible issues."
 msgstr ""
 "Turris-systemet har et merknadssystem. Forskjellige komponenter "
 "(inkludert helsesjekk) bruker det til å informere administrator om mulige"
@@ -45,22 +45,23 @@ msgstr ""
 #: healthcheck_setup/email_notifications.py:41
 #, fuzzy
 msgid ""
-"In reForis navigate to Maintenance setting and configure email "
+"Go to the \"Maintenance\" setting in Foris and set up e-mail "
 "notifications there."
 msgstr ""
 "I foris går du til vedlikeholdsinnstillingen og setter opp "
 "e-postmerknader der."
 
 #: healthcheck_setup/email_notifications.py:51
-msgid "Email notifications seems to be configured."
+#, fuzzy
+msgid "E-mail notifications will be sent out."
 msgstr "E-postmerknader har blitt satt opp."
 
 #: healthcheck_setup/email_notifications.py:54
 #, fuzzy
-msgid "Notifications are send to the following mail addresses: "
+msgid "Notifications are sent to the following e-mail addresses: "
 msgstr "Merknader blir sendt til følgende e-postadresser: "
 
-#: healthcheck_setup/__init__.py:22
+#: healthcheck_setup/__init__.py:23
 msgid "Suggestion for router setup."
 msgstr "Forslag for ruteroppsett."
 

@@ -1,15 +1,15 @@
 # Translations template for healthcheck.
-# Copyright (C) 2021 CZ.NIC z.s.p.o
+# Copyright (C) 2022 CZ.NIC z.s.p.o
 # This file is distributed under the same license as the healthcheck
 # project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
-"POT-Creation-Date: 2021-12-10 17:12+0100\n"
+"POT-Creation-Date: 2022-02-16 10:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -139,8 +139,9 @@ msgstr ""
 
 #: healthcheck/report.py:78
 msgid ""
-"Check was inconclusive. This means that for some reason check wasn't able"
-" to generate any other report. This is mostly because it failed horribly."
+"The check was inconclusive. This means that for some reason the check "
+"wasn't able to generate any other report. This highly suggests it failed "
+"horribly."
 msgstr ""
 
 #: healthcheck/report.py:92
@@ -149,8 +150,8 @@ msgstr ""
 
 #: healthcheck/report.py:95
 msgid ""
-"Check wasn't applicable. This is most probably because it checks system "
-"attribute that is notinstalled or activated."
+"The check wasn't applicable. This is most probably because it checks a "
+"system attribute that is not installed or activated."
 msgstr ""
 
 #: healthcheck/report.py:109
@@ -158,7 +159,7 @@ msgid "Pass"
 msgstr ""
 
 #: healthcheck/report.py:112
-msgid "Check successfully passed. No problem was detected."
+msgid "Check passed. No problem was detected."
 msgstr ""
 
 #: healthcheck/report.py:126
@@ -167,8 +168,8 @@ msgstr ""
 
 #: healthcheck/report.py:129
 msgid ""
-"Check can't be finished at the moment but should be able after a while. "
-"This is because becuase it lacks data to assess trends from."
+"The Check can't finish at the moment, but should be able after a while. "
+"This is commonly becuase it lacks data to assess trends from."
 msgstr ""
 
 #: healthcheck/report.py:147
@@ -177,8 +178,8 @@ msgstr ""
 
 #: healthcheck/report.py:150
 msgid ""
-"Check provides advise regarding software running on router.  Please "
-"consider it."
+"The check provides advice regarding the software running on the router. "
+"Please consider it."
 msgstr ""
 
 #: healthcheck/report.py:161
@@ -187,83 +188,83 @@ msgstr ""
 
 #: healthcheck/report.py:164
 msgid ""
-"Check detected problem with software. It is far from fatal but it might "
-"be causing some functionalitydegradation now or in future. Please solve "
-"this issue at your convenience."
+"A check detected a problem with the software.It is far from fatal, but it"
+" might be causing some functionality degradation now or in future.Please "
+"solve this issue at your convenience."
 msgstr ""
 
-#: healthcheck/report.py:178
+#: healthcheck/report.py:179
 msgid "Software error"
 msgstr ""
 
-#: healthcheck/report.py:181
+#: healthcheck/report.py:182
 msgid ""
-"Check detected dangerous problem with software. It is not immediately "
-"fatal but it possibly causessome functionality degradation and/or it can "
-"progress to be fatal for device functionality. Pleaseresolver this "
+"A check detected a dangerous problem with the software. It is not "
+"immediately fatal, but itpossibly causes some functionality degradation "
+"and/or it can turn fatal for device functionality.Please resolve this "
 "problem as soon as possible."
 msgstr ""
 
-#: healthcheck/report.py:196
+#: healthcheck/report.py:197
 msgid "Software fatal error"
 msgstr ""
 
-#: healthcheck/report.py:199
+#: healthcheck/report.py:200
 msgid ""
-"Check detected fatal problem with software. It is causing system to not "
-"work properly."
+"A check detected a fatal problem with the software. It is causing the "
+"system not to work properly."
 msgstr ""
 
-#: healthcheck/report.py:214
+#: healthcheck/report.py:215
 msgid "Hardware warning"
 msgstr ""
 
-#: healthcheck/report.py:217
+#: healthcheck/report.py:218
 msgid ""
-"Check detected problem with hardware. It is far from fatal but it might "
-"be causing some functionalitydegradation now or in future. Please solve "
-"this issue at your convenience."
+"A check detected a problem with the hardware. It is far from fatal, but "
+"might be causing some functionalitydegradation now or in future. Please "
+"solve this issue at your convenience."
 msgstr ""
 
-#: healthcheck/report.py:231
+#: healthcheck/report.py:232
 msgid "Hardware error"
 msgstr ""
 
-#: healthcheck/report.py:234
+#: healthcheck/report.py:235
 msgid ""
-"Check detected dangerous problem with hardware. It is not immediately "
-"fatal but it possibly causessome functionality degradation and/or it can "
-"progress to be fatal for device. Please resolver thisproblem as soon as "
+"A check detected a dangerous problem with hardware. It is not immediately"
+" fatal, but possibly causessome functionality degradation and/or it can "
+"turn fatal for the device.Please resolver this problem as soon as "
 "possible."
 msgstr ""
 
-#: healthcheck/report.py:249
-msgid "Hardware fatal error"
+#: healthcheck/report.py:250
+msgid "Fatal hardware error"
 msgstr ""
 
-#: healthcheck/report.py:252
+#: healthcheck/report.py:253
 msgid ""
-"Check detected fatal problem with hardware. It is causing system to not "
-"work properly."
+"A check detected a fatal problem with the hardware. It is causing the "
+"system to not work properly."
 msgstr ""
 
-#: healthcheck/report.py:267
-msgid "Security advise"
+#: healthcheck/report.py:268
+msgid "Security advice"
 msgstr ""
 
-#: healthcheck/report.py:270
+#: healthcheck/report.py:271
 msgid ""
-"Check detected possible security concern. It provides advise.  Please "
+"A check detected a possible security concern. It provides advice. Please "
 "consider it."
 msgstr ""
 
-#: healthcheck/report.py:281
+#: healthcheck/report.py:282
 msgid "Security warning"
 msgstr ""
 
-#: healthcheck/report.py:284
+#: healthcheck/report.py:285
 msgid ""
-"Check detected possible security problem. It is advised to solve it as "
-"soon as possible to mitigatepossible exploit."
+"A check detected a possible security problem. It is advised to solve it "
+"as soon as possible to mitigateany possible exploit."
 msgstr ""
 
