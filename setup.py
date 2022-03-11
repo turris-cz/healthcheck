@@ -42,7 +42,7 @@ setup(
         "humanize",
         "rich",
         "crontab",
-        "pyuci @ git+https://gitlab.nic.cz/turris/pyuci.git",
+        "pyuci >=0.9.0",
     ],
     setup_requires=["babel"],
     cmdclass={"install": InstallWithCompiledMessages},
