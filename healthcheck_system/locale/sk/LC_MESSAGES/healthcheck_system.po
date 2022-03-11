@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2021-12-10 17:12+0100\n"
-"PO-Revision-Date: 2022-02-20 07:54+0000\n"
+"PO-Revision-Date: 2022-03-12 19:56+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
 "healthcheck-system/sk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck_system/flash_writes.py:58 healthcheck_system/flash_writes.py:54
@@ -116,12 +116,11 @@ msgid "watches amount of free ram and reports not enough space."
 msgstr "sleduje množstvo voľnej RAM a hlási nedostatok miesta."
 
 #: healthcheck_system/free_ram.py:57
-#, fuzzy
 msgid ""
 "Amount of memory or less that triggers error. The format is number and unit "
 "(such as '80MB')"
 msgstr ""
-"Najnižšie množstvo pamäte, ktoré vyvolá chybu. Formát je číslo a jednotka ("
+"Nízke množstvo pamäti, ktoré vyvolá chybu. Formát je číslo a jednotka ("
 "napríklad „80 MB“)"
 
 #: healthcheck_system/free_ram.py:64
