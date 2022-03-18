@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2022-02-16 10:37+0100\n"
-"PO-Revision-Date: 2022-03-12 19:56+0000\n"
+"PO-Revision-Date: 2022-03-19 15:55+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
 "healthcheck/sk/>\n"
@@ -24,11 +24,11 @@ msgstr ""
 #: healthcheck/check.py:67
 msgid "Can be used to disable check execution. It has to be a boolean value."
 msgstr ""
-"Môže sa použiť na vypnutie vykonávania kontroly. Musí ísť o logickú hodnotu."
+"Používa sa na zakázanie vykonávania kontroly. Musí ísť o logickú hodnotu."
 
 #: healthcheck/check.py:103
 msgid "Check execution failed with exception: "
-msgstr "Vykonanie kontroly zlyhalo s výnimkou: "
+msgstr "Vykonanie kontroly neúspešné s výnimkou: "
 
 #: healthcheck/check.py:109
 msgid "Traceback:"
@@ -36,25 +36,24 @@ msgstr "Spätné sledovanie:"
 
 #: healthcheck/check.py:120
 msgid "Check execution is disabled"
-msgstr "Vykonávanie kontroly je vypnuté"
+msgstr "Vykonávanie kontroly je zakázané"
 
 #: healthcheck/check.py:124
 msgid ""
 "Both plugin as check itself are disabled in configuration. You are "
 "rigorous I give you that."
-msgstr "Plugin aj samotná kontrola sú v konfigurácii vypnuté."
+msgstr "Plugin aj vlastná kontrola sú v konfigurácii zakázané."
 
 #: healthcheck/check.py:126
 msgid ""
 "The plugin check is part of is explicitly disabled as whole in "
 "configuration."
 msgstr ""
-"Kontrola zásuvného modulu ako súčasť je v konfigurácii explicitne zakázaná "
-"ako celok."
+"Kontrola pluginu ako súčasti je v konfigurácii explicitne zakázaná ako celok."
 
 #: healthcheck/check.py:127
 msgid "The check is explicitly disabled in configuration."
-msgstr "Táto kontrola je v konfigurácii explicitne vypnutá."
+msgstr "Táto kontrola je v konfigurácii explicitne zakázaná."
 
 #: healthcheck/__main__.py:12
 msgid "System health checker."
@@ -78,7 +77,7 @@ msgstr "Spustenie kontroly stavu systému na pozadí"
 
 #: healthcheck/__main__.py:25
 msgid "Periodic check that sends notifications when issues are found"
-msgstr "Pravidelná kontrola so zasielaním oznámení pri zistení problémov"
+msgstr "Pravidelná kontrola so zasielaním notifikácií pri zistení problémov"
 
 #: healthcheck/__main__.py:30
 msgid "Check to be executed. If not specified then all checks are executed."
@@ -91,7 +90,7 @@ msgstr "Taký plugin neexistuje"
 
 #: healthcheck/__main__.py:100
 msgid "No such check in plugin"
-msgstr "Takáto kontrola v plugine neexistuje"
+msgstr "Táto kontrola v plugine neexistuje"
 
 #: healthcheck/_output.py:245
 msgid "#### Healthcheck detected the following new or deteriorated issues ####"
@@ -104,11 +103,11 @@ msgstr "#### Kontrola stavu zistila nasledujúce zlepšenia ####"
 
 #: healthcheck/_output.py:251
 msgid "#### Healthcheck still reports the following issues ####"
-msgstr "#### Kontrola stavu naďalej hlási nasledujúce problémy ####"
+msgstr "#### Kontrola stavu stále hlási nasledujúce problémy ####"
 
 #: healthcheck/_output.py:277
 msgid "Can be used to disable notifications."
-msgstr "Môže sa použiť na vypnutie oznámení."
+msgstr "Používa sa na zakázanie notifikícií."
 
 #: healthcheck/_output.py:283
 msgid ""
@@ -123,16 +122,16 @@ msgid ""
 "Minimal priority for hardware related notifications to be generated. This"
 " is number as well as for level. In default this is set to: "
 msgstr ""
-"Najnižšia priorita na vytvorenie oznámenia týkajúceho sa hardware. Toto "
-"číslo označuje úroveň. Predvolené nastavenie je: "
+"Najnižšia priorita na vytvorenie notifikácie o hardware. Toto číslo označuje "
+"úroveň. Predvolené nastavenie je: "
 
 #: healthcheck/_output.py:303
 msgid ""
 "Minimal priority for software related notifications to be generated. This"
 " is number as well as for level. In default this is set to: "
 msgstr ""
-"Najnižšia priorita na vytvorenie oznámenia týkajúceho sa software. Toto "
-"číslo označuje úroveň. Predvolené nastavenie je: "
+"Najnižšia priorita na vytvorenie notifikácie o software. Toto číslo označuje "
+"úroveň. Predvolené nastavenie je: "
 
 #: healthcheck/_output.py:313
 msgid ""
@@ -140,17 +139,17 @@ msgid ""
 "and when should notification about persistent issues be send. In deafult "
 "it is set to: "
 msgstr ""
-"Časové určenie oznámení zadané vo formáte cron. Určuje, ako často a kedy sa "
-"majú posielať oznámenia o pretrvávajúcich problémoch. Predvolené nastavenie "
-"je: "
+"Časové rozpätie oznámení zadané vo formáte cron. Určuje, ako často a kedy sa "
+"majú posielať notifikácie o pretrvávajúcich problémoch. Predvolené "
+"nastavenie je: "
 
 #: healthcheck/plugin.py:60
 msgid ""
 "Can be used to disable all checks from this plugin. It has to be a "
 "boolean value."
 msgstr ""
-"Dá sa použiť na vypnutie všetkých kontrol v tomto plugine. Musí ísť o "
-"logickú hodnotu."
+"Používa sa na zakázanie všetkých kontrol v tomto plugine. Musí ísť o logickú "
+"hodnotu."
 
 #: healthcheck/report.py:75
 msgid "Inconclusive"
@@ -162,7 +161,7 @@ msgid ""
 "wasn't able to generate any other report. This highly suggests it failed "
 "horribly."
 msgstr ""
-"Kontrola bole nepreukazná. To znamená, že z nejakého dôvodu nebolo možné "
+"Kontrola bola nepreukazná. Znamená to, že z nejakého dôvodu nebolo možné "
 "vytvoriť žiadnu správu. Obvyklou príčinou je závažné zlyhanie kontroly."
 
 #: healthcheck/report.py:92
@@ -174,8 +173,8 @@ msgid ""
 "The check wasn't applicable. This is most probably because it checks a "
 "system attribute that is not installed or activated."
 msgstr ""
-"Kontrola sa nedá použiť. Pravdepodobne kontroluje systémový atribút, ktorý "
-"nie je nainštalovaný alebo aktivovaný."
+"Kontrola sa nedá použiť. Pravdepodobne sa kontroluje systémový atribút, "
+"ktorý nie je nainštalovaný alebo aktivovaný."
 
 #: healthcheck/report.py:109
 msgid "Pass"
@@ -219,9 +218,9 @@ msgid ""
 " might be causing some functionality degradation now or in future.Please "
 "solve this issue at your convenience."
 msgstr ""
-"Kontrola zistila problém so softwarom. Nie je závažný, ale teraz alebo v "
-"budúcnosti môže spôsobovať určité zhoršenie funkčnosti. Prosím, vyriešte "
-"tento problém podľa svojich možností."
+"Kontrola zistila problém so softwarom. Nie je závažný, ale teraz alebo "
+"neskôr môže spôsobovať určité zhoršenie funkčnosti. Prosím, vyriešte tento "
+"problém podľa svojich možností."
 
 #: healthcheck/report.py:179
 msgid "Software error"
@@ -262,7 +261,7 @@ msgid ""
 "solve this issue at your convenience."
 msgstr ""
 "Kontrola zistila problém s hardwarom. Nie je závažný, ale môže spôsobovať "
-"určité zhoršenie funkčnosti teraz alebo v budúcnosti. Prosím, vyriešte tento "
+"určité zhoršenie funkčnosti teraz alebo neskôr. Prosím, vyriešte tento "
 "problém podľa svojich možností."
 
 #: healthcheck/report.py:232
@@ -301,7 +300,7 @@ msgid ""
 "A check detected a possible security concern. It provides advice. Please "
 "consider it."
 msgstr ""
-"Kontrola zistila možný bezpečnostný problém. Prosím, zvážte poskytnuté "
+"Kontrola zistila možný bezpečnostný problém. Prosím, zvážte ponúknuté "
 "odporúčania."
 
 #: healthcheck/report.py:282
