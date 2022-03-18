@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2022-02-16 10:37+0100\n"
-"PO-Revision-Date: 2022-02-20 07:54+0000\n"
+"PO-Revision-Date: 2022-03-19 15:55+0000\n"
 "Last-Translator: Atec <dr.atec@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
 "healthcheck-setup/sk/>\n"
@@ -18,42 +18,42 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 4.12-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck_setup/email_notifications.py:25
 msgid "Checks if e-mail notifications are set up."
-msgstr "Zdá sa, že e-mailové oznámenia sú nastavené."
+msgstr "Zdá sa, že e-mailové notifikácie sú nastavené."
 
 #: healthcheck_setup/email_notifications.py:32
 msgid "Set up e-mail notifications to be notified of router events"
 msgstr ""
 "Aby ste boli informovaní o prevádzke routera, mali by ste nastaviť e-mail "
-"pre oznámenia"
+"pre notifikácie"
 
 #: healthcheck_setup/email_notifications.py:35
 msgid ""
 "Turris system has notification system. Various components (including "
 "healthcheck) are using it to inform the administrator of possible issues."
 msgstr ""
-"Súčasťou systému Turris je systém oznámení. Rôzne komponenty, vrátane "
-"kontroly stavu, ho využívajú na informovanie administrátora o možných "
-"problémoch."
+"Súčasťou systému Turris je systém notifikácií. Kontrola stavu a rôzne iné "
+"komponenty ho využívajú na informovanie administrátora o možných problémoch."
 
 #: healthcheck_setup/email_notifications.py:41
 msgid ""
 "Go to the \"Maintenance\" setting in Foris and set up e-mail "
 "notifications there."
 msgstr ""
-"V rozhraní Foris prejdite do nastavení údržby a nastavte e-mailové oznámenia."
+"V rozhraní Foris prejdite do nastavení údržby a nastavte e-mailové "
+"notifikácie."
 
 #: healthcheck_setup/email_notifications.py:51
 msgid "E-mail notifications will be sent out."
-msgstr "Budú sa posielať e-mailové oznámenia."
+msgstr "Budú sa posielať e-mailové notifikácie."
 
 #: healthcheck_setup/email_notifications.py:54
 msgid "Notifications are sent to the following e-mail addresses: "
-msgstr "Oznámenia sa posielajú na nasledujúce e-mailové adresy: "
+msgstr "Notifikácie sa posielajú na nasledujúce e-mailové adresy: "
 
 #: healthcheck_setup/__init__.py:23
 msgid "Suggestion for router setup."
