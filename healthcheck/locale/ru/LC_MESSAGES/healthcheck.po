@@ -9,49 +9,52 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2022-02-16 10:37+0100\n"
-"PO-Revision-Date: 2021-12-01 06:52+0000\n"
+"PO-Revision-Date: 2022-02-21 11:55+0000\n"
 "Last-Translator: Алексей Леньшин <alenshin@gmail.com>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/turris/"
+"healthcheck/ru/>\n"
 "Language: ru\n"
-"Language-Team: Russian "
-"<https://hosted.weblate.org/projects/turris/healthcheck/ru/>\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.11-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck/check.py:67
 msgid "Can be used to disable check execution. It has to be a boolean value."
 msgstr ""
+"Может использоваться для отключения выполнения проверки. Это должно быть "
+"логическое значение."
 
 #: healthcheck/check.py:103
 msgid "Check execution failed with exception: "
-msgstr ""
+msgstr "Проверка выполнения не удалась с исключением: "
 
 #: healthcheck/check.py:109
 msgid "Traceback:"
-msgstr ""
+msgstr "Отследить:"
 
 #: healthcheck/check.py:120
 msgid "Check execution is disabled"
-msgstr ""
+msgstr "Проверка выполнения отключена"
 
 #: healthcheck/check.py:124
 msgid ""
 "Both plugin as check itself are disabled in configuration. You are "
 "rigorous I give you that."
-msgstr ""
+msgstr "Оба плагина, как и сама проверка, отключены в настройках."
 
 #: healthcheck/check.py:126
 msgid ""
 "The plugin check is part of is explicitly disabled as whole in "
 "configuration."
-msgstr ""
+msgstr "Проверка плагина явным образом отключена в конфигурации."
 
 #: healthcheck/check.py:127
 msgid "The check is explicitly disabled in configuration."
-msgstr ""
+msgstr "Проверка явно отключена в конфигурации."
 
 #: healthcheck/__main__.py:12
 msgid "System health checker."
@@ -62,9 +65,8 @@ msgid "List all available checks"
 msgstr "Список всех доступных проверок"
 
 #: healthcheck/__main__.py:20
-#, fuzzy
 msgid "List all available UCI configuration options"
-msgstr "Список всех доступных проверок"
+msgstr "Список всех доступных параметров конфигурации UCI"
 
 #: healthcheck/__main__.py:22
 msgid "Output in JSON data format"
@@ -76,7 +78,7 @@ msgstr "Запустить проверку работоспособности �
 
 #: healthcheck/__main__.py:25
 msgid "Periodic check that sends notifications when issues are found"
-msgstr ""
+msgstr "Периодическая проверка с отправкой уведомлений при обнаружении проблем"
 
 #: healthcheck/__main__.py:30
 msgid "Check to be executed. If not specified then all checks are executed."
@@ -93,36 +95,50 @@ msgstr "Нет такого плагина проверки"
 #: healthcheck/_output.py:245
 msgid "#### Healthcheck detected the following new or deteriorated issues ####"
 msgstr ""
+"#### Проверка работоспособности обнаружила следующие новые или усугубившиеся "
+"проблемы ####"
 
 #: healthcheck/_output.py:248
 msgid "#### Healthcheck detected improvement on following issues ####"
 msgstr ""
+"#### Проверка работоспособности обнаружила улучшение по следующим проблемам "
+"####"
 
 #: healthcheck/_output.py:251
 msgid "#### Healthcheck still reports the following issues ####"
 msgstr ""
+"#### Проверка работоспособности по-прежнему сообщает о следующих проблемах "
+"####"
 
 #: healthcheck/_output.py:277
 msgid "Can be used to disable notifications."
-msgstr ""
+msgstr "Может использоваться для отключения уведомлений."
 
 #: healthcheck/_output.py:283
 msgid ""
 "Minimal priority for notification to be generated. This is number from 0 "
 "to 100 where higher means more significant. In default this is set to: "
 msgstr ""
+"Минимальный приоритет для создания уведомления. Это число от 0 до 100, где "
+"больше означает большую значимость. По умолчанию установлено: "
 
 #: healthcheck/_output.py:293
+#, fuzzy
 msgid ""
 "Minimal priority for hardware related notifications to be generated. This"
 " is number as well as for level. In default this is set to: "
 msgstr ""
+"Минимальный приоритет для генерируемых уведомлений, связанных с "
+"оборудованием. Это число, а также для уровня. По умолчанию установлено: "
 
 #: healthcheck/_output.py:303
+#, fuzzy
 msgid ""
 "Minimal priority for software related notifications to be generated. This"
 " is number as well as for level. In default this is set to: "
 msgstr ""
+"Минимальный приоритет для генерируемых уведомлений, связанных с программным "
+"обеспечением. Это число, а также для уровня. По умолчанию установлено: "
 
 #: healthcheck/_output.py:313
 msgid ""
@@ -130,46 +146,49 @@ msgid ""
 "and when should notification about persistent issues be send. In deafult "
 "it is set to: "
 msgstr ""
+"Период уведомления указывается в формате cron. Указывает, как часто и когда "
+"следует отправлять уведомления о постоянных проблемах. По умолчанию "
+"установлено: "
 
 #: healthcheck/plugin.py:60
 msgid ""
 "Can be used to disable all checks from this plugin. It has to be a "
 "boolean value."
 msgstr ""
+"Может использоваться для отключения всех проверок из этого плагина. Это "
+"должно быть логическое значение."
 
 #: healthcheck/report.py:75
 msgid "Inconclusive"
 msgstr "Незавершенный"
 
 #: healthcheck/report.py:78
-#, fuzzy
 msgid ""
 "The check was inconclusive. This means that for some reason the check "
 "wasn't able to generate any other report. This highly suggests it failed "
 "horribly."
 msgstr ""
 "Проверка была безрезультатной. Это означает, что по какой-то причине "
-"проверка не смогла создать отчет."
+"проверка не смогла сгенерировать никакого другого отчета. Это говорит о том, "
+"что проверка провалилась."
 
 #: healthcheck/report.py:92
 msgid "Not applicable"
 msgstr "Непригодный"
 
 #: healthcheck/report.py:95
-#, fuzzy
 msgid ""
 "The check wasn't applicable. This is most probably because it checks a "
 "system attribute that is not installed or activated."
 msgstr ""
-"Проверка не применима. Скорее всего, это связано с тем, что она проверяет"
-" системный атрибут, который не установлен или не активирован."
+"Проверка не применима. Скорее всего, это связано с тем, что она проверяет "
+"системный атрибут, который не установлен или не активирован."
 
 #: healthcheck/report.py:109
 msgid "Pass"
 msgstr "Успешно"
 
 #: healthcheck/report.py:112
-#, fuzzy
 msgid "Check passed. No problem was detected."
 msgstr "Проверка успешно пройдена. Проблем не обнаружено."
 
@@ -178,21 +197,19 @@ msgid "Try again later"
 msgstr "Попробуйте позже"
 
 #: healthcheck/report.py:129
-#, fuzzy
 msgid ""
 "The Check can't finish at the moment, but should be able after a while. "
 "This is commonly becuase it lacks data to assess trends from."
 msgstr ""
-"В настоящий момент проверка не может быть завершена, но через некоторое "
-"время она станет возможной. Это связано с отсутствием данных для оценки "
-"тенденций."
+"Проверка не может быть завершена в данный момент, но должна завершиться "
+"через некоторое время. Обычно это происходит из-за отсутствия данных для "
+"оценки тенденций."
 
 #: healthcheck/report.py:147
 msgid "Software advise"
 msgstr "Рекомендации по программному обеспечению"
 
 #: healthcheck/report.py:150
-#, fuzzy
 msgid ""
 "The check provides advice regarding the software running on the router. "
 "Please consider it."
@@ -205,68 +222,62 @@ msgid "Software warning"
 msgstr "Предупреждение о программном обеспечении"
 
 #: healthcheck/report.py:164
-#, fuzzy
 msgid ""
 "A check detected a problem with the software.It is far from fatal, but it"
 " might be causing some functionality degradation now or in future.Please "
 "solve this issue at your convenience."
 msgstr ""
-"Проверьте обнаруженную проблему с программным обеспечением. Это далеко не"
-" фатально, но может привести к некоторому ухудшению функциональности "
-"сейчас или в будущем. Решите эту проблему по своему усмотрению."
+"Проверьте обнаруженную проблему с программным обеспечением. Это далеко не "
+"фатально, но может привести к некоторому ухудшению функциональности сейчас "
+"или в будущем. Решите эту проблему по своему усмотрению."
 
 #: healthcheck/report.py:179
 msgid "Software error"
 msgstr "Ошибка в программном обеспечении"
 
 #: healthcheck/report.py:182
-#, fuzzy
 msgid ""
 "A check detected a dangerous problem with the software. It is not "
 "immediately fatal, but itpossibly causes some functionality degradation "
 "and/or it can turn fatal for device functionality.Please resolve this "
 "problem as soon as possible."
 msgstr ""
-"Проверьте обнаруженную опасную проблему с программным обеспечением. Это "
-"не сразу приводит к фатальному исходу, но может привести к некоторому "
-"ухудшению функциональности и / или может стать фатальным для "
-"функциональности устройства. Пожалуйста, разрешите эту проблему как можно"
-" скорее."
+"Проверьте обнаруженную опасную проблему с программным обеспечением. Это не "
+"сразу приводит к фатальному исходу, но может привести к некоторому ухудшению "
+"функциональности и / или может стать фатальным для функциональности "
+"устройства. Пожалуйста, разрешите эту проблему как можно скорее."
 
 #: healthcheck/report.py:197
 msgid "Software fatal error"
 msgstr "Неустранимая ошибка программного обеспечения"
 
 #: healthcheck/report.py:200
-#, fuzzy
 msgid ""
 "A check detected a fatal problem with the software. It is causing the "
 "system not to work properly."
 msgstr ""
-"Проверьте обнаруженную фатальную проблему с программным обеспечением. Это"
-" приводит к тому, что система не работает."
+"Проверьте обнаруженную фатальную проблему с программным обеспечением. Это "
+"приводит к тому, что система не работает."
 
 #: healthcheck/report.py:215
 msgid "Hardware warning"
 msgstr "Аппаратное предупреждение"
 
 #: healthcheck/report.py:218
-#, fuzzy
 msgid ""
 "A check detected a problem with the hardware. It is far from fatal, but "
 "might be causing some functionalitydegradation now or in future. Please "
 "solve this issue at your convenience."
 msgstr ""
-"Проверьте обнаруженную проблему с оборудованием. Это далеко не фатально, "
-"но может привести к некоторому ухудшению функциональности сейчас или в "
-"будущем. Решите эту проблему по своему усмотрению."
+"Проверьте обнаруженную проблему с оборудованием. Это далеко не фатально, но "
+"может привести к некоторому ухудшению функциональности сейчас или в будущем. "
+"Решите эту проблему по своему усмотрению."
 
 #: healthcheck/report.py:232
 msgid "Hardware error"
 msgstr "Аппаратная ошибка"
 
 #: healthcheck/report.py:235
-#, fuzzy
 msgid ""
 "A check detected a dangerous problem with hardware. It is not immediately"
 " fatal, but possibly causessome functionality degradation and/or it can "
@@ -274,51 +285,45 @@ msgid ""
 "possible."
 msgstr ""
 "Проверьте обнаруженную опасную проблему с оборудованием. Это не является "
-"сразу фатальным, но может привести к некоторому ухудшению "
-"функциональности и/или может стать фатальным для устройства. Решите эту "
-"проблему как можно скорее."
+"сразу фатальным, но может привести к некоторому ухудшению функциональности и/"
+"или может стать фатальным для устройства. Решите эту проблему как можно "
+"скорее."
 
 #: healthcheck/report.py:250
-#, fuzzy
 msgid "Fatal hardware error"
 msgstr "Аппаратная ошибка"
 
 #: healthcheck/report.py:253
-#, fuzzy
 msgid ""
 "A check detected a fatal problem with the hardware. It is causing the "
 "system to not work properly."
 msgstr ""
-"Проверьте обнаруженную фатальную проблему с оборудованием. Это приводит к"
-" тому, что система не работает."
+"Проверьте обнаруженную фатальную проблему с оборудованием. Это приводит к "
+"тому, что система не работает."
 
 #: healthcheck/report.py:268
-#, fuzzy
 msgid "Security advice"
 msgstr "Совет по безопасности"
 
 #: healthcheck/report.py:271
-#, fuzzy
 msgid ""
 "A check detected a possible security concern. It provides advice. Please "
 "consider it."
 msgstr ""
-"Проверка обнаружила возможные проблемы с безопасностью. Она дает совет. "
-"Пожалуйста, примите это во внимание."
+"Проверка обнаружила возможные проблемы с безопасностью. Она дает совет, "
+"примите его во внимание."
 
 #: healthcheck/report.py:282
 msgid "Security warning"
 msgstr "Предупреждение безопасности"
 
 #: healthcheck/report.py:285
-#, fuzzy
 msgid ""
 "A check detected a possible security problem. It is advised to solve it "
 "as soon as possible to mitigateany possible exploit."
 msgstr ""
-"Проверка обнаружила возможную проблему безопасности. Рекомендуется как "
-"можно скорее решить эту проблему, чтобы избежать возможного эксплойта."
+"Проверка обнаружила возможную проблему безопасности. Рекомендуется как можно "
+"скорее решить эту проблему, чтобы избежать возможного эксплойта."
 
 #~ msgid "Hardware fatal error"
 #~ msgstr "Неустранимая аппаратная ошибка"
-
