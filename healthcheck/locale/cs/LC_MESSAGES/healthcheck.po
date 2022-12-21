@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2022-02-16 10:37+0100\n"
-"PO-Revision-Date: 2022-05-11 15:18+0000\n"
+"PO-Revision-Date: 2022-12-22 14:51+0000\n"
 "Last-Translator: Lukas Jelinek <lukas.jelinek@nic.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/healthcheck/"
 "cs/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.12.1\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck/check.py:67
@@ -51,7 +51,7 @@ msgstr ""
 
 #: healthcheck/check.py:127
 msgid "The check is explicitly disabled in configuration."
-msgstr ""
+msgstr "Kontrola je v konfiguraci výslovně zakázána."
 
 #: healthcheck/__main__.py:12
 msgid "System health checker."
@@ -63,7 +63,7 @@ msgstr "Seznam všech dostupných kontrol"
 
 #: healthcheck/__main__.py:20
 msgid "List all available UCI configuration options"
-msgstr ""
+msgstr "Seznam všech dostupných možností konfigurace UCI"
 
 #: healthcheck/__main__.py:22
 msgid "Output in JSON data format"
@@ -75,7 +75,7 @@ msgstr "Spuštění kontroly stavu na pozadí"
 
 #: healthcheck/__main__.py:25
 msgid "Periodic check that sends notifications when issues are found"
-msgstr ""
+msgstr "Periodická kontrola, které při nalezení problémů odesílá notifikace"
 
 #: healthcheck/__main__.py:30
 msgid "Check to be executed. If not specified then all checks are executed."
