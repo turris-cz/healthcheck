@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2022-02-16 10:37+0100\n"
-"PO-Revision-Date: 2023-09-02 11:57+0000\n"
+"PO-Revision-Date: 2023-09-03 12:52+0000\n"
 "Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/turris/"
 "healthcheck-setup/sv/>\n"
@@ -40,15 +40,17 @@ msgid ""
 "Go to the \"Maintenance\" setting in Foris and set up e-mail "
 "notifications there."
 msgstr ""
+"Gå till inställningen \"Underhåll\" i Foris och ställ in aviseringar via e-"
+"post där."
 
 #: healthcheck_setup/email_notifications.py:51
 msgid "E-mail notifications will be sent out."
-msgstr ""
+msgstr "Aviseringar via e-post kommer att skickas ut."
 
 #: healthcheck_setup/email_notifications.py:54
 msgid "Notifications are sent to the following e-mail addresses: "
-msgstr ""
+msgstr "Aviseringar skickas till de följande e-postadresserna: "
 
 #: healthcheck_setup/__init__.py:23
 msgid "Suggestion for router setup."
-msgstr ""
+msgstr "Förslag på hur man ställer in en router."
