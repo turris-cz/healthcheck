@@ -9,28 +9,35 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2021-12-10 17:12+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-09-04 17:58+0000\n"
+"Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
+"Language-Team: Swedish <https://hosted.weblate.org/projects/turris/"
+"healthcheck-system/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck_system/flash_writes.py:58
 msgid "Checks if system is not writing too much to flash storage."
 msgstr ""
+"Kontrollerar om systemet inte skriver för mycket till lagringsutrymmet i "
+"flashminnet."
 
 #: healthcheck_system/flash_writes.py:78
 msgid "There is no flash device detected in system."
-msgstr ""
+msgstr "Ingen flash-enhet upptäcktes i systemet."
 
 #: healthcheck_system/flash_writes.py:81
 msgid ""
 "Check found no flash device in system. This is most likely because there "
 "is just no such device."
 msgstr ""
+"Kontrollen hittade ingen flash-enhet i systemet. Detta kan bero på att det "
+"inte finns en sådan enhet."
 
 #: healthcheck_system/flash_writes.py:94
 msgid ""
@@ -43,15 +50,15 @@ msgstr ""
 
 #: healthcheck_system/flash_writes.py:101
 msgid "The calculation is since boot up that was {} ago."
-msgstr ""
+msgstr "Beräkningen är sedan uppstarten som skedde {} sedan."
 
 #: healthcheck_system/flash_writes.py:103
 msgid "The amount of recorded sector writes is {}."
-msgstr ""
+msgstr "Summan av inrapporterade sektor-skrivningar är {}."
 
 #: healthcheck_system/flash_writes.py:105
 msgid "That is {} sector writes per hour."
-msgstr ""
+msgstr "Det är {} sektor-skrivningar i timmen."
 
 #: healthcheck_system/flash_writes.py:109
 msgid ""
@@ -63,13 +70,15 @@ msgstr ""
 
 #: healthcheck_system/flash_writes.py:120
 msgid "Number of writes to MMC storage does not exceed limits"
-msgstr ""
+msgstr "Antalet skrivningar till MMC-lagringsutrymmet överskrider inte gränser"
 
 #: healthcheck_system/flash_writes.py:130
 msgid ""
 "The amount of writes is hight but it is too soon after boot to reliably "
 "assess the impact"
 msgstr ""
+"Antalet skrivningar är höga, men det är för tidigt efter uppstart för att "
+"pålitligt bedöma effekten"
 
 #: healthcheck_system/flash_writes.py:134
 msgid ""
@@ -79,15 +88,15 @@ msgstr ""
 
 #: healthcheck_system/flash_writes.py:146
 msgid "The amount of writes is considerably high"
-msgstr ""
+msgstr "Mängden skrivningar är avsevärt höga"
 
 #: healthcheck_system/flash_writes.py:153
 msgid "The amount of writes is really high!"
-msgstr ""
+msgstr "Mängden skrivningar är verkligen höga!"
 
 #: healthcheck_system/flash_writes.py:156
 msgid "You should act now to prevent permanent hardware damage!"
-msgstr ""
+msgstr "Du borde agera nu för att förhindra permanent hårdvaru-skada!"
 
 #: healthcheck_system/free_ram.py:38
 msgid "watches amount of free ram and reports not enough space."
@@ -98,28 +107,32 @@ msgid ""
 "Amount of memory or less that triggers error. The format is number and "
 "unit (such as '80MB')"
 msgstr ""
+"Mängden minne eller mindre som triggar fel. Formatet är nummer och enhet (så "
+"som '80MB')"
 
 #: healthcheck_system/free_ram.py:64
 msgid ""
 "Amount of memory or less that triggers warning. The format is number and "
 "unit (such as '160MB')"
 msgstr ""
+"Mängden minne eller mindre som utlöser varning. Formatet är nummer och enhet "
+"(så som '160MB')"
 
 #: healthcheck_system/free_ram.py:113
 msgid "Amount of free memory: "
-msgstr ""
+msgstr "Mängden tillgängligt minne: "
 
 #: healthcheck_system/free_ram.py:116
 msgid "Processes consuming the most memory:"
-msgstr ""
+msgstr "Processer som slukar mest minne:"
 
 #: healthcheck_system/free_ram.py:130
 msgid "System seems to have enough free memory."
-msgstr ""
+msgstr "Systemet verkar ha tillräckligt med användbart minne."
 
 #: healthcheck_system/free_ram.py:137
 msgid "System seems to have not enough free memory."
-msgstr ""
+msgstr "Systemet verkar inte ha tillräckligt tillgängligt minne."
 
 #: healthcheck_system/free_ram.py:140 healthcheck_system/free_ram.py:150
 msgid ""
@@ -129,31 +142,32 @@ msgstr ""
 
 #: healthcheck_system/free_ram.py:147
 msgid "System experiences memory shortage."
-msgstr ""
+msgstr "Systemet upplever brist på minne."
 
 #: healthcheck_system/free_storage.py:73
 msgid "Checks amount of free space on mounted filesystems."
 msgstr ""
+"Kontrollerar mängden tillgängligt användbart minne på monterade filsystem."
 
 #: healthcheck_system/free_storage.py:98
 msgid "Specific mount point to be ignored (such as '/home')."
-msgstr ""
+msgstr "Specifik monteringspunkt som ska ignoreras (så som '/home')."
 
 #: healthcheck_system/free_storage.py:103
 msgid "File Systems type to be ignored (such as 'sysfs')."
-msgstr ""
+msgstr "Typer av filsystem som ska ignoreras (så som 'sysfs')."
 
 #: healthcheck_system/free_storage.py:146
 msgid " out of "
-msgstr ""
+msgstr " utav "
 
 #: healthcheck_system/free_storage.py:148
 msgid " available on device: "
-msgstr ""
+msgstr " tillgängligt på enhet: "
 
 #: healthcheck_system/free_storage.py:154
 msgid "used"
-msgstr ""
+msgstr "använt"
 
 #: healthcheck_system/free_storage.py:157
 msgid ""
@@ -161,42 +175,54 @@ msgid ""
 " created by user(s) and not by system (unless you know what you are "
 "doing)."
 msgstr ""
+"Du borde ta bort alla onödiga filer och mappar utifall att de skapades av "
+"användare(n) och inte av systemet (förutsatt att du vet vad du gör)."
 
 #: healthcheck_system/free_storage.py:162
 msgid ""
 " You can also remove some nonessential software you do not need to free "
 "storage space."
 msgstr ""
+" Du kan också ta bort någon mjukvara som du inte behöver för att frigöra "
+"utrymme i lagringsplatsen."
 
 #: healthcheck_system/free_storage.py:164
 msgid ""
 " You should also check snapshots and remove unnecessary ones (using "
 "schnapps or by any other way you are using)."
 msgstr ""
+" Du borde också kolla ögonblicksbilder och ta bort de som är onödiga (genom "
+"att använda schnapps) eller via ett annat sätt som du använder)."
 
 #: healthcheck_system/free_storage.py:169
 msgid ""
 " In case of this storage it can also be enough to just reboot device as "
 "content resides in volatile memory."
 msgstr ""
+" Utifall att det är det här lagringsutrymmet så kan det också vara nog för "
+"att starta om enheten eftersom att innehållet bor i volatilt minne."
 
 #: healthcheck_system/free_storage.py:174
 msgid ""
 "This applies to permanent storages (hardware storage devices). In case of"
 " memory storages such as 'tmpfs' it might be enough to perform reboot."
 msgstr ""
+"Det här gäller för permanenta lagringar (hårdvarubaserade lagringsenheter). "
+"Vid minneslagringar så som 'tmpfs' så kan det vara nog för att utföra "
+"omstart."
 
 #: healthcheck_system/free_storage.py:184
 msgid "There is enough of free storage space"
-msgstr ""
+msgstr "Det finns tillräckligt med tillgängligt utrymme"
 
 #: healthcheck_system/free_storage.py:194
 msgid "Storage space is getting low"
-msgstr ""
+msgstr "Utrymmet för lagringsplatsen är på väg att bli låg"
 
 #: healthcheck_system/free_storage.py:201
 msgid "Amount of free storage space is getting dangerously low"
 msgstr ""
+"Mängden tillgängligt utrymme i lagringsplatsen är på väg att bli farligt låg"
 
 #: healthcheck_system/free_storage.py:207
 msgid ""
@@ -208,7 +234,7 @@ msgstr ""
 
 #: healthcheck_system/free_storage.py:219
 msgid "Storage is full!"
-msgstr ""
+msgstr "Utrymmet är fyllt!"
 
 #: healthcheck_system/free_storage.py:225
 msgid ""
