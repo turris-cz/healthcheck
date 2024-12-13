@@ -9,13 +9,16 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2021-12-10 17:12+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2024-12-14 18:00+0000\n"
+"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/turris/"
+"healthcheck-system/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.9-rc\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck_system/flash_writes.py:58
@@ -88,6 +91,8 @@ msgstr ""
 #: healthcheck_system/flash_writes.py:156
 msgid "You should act now to prevent permanent hardware damage!"
 msgstr ""
+"Vous devriez agir maintenant pour prévenir les dommages matériels permanents "
+"!"
 
 #: healthcheck_system/free_ram.py:38
 msgid "watches amount of free ram and reports not enough space."
@@ -107,7 +112,7 @@ msgstr ""
 
 #: healthcheck_system/free_ram.py:113
 msgid "Amount of free memory: "
-msgstr ""
+msgstr "Quantité de mémoire libre : "
 
 #: healthcheck_system/free_ram.py:116
 msgid "Processes consuming the most memory:"
@@ -115,11 +120,11 @@ msgstr ""
 
 #: healthcheck_system/free_ram.py:130
 msgid "System seems to have enough free memory."
-msgstr ""
+msgstr "Le système semble avoir assez de mémoire libre."
 
 #: healthcheck_system/free_ram.py:137
 msgid "System seems to have not enough free memory."
-msgstr ""
+msgstr "Le système semble ne pas avoir pas assez de mémoire libre."
 
 #: healthcheck_system/free_ram.py:140 healthcheck_system/free_ram.py:150
 msgid ""
@@ -149,11 +154,11 @@ msgstr ""
 
 #: healthcheck_system/free_storage.py:148
 msgid " available on device: "
-msgstr ""
+msgstr " disponible sur l'appareil : "
 
 #: healthcheck_system/free_storage.py:154
 msgid "used"
-msgstr ""
+msgstr "utilisé"
 
 #: healthcheck_system/free_storage.py:157
 msgid ""
@@ -188,7 +193,7 @@ msgstr ""
 
 #: healthcheck_system/free_storage.py:184
 msgid "There is enough of free storage space"
-msgstr ""
+msgstr "Il y a assez d'espace de stockage libre"
 
 #: healthcheck_system/free_storage.py:194
 msgid "Storage space is getting low"
@@ -208,7 +213,7 @@ msgstr ""
 
 #: healthcheck_system/free_storage.py:219
 msgid "Storage is full!"
-msgstr ""
+msgstr "Le stockage est plein !"
 
 #: healthcheck_system/free_storage.py:225
 msgid ""
@@ -268,7 +273,7 @@ msgstr ""
 
 #: healthcheck_system/mmc_life.py:88
 msgid "There is no MMC device detected in system."
-msgstr ""
+msgstr "Il n'y a pas de périphérique MMC détecté dans le système."
 
 #: healthcheck_system/mmc_life.py:91
 msgid ""
@@ -284,7 +289,7 @@ msgstr ""
 #: healthcheck_system/mmc_life.py:110 healthcheck_system/smart.py:141
 #: healthcheck_system/smart.py:162
 msgid "MMC tools (mmc-utils) are missing or not accessible."
-msgstr ""
+msgstr "Les outils MMC (mmc-utils) sont manquants ou non accessibles."
 
 #: healthcheck_system/mmc_life.py:112 healthcheck_system/smart.py:142
 #: healthcheck_system/smart.py:163
@@ -293,7 +298,7 @@ msgstr ""
 
 #: healthcheck_system/mmc_life.py:113
 msgid "MMC does not provide information about its lifespan."
-msgstr ""
+msgstr "La MMC ne fournit pas d'information sur sa durée de vie."
 
 #: healthcheck_system/mmc_life.py:117 healthcheck_system/smart.py:146
 #: healthcheck_system/smart.py:167
@@ -347,7 +352,7 @@ msgstr ""
 
 #: healthcheck_system/mmc_life.py:175
 msgid "MMC is end of life."
-msgstr ""
+msgstr "MMC est fin de vie."
 
 #: healthcheck_system/mmc_life.py:178
 msgid ""
@@ -473,7 +478,7 @@ msgstr ""
 
 #: healthcheck_system/smart.py:120
 msgid "There is no ATA/SATA/NVMe device detected in system."
-msgstr ""
+msgstr "Il n'y a pas de périphérique ATA/SATA/NVMe détecté dans le système."
 
 #: healthcheck_system/smart.py:123
 msgid ""
