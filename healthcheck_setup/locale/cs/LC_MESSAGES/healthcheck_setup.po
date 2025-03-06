@@ -9,56 +9,54 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2022-02-16 10:37+0100\n"
-"PO-Revision-Date: 2021-11-16 17:48+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-11-15 13:00+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
+"Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
+"healthcheck-setup/cs/>\n"
 "Language: cs\n"
-"Language-Team: cs <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 5.9-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck_setup/email_notifications.py:25
-#, fuzzy
 msgid "Checks if e-mail notifications are set up."
-msgstr "Zdá se, že e-mailové notifikace jsou nakonfigurovány."
+msgstr "Zkontroluje, zda jsou nastaveny e-mailové notifikace."
 
 #: healthcheck_setup/email_notifications.py:32
-#, fuzzy
 msgid "Set up e-mail notifications to be notified of router events"
 msgstr ""
-"Měli byste nakonfigurovat e-mail pro notifikace, abyste mohli být "
-"informováni o událostech v routeru"
+"Nastavte e-mailové notifikace , abyste mohli být informováni o událostech ve "
+"směrovači"
 
 #: healthcheck_setup/email_notifications.py:35
-#, fuzzy
 msgid ""
 "Turris system has notification system. Various components (including "
 "healthcheck) are using it to inform the administrator of possible issues."
 msgstr ""
-"Systém Turris obsahuje notifikační systém. Různé komponenty, včetně "
-"healthcheck, ho využívají pro informování administrátora o možných "
-"problémech."
+"Systém Turris obsahuje notifikační systém. Různé součásti, včetně "
+"healthcheck, ho využívají pro informování správce o možných problémech."
 
 #: healthcheck_setup/email_notifications.py:41
 msgid ""
 "Go to the \"Maintenance\" setting in Foris and set up e-mail "
 "notifications there."
 msgstr ""
+"Přejděte ve Forisu do nastavení „Údržba“ a nastavte zde e-mailové notifikace."
 
 #: healthcheck_setup/email_notifications.py:51
-#, fuzzy
 msgid "E-mail notifications will be sent out."
-msgstr "Zdá se, že e-mailové notifikace jsou nakonfigurovány."
+msgstr "E-mailové notifikace se budou odesílat."
 
 #: healthcheck_setup/email_notifications.py:54
 msgid "Notifications are sent to the following e-mail addresses: "
-msgstr ""
+msgstr "Notifikace jsou odesílány na následující e-mailové adresy: "
 
 #: healthcheck_setup/__init__.py:23
 msgid "Suggestion for router setup."
-msgstr "Návrh pro nastavení routeru."
+msgstr "Doporučení pro nastavení směrovače."
 
 #~ msgid ""
 #~ "In Foris navigate to Maintenance setting"
@@ -76,4 +74,3 @@ msgstr "Návrh pro nastavení routeru."
 
 #~ msgid "Notifications are send to the following mail addresses: "
 #~ msgstr ""
-

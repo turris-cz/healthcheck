@@ -1,0 +1,60 @@
+# Translations template for healthcheck.
+# Copyright (C) 2022 CZ.NIC z.s.p.o
+# This file is distributed under the same license as the healthcheck
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: healthcheck 0.1\n"
+"Report-Msgid-Bugs-To: packaging@turris.cz\n"
+"POT-Creation-Date: 2022-02-16 10:37+0100\n"
+"PO-Revision-Date: 2024-01-04 21:10+0000\n"
+"Last-Translator: powerburner-nl <peter.mulder.1981@gmail.com>\n"
+"Language-Team: Dutch <https://hosted.weblate.org/projects/turris/"
+"healthcheck-setup/nl/>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.4-dev\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: healthcheck_setup/email_notifications.py:25
+msgid "Checks if e-mail notifications are set up."
+msgstr "Controle of e-mailmeldingen zijn ingesteld."
+
+#: healthcheck_setup/email_notifications.py:32
+msgid "Set up e-mail notifications to be notified of router events"
+msgstr ""
+"Stel e-mailmeldingen in om een bericht te krijgen bij gebeurtenissen van de "
+"router"
+
+#: healthcheck_setup/email_notifications.py:35
+msgid ""
+"Turris system has notification system. Various components (including "
+"healthcheck) are using it to inform the administrator of possible issues."
+msgstr ""
+"De router heeft een meldingssysteem. Verschillende componenten (waaronder "
+"healthcheck) gebruiken het om de beheerder te informeren over mogelijke "
+"problemen."
+
+#: healthcheck_setup/email_notifications.py:41
+msgid ""
+"Go to the \"Maintenance\" setting in Foris and set up e-mail "
+"notifications there."
+msgstr ""
+"Ga naar de instelling \"Onderhoud\" in Foris en stel daar e-mailmeldingen in."
+
+#: healthcheck_setup/email_notifications.py:51
+msgid "E-mail notifications will be sent out."
+msgstr "Er worden meldingen per e-mail verstuurd."
+
+#: healthcheck_setup/email_notifications.py:54
+msgid "Notifications are sent to the following e-mail addresses: "
+msgstr "Meldingen worden naar de volgende e-mailadressen gestuurd: "
+
+#: healthcheck_setup/__init__.py:23
+msgid "Suggestion for router setup."
+msgstr "Suggestie voor het instellen van de router."

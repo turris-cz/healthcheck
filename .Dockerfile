@@ -28,7 +28,7 @@ RUN \
 RUN \
   git clone git://git.openwrt.org/project/uci.git ~/uci && \
   cd ~/uci && \
-  cmake cmake CMakeLists.txt && \
+  cmake CMakeLists.txt && \
   make install && \
   cd .. && \
   rm -rf uci
@@ -37,7 +37,7 @@ RUN \
 RUN \
   apt-get update && \
   apt-get -y install --no-install-recommends \
-    python3-dev python3-setuptools python3-pip python3-pytest \
+    python3-dev python3-venv python3-setuptools python3-pip python3-pytest \
     python3-pytest-cov lcov \
     && \
   apt-get clean
@@ -46,7 +46,9 @@ RUN \
 RUN \
   git clone https://gitlab.nic.cz/turris/pyuci.git ~/pyuci && \
   cd ~/pyuci && \
-  python3 setup.py install && \
+  python3 -m venv venv && \
+  . venv/bin/activate && \
+  python3 -m pip install . && \
   cd .. && \
   rm -rf pyuci
 
@@ -57,12 +59,17 @@ RUN \
   apt-get -y install --no-install-recommends \
     python3-pip
 
-RUN \
-  pip3 install \
-    black \
-    isort \
-    pylint \
-    mypy
+# Install venv package
+RUN apt-get update && apt-get install -y python3-venv
+
+# Create and activate a virtual environment
+RUN python3 -m venv /opt/venv && \
+    . /opt/venv/bin/activate && \
+    pip install --upgrade pip && \
+    pip install black isort pylint mypy
+
+# Ensure the virtual environment is used by default
+ENV PATH="/opt/venv/bin:$PATH"
 
 COPY ./requirements.txt ./
 RUN \

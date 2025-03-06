@@ -1,0 +1,331 @@
+# Translations template for healthcheck.
+# Copyright (C) 2022 CZ.NIC z.s.p.o
+# This file is distributed under the same license as the healthcheck
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: healthcheck 0.1\n"
+"Report-Msgid-Bugs-To: packaging@turris.cz\n"
+"POT-Creation-Date: 2022-02-16 10:37+0100\n"
+"PO-Revision-Date: 2023-08-13 11:51+0000\n"
+"Last-Translator: Erik Pfannenstein <debianignatz@gmx.de>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/turris/"
+"healthcheck/de/>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.0-dev\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: healthcheck/check.py:67
+msgid "Can be used to disable check execution. It has to be a boolean value."
+msgstr ""
+"Kann verwendet werden, um die Ausführung von Prüfungen abzuschalten. Muss "
+"ein Boole'scher Wert sein."
+
+#: healthcheck/check.py:103
+msgid "Check execution failed with exception: "
+msgstr "Prüfung mit Ausnahme fehlgeschlagen: "
+
+#: healthcheck/check.py:109
+msgid "Traceback:"
+msgstr "Traceback:"
+
+#: healthcheck/check.py:120
+msgid "Check execution is disabled"
+msgstr "Ausführung von Prüfungen ist abgeschaltet"
+
+#: healthcheck/check.py:124
+msgid ""
+"Both plugin as check itself are disabled in configuration. You are "
+"rigorous I give you that."
+msgstr ""
+"Beide Plugins sowie die Prüfung an sich sind in der Konfiguration "
+"abgeschaltet. Sie sind konsequent, das muss man Ihnen lassen."
+
+#: healthcheck/check.py:126
+msgid ""
+"The plugin check is part of is explicitly disabled as whole in "
+"configuration."
+msgstr ""
+"Das Plugin, von dem die Prüfung ein Teil ist, wurde in der Konfiguration "
+"ausdrücklich komplett abgeschaltet."
+
+#: healthcheck/check.py:127
+msgid "The check is explicitly disabled in configuration."
+msgstr "Die Prüfung wurde in der Konfiguration ausdrücklich abgeschaltet."
+
+#: healthcheck/__main__.py:12
+msgid "System health checker."
+msgstr "Systemgesundheits-Prüfer."
+
+#: healthcheck/__main__.py:18
+msgid "List all available checks"
+msgstr "Alle verfügbaren Prüfungen auflisten"
+
+#: healthcheck/__main__.py:20
+msgid "List all available UCI configuration options"
+msgstr "Alle verfügbaren UCI-Konfigurations-Optionen auflisten"
+
+#: healthcheck/__main__.py:22
+msgid "Output in JSON data format"
+msgstr "Im JSON-Datenformat ausgeben"
+
+#: healthcheck/__main__.py:23
+msgid "Run healthcheck in background"
+msgstr "Gesundheitsprüfung im Hintergrund ausführen"
+
+#: healthcheck/__main__.py:25
+msgid "Periodic check that sends notifications when issues are found"
+msgstr ""
+"Regelmäßige Prüfung, die Benachrichtigungen sendet, wenn sie Probleme "
+"entdeckt"
+
+#: healthcheck/__main__.py:30
+msgid "Check to be executed. If not specified then all checks are executed."
+msgstr ""
+"Prüfung, die ausgeführt werden soll. Falls nichts angegeben ist, laufen alle "
+"Prüfungen."
+
+#: healthcheck/__main__.py:92
+msgid "No such plugin"
+msgstr "Kein solches Plugin"
+
+#: healthcheck/__main__.py:100
+msgid "No such check in plugin"
+msgstr "Keine solche Prüfung im Plugin"
+
+#: healthcheck/_output.py:245
+msgid "#### Healthcheck detected the following new or deteriorated issues ####"
+msgstr ""
+"#### Gesundheitsprüfung hat die folgenden neuen oder schlimmer gewordenen "
+"Probleme festgestellt ####"
+
+#: healthcheck/_output.py:248
+msgid "#### Healthcheck detected improvement on following issues ####"
+msgstr ""
+"#### Gesundheitsprüfung hat Verbesserungen bei den folgenden Problemen "
+"festgestellt ####"
+
+#: healthcheck/_output.py:251
+msgid "#### Healthcheck still reports the following issues ####"
+msgstr "#### Gesundheitsprüfung meldet immer noch die folgenden Probleme ####"
+
+#: healthcheck/_output.py:277
+msgid "Can be used to disable notifications."
+msgstr "Kann verwendet werden, um Benachrichtigungen abzuschalten."
+
+#: healthcheck/_output.py:283
+msgid ""
+"Minimal priority for notification to be generated. This is number from 0 "
+"to 100 where higher means more significant. In default this is set to: "
+msgstr ""
+"Niedrigste Priorität für die zu erstellenden Benachrichtigungen. Sie reicht "
+"von 0 bis 100, wobei eine höhere Zahl für eine höhere Dringlichkeit steht. "
+"Ihr Standardwert ist: "
+
+#: healthcheck/_output.py:293
+msgid ""
+"Minimal priority for hardware related notifications to be generated. This"
+" is number as well as for level. In default this is set to: "
+msgstr ""
+"Niedrigste Priorität für zu generierende Benachrichtigungen mit Hardware-"
+"Bezug. Das ist eine Zahl wie beim Level. Standardmäßig beträgt sie: "
+
+#: healthcheck/_output.py:303
+msgid ""
+"Minimal priority for software related notifications to be generated. This"
+" is number as well as for level. In default this is set to: "
+msgstr ""
+"Niedrigste Priorität für zu erstellende Benachrichtigungen mit Software-"
+"Bezug. Dies ist eine Zahl wie beim Level. Standardmäßig beträgt sie: "
+
+#: healthcheck/_output.py:313
+msgid ""
+"Notification period specified in cron format. This specifies how often "
+"and when should notification about persistent issues be send. In deafult "
+"it is set to: "
+msgstr ""
+"Benachrichtigungs-Zeiten im Cron-Format. Hier ist angegeben, wann und wie "
+"oft Benachrichtigungen über bestehende Probleme gesendet werden sollen. "
+"Standardmäßig ist das: "
+
+#: healthcheck/plugin.py:60
+msgid ""
+"Can be used to disable all checks from this plugin. It has to be a "
+"boolean value."
+msgstr ""
+"Kann verwendet werden, um alle Prüfungen in diesem Plugin abzuschalten. Muss "
+"ein Boole'scher Wert sein."
+
+#: healthcheck/report.py:75
+msgid "Inconclusive"
+msgstr "Uneindeutig"
+
+#: healthcheck/report.py:78
+msgid ""
+"The check was inconclusive. This means that for some reason the check "
+"wasn't able to generate any other report. This highly suggests it failed "
+"horribly."
+msgstr ""
+"Die Prüfung hatte kein eindeutiges Ergebnis. Das bedeutet, dass aus "
+"irgendeinem Grund kein Bericht für die Prüfung erstellt werden konnte. Die "
+"Prüfung muss furchtbar schief gelaufen sein."
+
+#: healthcheck/report.py:92
+msgid "Not applicable"
+msgstr "Nicht anwendbar"
+
+#: healthcheck/report.py:95
+msgid ""
+"The check wasn't applicable. This is most probably because it checks a "
+"system attribute that is not installed or activated."
+msgstr ""
+"Die Prüfung war nicht anwendbar. Das bedeutet höchstwahrscheinlich, dass sie "
+"ein System-Attribut überprüft, das nicht installiert oder aktiv ist."
+
+#: healthcheck/report.py:109
+msgid "Pass"
+msgstr "Bestanden"
+
+#: healthcheck/report.py:112
+msgid "Check passed. No problem was detected."
+msgstr "Prüfung bestanden. Kein Problem entdeckt."
+
+#: healthcheck/report.py:126
+msgid "Try again later"
+msgstr "Später wieder versuchen"
+
+#: healthcheck/report.py:129
+msgid ""
+"The Check can't finish at the moment, but should be able after a while. "
+"This is commonly becuase it lacks data to assess trends from."
+msgstr ""
+"Die Prüfung kann im Moment nicht abgeschlossen werden, aber vielleicht "
+"später. Das passiert üblicherweise, wenn zu wenige Daten vorliegen, um einen "
+"Trend herauszulesen."
+
+#: healthcheck/report.py:147
+msgid "Software advise"
+msgstr "Software-Hinweis"
+
+#: healthcheck/report.py:150
+msgid ""
+"The check provides advice regarding the software running on the router. "
+"Please consider it."
+msgstr ""
+"Dies Prüfung gibt Hinweise bezüglich der Software, die auf dem Router läuft. "
+"Bitte ziehen Sie sie in Erwägung."
+
+#: healthcheck/report.py:161
+msgid "Software warning"
+msgstr "Software-Warnung"
+
+#: healthcheck/report.py:164
+msgid ""
+"A check detected a problem with the software.It is far from fatal, but it"
+" might be causing some functionality degradation now or in future.Please "
+"solve this issue at your convenience."
+msgstr ""
+"Eine Prüfung hat ein Problem in der Software festgestellt. Es ist noch "
+"längst nicht fatal, aber kann zur Verschlechterung der Funktionalität jetzt "
+"oder in Zukunft führen. Bitte gehen Sie dem bei Gelegenheit nach."
+
+#: healthcheck/report.py:179
+msgid "Software error"
+msgstr "Software-Fehler"
+
+#: healthcheck/report.py:182
+msgid ""
+"A check detected a dangerous problem with the software. It is not "
+"immediately fatal, but itpossibly causes some functionality degradation "
+"and/or it can turn fatal for device functionality.Please resolve this "
+"problem as soon as possible."
+msgstr ""
+"Eine Prüfung hat ein handfestes Problem in der Software festgestellt. Es ist "
+"nicht sofort fatal, kann aber zur Verschlechterung der Funktionalität führen "
+"oder schwerwiegend für die Geräte-Funktionalität werden. Bitte beheben Sie "
+"es so bald wie möglich."
+
+#: healthcheck/report.py:197
+msgid "Software fatal error"
+msgstr "Fataler Software-Fehler"
+
+#: healthcheck/report.py:200
+msgid ""
+"A check detected a fatal problem with the software. It is causing the "
+"system not to work properly."
+msgstr ""
+"Eine Prüfung hat ein schwerwiegendes Problem mit der Software festegestellt. "
+"Wegen ihm funktioniert das System nicht ordentlich."
+
+#: healthcheck/report.py:215
+msgid "Hardware warning"
+msgstr "Hardware-Warnung"
+
+#: healthcheck/report.py:218
+msgid ""
+"A check detected a problem with the hardware. It is far from fatal, but "
+"might be causing some functionalitydegradation now or in future. Please "
+"solve this issue at your convenience."
+msgstr ""
+"Eine Prüfung hat ein Problem mit der Hardware festgestellt. Es ist noch "
+"längst nicht fatal, kann aber zur Verschlechterung von Funktionalität jetzt "
+"oder in Zukunft führen. Bitte gehen Sie dem bei Gelegenheit nach."
+
+#: healthcheck/report.py:232
+msgid "Hardware error"
+msgstr "Hardware-Fehler"
+
+#: healthcheck/report.py:235
+msgid ""
+"A check detected a dangerous problem with hardware. It is not immediately"
+" fatal, but possibly causessome functionality degradation and/or it can "
+"turn fatal for the device.Please resolver this problem as soon as "
+"possible."
+msgstr ""
+"Eine Prüfung hat ein gefährliches Problem mit der Hardware festgestellt. Es "
+"ist noch nicht sofort fatal, kann aber zur Verschlechterung von "
+"Funktionalität führen und/oder ernst für das Gerät werden. Bitte beheben Sie "
+"es so bald wie möglich."
+
+#: healthcheck/report.py:250
+msgid "Fatal hardware error"
+msgstr "Fataler Hardware-Fehler"
+
+#: healthcheck/report.py:253
+msgid ""
+"A check detected a fatal problem with the hardware. It is causing the "
+"system to not work properly."
+msgstr ""
+"Eine Prüfung hat ein schwerwiegendes Problem mit der Hardware erkannt. Wegen "
+"ihm funktioniert die Hardware nicht ordentlich."
+
+#: healthcheck/report.py:268
+msgid "Security advice"
+msgstr "Sicherheits-Hinweis"
+
+#: healthcheck/report.py:271
+msgid ""
+"A check detected a possible security concern. It provides advice. Please "
+"consider it."
+msgstr ""
+"Eine Prüfung hat ein mögliches Sicherheitsproblem entdeckt und gibt "
+"Hinweise. Bitte ziehen Sie sie in Erwägung."
+
+#: healthcheck/report.py:282
+msgid "Security warning"
+msgstr "Sicherheits-Warnung"
+
+#: healthcheck/report.py:285
+msgid ""
+"A check detected a possible security problem. It is advised to solve it "
+"as soon as possible to mitigateany possible exploit."
+msgstr ""
+"Eine Prüfung hat ein mögliches Sicherheitsproblem erkannt. Es empfiehlt "
+"sich, das Problem schnellstmöglich zu lösen, damit es nicht ausgenutzt "
+"werden kann."

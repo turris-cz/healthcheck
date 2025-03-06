@@ -1,0 +1,63 @@
+# Translations template for healthcheck.
+# Copyright (C) 2022 CZ.NIC z.s.p.o
+# This file is distributed under the same license as the healthcheck
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: healthcheck 0.1\n"
+"Report-Msgid-Bugs-To: packaging@turris.cz\n"
+"POT-Creation-Date: 2022-02-16 10:37+0100\n"
+"PO-Revision-Date: 2022-09-11 16:17+0000\n"
+"Last-Translator: Dan Cybersec <dan.cybersec@protonmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/turris/"
+"healthcheck-setup/es/>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.14.1-dev\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: healthcheck_setup/email_notifications.py:25
+msgid "Checks if e-mail notifications are set up."
+msgstr "Verificar si las notificaciones por correo electrónico están activadas."
+
+#: healthcheck_setup/email_notifications.py:32
+msgid "Set up e-mail notifications to be notified of router events"
+msgstr ""
+"Configura las notificaciones por correo electrónico para recibir avisos de "
+"los eventos del router"
+
+#: healthcheck_setup/email_notifications.py:35
+msgid ""
+"Turris system has notification system. Various components (including "
+"healthcheck) are using it to inform the administrator of possible issues."
+msgstr ""
+"Turris cuenta con un sistema de notificaciones. Varios componentes (incluido "
+"el «healthcheck») lo emplean para avisar al administrador de posibles "
+"problemas."
+
+#: healthcheck_setup/email_notifications.py:41
+msgid ""
+"Go to the \"Maintenance\" setting in Foris and set up e-mail "
+"notifications there."
+msgstr ""
+"Ir a los ajustes de «Mantenimiento» en Foris y configurar allí las "
+"notificaciones de correo electrónico."
+
+#: healthcheck_setup/email_notifications.py:51
+msgid "E-mail notifications will be sent out."
+msgstr "Las notificaciones de correo electrónico se enviarán."
+
+#: healthcheck_setup/email_notifications.py:54
+msgid "Notifications are sent to the following e-mail addresses: "
+msgstr ""
+"Las notificaciones son enviadas a las siguientes direcciones de correo "
+"electrónico: "
+
+#: healthcheck_setup/__init__.py:23
+msgid "Suggestion for router setup."
+msgstr "Sugerencia para la configuración del router."
