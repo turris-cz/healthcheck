@@ -28,7 +28,7 @@ RUN \
 RUN \
   git clone git://git.openwrt.org/project/uci.git ~/uci && \
   cd ~/uci && \
-  cmake cmake CMakeLists.txt && \
+  cmake CMakeLists.txt && \
   make install && \
   cd .. && \
   rm -rf uci
