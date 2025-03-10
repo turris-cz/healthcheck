@@ -9,28 +9,34 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2021-12-10 17:12+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-03-11 16:39+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/turris/"
+"healthcheck-system/ta/>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10.3-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck_system/flash_writes.py:58
 msgid "Checks if system is not writing too much to flash storage."
 msgstr ""
+"ஃபிளாச் சேமிப்பகத்திற்கு கணினி அதிகம் எழுதவில்லையா என்று சரிபார்க்கவும்."
 
 #: healthcheck_system/flash_writes.py:78
 msgid "There is no flash device detected in system."
-msgstr ""
+msgstr "கணினியில் ஃபிளாச் சாதனம் கண்டறியப்படவில்லை."
 
 #: healthcheck_system/flash_writes.py:81
 msgid ""
 "Check found no flash device in system. This is most likely because there "
 "is just no such device."
 msgstr ""
+"கணினியில் ஃபிளாச் சாதனம் இல்லை என்று சரிபார்க்கவும். இதுபோன்ற சாதனம் இல்லாததால் இது "
+"பெரும்பாலும் இருக்கலாம்."
 
 #: healthcheck_system/flash_writes.py:94
 msgid ""
@@ -40,18 +46,23 @@ msgid ""
 "the excessive writes to MMC can shorten lifespan to just a year or two. "
 "The that excessive writes are not regularly covered by warranty."
 msgstr ""
+"எம்.எம்.சி ச்டோரேச்களில் எழுதங்களின் எண்ணிக்கை இயல்பாகவே அதன் ஆயுட்காலம் இணைக்கப்பட்டுள்ளது. "
+"அதிகப்படியான எழுத்துக்கள் எதிர்பார்க்கப்படும் வேறு சில வழக்கமான சேமிப்பகங்களுடன் "
+"ஒப்பிடும்போது, ஆயுட்காலம் இன்னும் சாதனத்தின் ஆயுட்காலம் தொடர்ந்து சந்திக்க முடியும், "
+"எம்.எம்.சிக்கு அதிகப்படியான எழுத்துக்கள் ஆயுட்காலம் ஒரு வருடம் அல்லது இரண்டு வருடங்களாக "
+"குறைக்க முடியும். அதிகப்படியான எழுத்துக்கள் தொடர்ந்து உத்தரவாதத்தால் மூடப்படவில்லை."
 
 #: healthcheck_system/flash_writes.py:101
 msgid "The calculation is since boot up that was {} ago."
-msgstr ""
+msgstr "கணக்கீடு துவக்கத்திலிருந்தே {} முன்பு இருந்தது."
 
 #: healthcheck_system/flash_writes.py:103
 msgid "The amount of recorded sector writes is {}."
-msgstr ""
+msgstr "பதிவுசெய்யப்பட்ட துறையின் அளவு {}."
 
 #: healthcheck_system/flash_writes.py:105
 msgid "That is {} sector writes per hour."
-msgstr ""
+msgstr "அதாவது {} துறை ஒரு மணி நேரத்திற்கு எழுதுகிறது."
 
 #: healthcheck_system/flash_writes.py:109
 msgid ""
@@ -60,100 +71,113 @@ msgid ""
 "in SD slot). These are but not limited to services for file sharing and "
 "caching as well as databases or other data collectors."
 msgstr ""
+"மற்ற சேமிப்பக வகைகளில் கனரக செயல்பாடுகளை எழுதுங்கள், குறிப்பாக எம்.எம்.சி சேமிப்பிடத்தை "
+"மாற்ற முடியாவிட்டால் (எச்டி ச்லாட்டில் செருகப்படாத போர்டில் கரைக்கப்படுவது போன்றவை). இவை "
+"கோப்பு பகிர்வு மற்றும் தற்காலிக சேமிப்பு மற்றும் தரவுத்தளங்கள் அல்லது பிற தரவு "
+"சேகரிப்பாளர்களுக்கான சேவைகளுக்கு மட்டுப்படுத்தப்படவில்லை."
 
 #: healthcheck_system/flash_writes.py:120
 msgid "Number of writes to MMC storage does not exceed limits"
-msgstr ""
+msgstr "எம்.எம்.சி சேமிப்பகத்திற்கு எழுத்துக்களின் எண்ணிக்கை வரம்புகளை மீறாது"
 
 #: healthcheck_system/flash_writes.py:130
 msgid ""
 "The amount of writes is hight but it is too soon after boot to reliably "
 "assess the impact"
 msgstr ""
+"எழுத்துக்களின் அளவு அதிகமாக உள்ளது, ஆனால் துவக்கத்திற்குப் பிறகு தாக்கத்தை நம்பத்தகுந்ததாக "
+"மதிப்பிடுவது மிக விரைவில்"
 
 #: healthcheck_system/flash_writes.py:134
 msgid ""
 "It is possible that this is just write happenig right after the boot and "
 "all will settle down in a while."
 msgstr ""
+"துவக்கத்திற்குப் பிறகு இது எழுதும் நடக்கும் மற்றும் அனைத்தும் சிறிது நேரத்தில் குடியேறும்."
 
 #: healthcheck_system/flash_writes.py:146
 msgid "The amount of writes is considerably high"
-msgstr ""
+msgstr "எழுத்துக்களின் அளவு கணிசமாக அதிகமாக உள்ளது"
 
 #: healthcheck_system/flash_writes.py:153
 msgid "The amount of writes is really high!"
-msgstr ""
+msgstr "எழுத்துக்களின் அளவு உண்மையில் அதிகம்!"
 
 #: healthcheck_system/flash_writes.py:156
 msgid "You should act now to prevent permanent hardware damage!"
-msgstr ""
+msgstr "நிரந்தர வன்பொருள் சேதத்தைத் தடுக்க நீங்கள் இப்போது செயல்பட வேண்டும்!"
 
 #: healthcheck_system/free_ram.py:38
 msgid "watches amount of free ram and reports not enough space."
-msgstr ""
+msgstr "இலவச ராம் கடிகாரங்கள் மற்றும் போதுமான இடம் இல்லை என்று தெரிவிக்கிறது."
 
 #: healthcheck_system/free_ram.py:57
 msgid ""
 "Amount of memory or less that triggers error. The format is number and "
 "unit (such as '80MB')"
 msgstr ""
+"நினைவகத்தின் அளவு அல்லது குறைவான பிழையைத் தூண்டும். வடிவம் எண் மற்றும் அலகு ('80MB' "
+"போன்றவை)"
 
 #: healthcheck_system/free_ram.py:64
 msgid ""
 "Amount of memory or less that triggers warning. The format is number and "
 "unit (such as '160MB')"
 msgstr ""
+"நினைவகத்தின் அளவு அல்லது குறைவாக எச்சரிக்கையைத் தூண்டும். வடிவம் எண் மற்றும் அலகு ("
+"'160MB' போன்றவை)"
 
 #: healthcheck_system/free_ram.py:113
 msgid "Amount of free memory: "
-msgstr ""
+msgstr "இலவச நினைவகத்தின் அளவு: "
 
 #: healthcheck_system/free_ram.py:116
 msgid "Processes consuming the most memory:"
-msgstr ""
+msgstr "மிகவும் நினைவகத்தை உட்கொள்ளும் செயல்முறைகள்:"
 
 #: healthcheck_system/free_ram.py:130
 msgid "System seems to have enough free memory."
-msgstr ""
+msgstr "கணினிக்கு போதுமான இலவச நினைவகம் இருப்பதாக தெரிகிறது."
 
 #: healthcheck_system/free_ram.py:137
 msgid "System seems to have not enough free memory."
-msgstr ""
+msgstr "கணினிக்கு போதுமான இலவச நினைவகம் இல்லை என்று தெரிகிறது."
 
 #: healthcheck_system/free_ram.py:140 healthcheck_system/free_ram.py:150
 msgid ""
 "You might want to check what processes are running on your router and how"
 " much memory they consume."
 msgstr ""
+"உங்கள் திசைவியில் என்ன செயல்முறைகள் இயங்குகின்றன, அவை எவ்வளவு நினைவகத்தை உட்கொள்கின்றன "
+"என்பதை நீங்கள் சரிபார்க்க விரும்பலாம்."
 
 #: healthcheck_system/free_ram.py:147
 msgid "System experiences memory shortage."
-msgstr ""
+msgstr "கணினி நினைவக பற்றாக்குறையை அனுபவிக்கிறது."
 
 #: healthcheck_system/free_storage.py:73
 msgid "Checks amount of free space on mounted filesystems."
-msgstr ""
+msgstr "ஏற்றப்பட்ட கோப்பு முறைமைகளில் இலவச இடத்தின் அளவை சரிபார்க்கிறது."
 
 #: healthcheck_system/free_storage.py:98
 msgid "Specific mount point to be ignored (such as '/home')."
-msgstr ""
+msgstr "புறக்கணிக்கப்பட வேண்டிய குறிப்பிட்ட மவுண்ட் பாயிண்ட் ('/வீடு' போன்றவை)."
 
 #: healthcheck_system/free_storage.py:103
 msgid "File Systems type to be ignored (such as 'sysfs')."
-msgstr ""
+msgstr "கோப்பு அமைப்புகள் புறக்கணிக்கப்பட வேண்டும் ('SYSFS' போன்றவை)."
 
 #: healthcheck_system/free_storage.py:146
 msgid " out of "
-msgstr ""
+msgstr " வெளியே "
 
 #: healthcheck_system/free_storage.py:148
 msgid " available on device: "
-msgstr ""
+msgstr " சாதனத்தில் கிடைக்கிறது: "
 
 #: healthcheck_system/free_storage.py:154
 msgid "used"
-msgstr ""
+msgstr "பயன்படுத்தப்பட்டது"
 
 #: healthcheck_system/free_storage.py:157
 msgid ""
@@ -161,42 +185,52 @@ msgid ""
 " created by user(s) and not by system (unless you know what you are "
 "doing)."
 msgstr ""
+"எந்தவொரு தேவையற்ற கோப்புகளையும் கோப்பகங்களையும் பயனர் (கள்) உருவாக்கியிருந்தால், கணினியால்"
+" அல்ல (நீங்கள் என்ன செய்கிறீர்கள் என்று உங்களுக்குத் தெரியாவிட்டால்) அகற்ற வேண்டும்."
 
 #: healthcheck_system/free_storage.py:162
 msgid ""
 " You can also remove some nonessential software you do not need to free "
 "storage space."
 msgstr ""
+" சேமிப்பக இடத்தை இலவசமாகத் தேவையில்லாத சில அத்தியாவசிய மென்பொருளையும் நீங்கள் அகற்றலாம்."
 
 #: healthcheck_system/free_storage.py:164
 msgid ""
 " You should also check snapshots and remove unnecessary ones (using "
 "schnapps or by any other way you are using)."
 msgstr ""
+" நீங்கள் ச்னாப்சாட்களை சரிபார்த்து தேவையற்றவற்றையும் அகற்ற வேண்டும் (Schnapps ஐப் பயன்படுத்தி "
+"அல்லது வேறு எந்த வழியிலும்)."
 
 #: healthcheck_system/free_storage.py:169
 msgid ""
 " In case of this storage it can also be enough to just reboot device as "
 "content resides in volatile memory."
 msgstr ""
+" இந்த சேமிப்பகத்தைப் பொறுத்தவரை, உள்ளடக்கம் கொந்தளிப்பான நினைவகத்தில் வசிப்பதால் சாதனத்தை "
+"மறுதொடக்கம் செய்ய போதுமானதாக இருக்கும்."
 
 #: healthcheck_system/free_storage.py:174
 msgid ""
 "This applies to permanent storages (hardware storage devices). In case of"
 " memory storages such as 'tmpfs' it might be enough to perform reboot."
 msgstr ""
+"இது நிரந்தர சேமிப்பகங்களுக்கு (வன்பொருள் சேமிப்பக சாதனங்கள்) பொருந்தும். "
+"'டி.எம்.பி.எஃப்.எச்' போன்ற நினைவக ச்டோரேச்களின் விசயத்தில், மறுதொடக்கம் செய்ய இது "
+"போதுமானதாக இருக்கலாம்."
 
 #: healthcheck_system/free_storage.py:184
 msgid "There is enough of free storage space"
-msgstr ""
+msgstr "இலவச சேமிப்பு இடம் போதுமானது"
 
 #: healthcheck_system/free_storage.py:194
 msgid "Storage space is getting low"
-msgstr ""
+msgstr "சேமிப்பக இடம் குறைவாக வருகிறது"
 
 #: healthcheck_system/free_storage.py:201
 msgid "Amount of free storage space is getting dangerously low"
-msgstr ""
+msgstr "இலவச சேமிப்பக இடத்தின் அளவு ஆபத்தானதாகக் குறைகிறது"
 
 #: healthcheck_system/free_storage.py:207
 msgid ""
@@ -205,10 +239,14 @@ msgid ""
 "updated or new added. Not only that it also considerably slows down the "
 "storage."
 msgstr ""
+"கணினி புதுப்பிப்புகளுடன் சேமிப்பக இடத்தை எளிதாக வெளியேற்றலாம் அல்லது கோப்புகள் "
+"புதுப்பிக்கப்படும்போது அல்லது புதியது சேர்க்கப்படும்போது, சேமிப்பக சாதனத்தை கிட்டத்தட்ட "
+"விளிம்பில் நிரப்புவது ஆபத்தானது. இது சேமிப்பகத்தை கணிசமாகக் குறைக்கிறது என்பது "
+"மட்டுமல்ல."
 
 #: healthcheck_system/free_storage.py:219
 msgid "Storage is full!"
-msgstr ""
+msgstr "சேமிப்பு நிரம்பியுள்ளது!"
 
 #: healthcheck_system/free_storage.py:225
 msgid ""
@@ -216,19 +254,22 @@ msgid ""
 "files can fail and services might start failing as well. You should act "
 "now!"
 msgstr ""
+"சேமிப்பு மிகவும் நிரம்பியுள்ளது. கோப்புகளை எழுதுவது அல்லது நீட்டிப்பது தோல்வியடையும் "
+"என்றும் சேவைகளும் தோல்வியடையத் தொடங்கும் என்று எதிர்பார்க்கப்படுகிறது. நீங்கள் இப்போது செயல்"
+"பட வேண்டும்!"
 
 #: healthcheck_system/__init__.py:44
 msgid "Basic system stability and endurance checks"
-msgstr ""
+msgstr "அடிப்படை கணினி நிலைத்தன்மை மற்றும் பொறையுடைமை சோதனைகள்"
 
 #: healthcheck_system/merge_conffiles.py:56
 msgid "Notifies about updates of the configuration files in packages."
-msgstr ""
+msgstr "தொகுப்புகளில் உள்ளமைவு கோப்புகளின் புதுப்பிப்புகள் பற்றி அறிவிக்கிறது."
 
 #: healthcheck_system/merge_conffiles.py:69
 #: healthcheck_system/resolver_conf.py:31
 msgid "There are no configuration files with need for merge."
-msgstr ""
+msgstr "ஒன்றிணைக்க வேண்டிய கட்டமைப்பு கோப்புகள் எதுவும் இல்லை."
 
 #: healthcheck_system/merge_conffiles.py:72
 #: healthcheck_system/resolver_conf.py:34
@@ -240,6 +281,11 @@ msgid ""
 "current configuration file. Right now there are no configuration files "
 "that would require merging."
 msgstr ""
+"இதற்கிடையில் அவை மாற்றியமைக்கப்படாவிட்டால் மட்டுமே உள்ளமைவு கோப்புகள் தானாகவே "
+"புதுப்பிக்கப்படும். அவை மாற்றியமைக்கப்பட்டவுடன் அவை ஒருபோதும் தானாகவே மாற்றப்படாது. புதி"
+"ய பதிப்பு எப்போதும் கோப்பில் '-opkg' பின்னொட்டுடன் பயனர் தங்களது தற்போதைய உள்ளமைவு கோப்பை "
+"கைமுறையாக புதுப்பிக்கப் போகிறது என்ற எதிர்பார்ப்புடன் வைக்கப்படுகிறது. இப்போது ஒன்றிணைக்க "
+"வேண்டிய உள்ளமைவு கோப்புகள் எதுவும் இல்லை."
 
 #: healthcheck_system/merge_conffiles.py:87
 #: healthcheck_system/resolver_conf.py:49
@@ -247,11 +293,14 @@ msgid ""
 "There are some configuration files with updated defaults that should be "
 "reviewed and merged."
 msgstr ""
+"புதுப்பிக்கப்பட்ட இயல்புநிலைகளுடன் சில உள்ளமைவு கோப்புகள் உள்ளன, அவை மதிப்பாய்வு "
+"செய்யப்பட்டு இணைக்கப்பட வேண்டும்."
 
 #: healthcheck_system/merge_conffiles.py:90
 #: healthcheck_system/resolver_conf.py:52
 msgid "The following configuration files from these packages should be merged:"
 msgstr ""
+"இந்த தொகுப்புகளிலிருந்து பின்வரும் உள்ளமைவு கோப்புகள் இணைக்கப்பட வேண்டும்:"
 
 #: healthcheck_system/merge_conffiles.py:95
 #: healthcheck_system/resolver_conf.py:57
@@ -261,39 +310,46 @@ msgid ""
 "'*-opkg' file (the original file name with '-opkg' appended and update "
 "your configuration accordingly. Then you can remove '*-opkg' file."
 msgstr ""
+"இந்த உள்ளமைவு கோப்புகள் உங்களால் அல்லது நீங்கள் பயன்படுத்திய பயன்பாட்டால் நேரடியாக "
+"மாற்றியமைக்கப்பட்டன. '*-Opkg' கோப்பில் சேமிக்கப்பட்ட புதிய இயல்புநிலை நிலையை நீங்கள் "
+"சரிபார்க்க விரும்புகிறீர்கள் ('-opkg' உடன் அசல் கோப்பு பெயர் சேர்க்கப்பட்டு அதற்கேற்ப உங்கள் "
+"உள்ளமைவைப் புதுப்பிக்கவும். பின்னர் நீங்கள் '*-opkg' கோப்பை அகற்றலாம்."
 
 #: healthcheck_system/mmc_life.py:70
 msgid "Watches wear of MMC storages plugged in to the router."
-msgstr ""
+msgstr "திசைவிக்கு செருகப்பட்ட எம்.எம்.சி ச்டோரேச்களின் வாட்ச் வேர்."
 
 #: healthcheck_system/mmc_life.py:88
 msgid "There is no MMC device detected in system."
-msgstr ""
+msgstr "கணினியில் எம்.எம்.சி சாதனம் எதுவும் கண்டறியப்படவில்லை."
 
 #: healthcheck_system/mmc_life.py:91
 msgid ""
 "Check found no MMC block device in system. This is most likely because "
 "there is just no such device plugged in."
 msgstr ""
+"கணினியில் எம்.எம்.சி தொகுதி சாதனம் இல்லை என்பதை சரிபார்க்கவும். இதுபோன்ற சாதனம் "
+"செருகப்படாததால் இது பெரும்பாலும் இருக்கலாம்."
 
 #: healthcheck_system/mmc_life.py:106 healthcheck_system/smart.py:137
 #: healthcheck_system/smart.py:158
 msgid "It is not possible to read extcsd data."
-msgstr ""
+msgstr "EXTCSD தரவைப் படிக்க முடியாது."
 
 #: healthcheck_system/mmc_life.py:110 healthcheck_system/smart.py:141
 #: healthcheck_system/smart.py:162
 msgid "MMC tools (mmc-utils) are missing or not accessible."
 msgstr ""
+"எம்.எம்.சி கருவிகள் (எம்.எம்.சி-யுடில்ச்) காணவில்லை அல்லது அணுக முடியாது."
 
 #: healthcheck_system/mmc_life.py:112 healthcheck_system/smart.py:142
 #: healthcheck_system/smart.py:163
 msgid "Read failed with error: "
-msgstr ""
+msgstr "பிழையுடன் தோல்வியுற்றது: "
 
 #: healthcheck_system/mmc_life.py:113
 msgid "MMC does not provide information about its lifespan."
-msgstr ""
+msgstr "எம்.எம்.சி அதன் ஆயுட்காலம் பற்றிய தகவல்களை வழங்கவில்லை."
 
 #: healthcheck_system/mmc_life.py:117 healthcheck_system/smart.py:146
 #: healthcheck_system/smart.py:167
@@ -301,19 +357,21 @@ msgid ""
 "You should install mmc-utils or any other package that provides mmc-"
 "utils's command 'mmc'."
 msgstr ""
+"நீங்கள் எம்.எம்.சி-யுடில்ச் அல்லது எம்.எம்.சி-யுடில்சின் கட்டளை 'எம்.எம்.சி' கட்டளையை வழங்கும் "
+"வேறு எந்த தொகுப்பையும் நிறுவ வேண்டும்."
 
 #: healthcheck_system/mmc_life.py:131
 msgid "Reserved blocks on memory were depleted!"
-msgstr ""
+msgstr "நினைவகத்தில் முன்பதிவு செய்யப்பட்ட தொகுதிகள் குறைந்துவிட்டன!"
 
 #: healthcheck_system/mmc_life.py:133
-#, python-format
+#, fuzzy, python-format
 msgid "More than 80% of reserved blocks consumed!"
-msgstr ""
+msgstr "ஒதுக்கப்பட்ட தொகுதிகளில் 80% க்கும் அதிகமானவை நுகரப்படுகின்றன!"
 
 #: healthcheck_system/mmc_life.py:134
 msgid "Device's lifespan is depleted at least: "
-msgstr ""
+msgstr "சாதனத்தின் ஆயுட்காலம் குறைந்தது குறைந்துவிட்டது: "
 
 #: healthcheck_system/mmc_life.py:135
 msgid ""
@@ -324,6 +382,12 @@ msgid ""
 "very heavily in the past. Note that the manufacturers do not provide "
 "warranty if MMC was used heavily.\n"
 msgstr ""
+"எம்.எம்.சி சேமிப்பிடத்தில் குறைந்த அளவு எழுத்துக்கள் உள்ளன, அதன் காரணமாக அது "
+"மட்டுப்படுத்தப்பட்ட ஆயுட்காலம் உள்ளது. இதன் பொருள் உங்கள் சாதனம் வயதாக இருந்தால் முன்பதிவு "
+"செய்யப்பட்ட தொகுதிகள் குறைவாக இருக்கும் என்று எதிர்பார்க்கப்படுகிறது. புதிய சாதனத்தைப் "
+"பொறுத்தவரை இது தொழிற்சாலையிலிருந்து தவறாக இருக்கலாம் அல்லது கடந்த காலங்களில் இது "
+"மிகவும் பெரிதும் பயன்படுத்தப்பட்டது. எம்.எம்.சி பெரிதும் பயன்படுத்தப்பட்டால் உற்பத்தியாளர்கள் "
+"உத்தரவாதத்தை வழங்குவதில்லை என்பதை நினைவில் கொள்க.\n"
 
 #: healthcheck_system/mmc_life.py:143
 msgid ""
@@ -332,22 +396,26 @@ msgid ""
 "tasks such as file sharing, databases, containers, logs and others to "
 "some other storage device."
 msgstr ""
+"சாதன ஆயுட்காலம் நீடிக்க நீங்கள் எழுத்துகளின் அளவைக் குறைக்க வேண்டும் (முன்னுரிமை கணினி "
+"புதுப்பிப்புகளுக்கு மட்டுமே). இதன் பொருள் கோப்பு பகிர்வு, தரவுத்தளங்கள், கொள்கலன்கள், "
+"பதிவுகள் மற்றும் பிறவற்றை வேறு சில சேமிப்பக சாதனங்களுக்கு எழுதும் கனமான பணிகளை "
+"நகர்த்துவதாகும்."
 
 #: healthcheck_system/mmc_life.py:154
 msgid "Life of MMC is all right."
-msgstr ""
+msgstr "எம்.எம்.சியின் வாழ்க்கை சரி."
 
 #: healthcheck_system/mmc_life.py:161
 msgid "Life of MMC is getting short."
-msgstr ""
+msgstr "எம்.எம்.சியின் வாழ்க்கை குறுகியதாகி வருகிறது."
 
 #: healthcheck_system/mmc_life.py:168
 msgid "Life of MMC is getting dangerously short!"
-msgstr ""
+msgstr "எம்.எம்.சியின் வாழ்க்கை ஆபத்தான முறையில் குறுகியதாகி வருகிறது!"
 
 #: healthcheck_system/mmc_life.py:175
 msgid "MMC is end of life."
-msgstr ""
+msgstr "எம்.எம்.சி வாழ்க்கையின் முடிவு."
 
 #: healthcheck_system/mmc_life.py:178
 msgid ""
@@ -356,32 +424,42 @@ msgid ""
 "dear to you. It should be replaced if possible. Either with same type of "
 "device or with different in case it is MMC soldered to board in device."
 msgstr ""
+"இப்போது எதுவும் செய்ய முடியாது. இது மிகவும் தாமதமானது. எம்.எம்.சி பெரும்பாலும் "
+"பயன்படுத்த முடியாதது. உங்கள் தரவு உங்களுக்கு மிகவும் பிடித்ததாக இருந்தால் அதைப் "
+"பயன்படுத்துவதை நிறுத்த வேண்டும். முடிந்தால் அதை மாற்ற வேண்டும். ஒரே வகை சாதனத்துடன் அல்லது"
+" சாதனத்தில் போர்டுக்கு MMC கரைக்கப்பட்டால் வேறுபட்டது."
 
 #: healthcheck_system/pkg_check.py:48
 msgid ""
 "Verify that none of the user's modifications in files provided by "
 "packages would be removed by update."
 msgstr ""
+"தொகுப்புகளால் வழங்கப்பட்ட கோப்புகளில் பயனரின் மாற்றங்கள் எதுவும் புதுப்பிப்பால் அகற்றப்படாது "
+"என்பதை சரிபார்க்கவும்."
 
 #: healthcheck_system/pkg_check.py:71
 msgid "All files provided by packages are in their original state"
-msgstr ""
+msgstr "தொகுப்புகள் வழங்கும் அனைத்து கோப்புகளும் அவற்றின் அசல் நிலையில் உள்ளன"
 
 #: healthcheck_system/pkg_check.py:74
 msgid ""
 "No files from packages were modified and thus there is no danger that "
 "subsequent update would erase these changes."
 msgstr ""
+"தொகுப்புகளிலிருந்து கோப்புகள் எதுவும் மாற்றப்படவில்லை, இதனால் அடுத்தடுத்த புதுப்பிப்பு இந்"
+"த மாற்றங்களை அழிக்கும் என்று எந்த ஆபத்தும் இல்லை."
 
 #: healthcheck_system/pkg_check.py:86
 msgid "Some files from system packages were modified."
-msgstr ""
+msgstr "கணினி தொகுப்புகளிலிருந்து சில கோப்புகள் மாற்றப்பட்டன."
 
 #: healthcheck_system/pkg_check.py:90
 msgid ""
 "The changes in these files from these packages are going to be wiped with"
 " subsequent updates:"
 msgstr ""
+"இந்த தொகுப்புகளிலிருந்து இந்த கோப்புகளில் ஏற்படும் மாற்றங்கள் அடுத்தடுத்த புதுப்பிப்புகளுடன் "
+"அழிக்கப்படப்போகின்றன:"
 
 #: healthcheck_system/pkg_check.py:96
 msgid ""
@@ -394,16 +472,23 @@ msgid ""
 "If you are modifying some sort of the script you should think about "
 "sending your change to the upstream. It is open-source non the less."
 msgstr ""
+"பாதிக்கப்பட்ட தொகுப்புகளை மீண்டும் நிறுவுவதன் மூலம் மாற்றங்களை மாற்ற வேண்டும் மற்றும் நீங்கள் "
+"அடைய முயற்சிக்கும் எதற்கும் மாற்று அணுகுமுறையை விசாரிக்க வேண்டும்.\n"
+" ரூட் உள்ளமைவு கோப்பை மாற்றாமல் உள்ளமைவைச் சேர்க்க பெரும்பாலான தொகுப்புகள் ஒரு வழியை "
+"வழங்குகின்றன. '.D' பின்னொட்டுடன் கோப்பகங்களைத் தேடுங்கள்.\n"
+" நீங்கள் ஒருவித ச்கிரிப்டை மாற்றியமைக்கிறீர்கள் என்றால், உங்கள் மாற்றத்தை மேலோடைக்கு அனுப்புவது"
+" பற்றி நீங்கள் சிந்திக்க வேண்டும். இது திறந்த மூலமற்றது."
 
 #: healthcheck_system/services.py:32
 msgid ""
 "Check if there is no disabled service that would be re-enabled with "
 "update."
 msgstr ""
+"புதுப்பிப்புடன் மீண்டும் இயக்கப்படும் ஊனமுற்ற பணி இல்லையா என்று சரிபார்க்கவும்."
 
 #: healthcheck_system/services.py:39
 msgid "All wanted services are enabled."
-msgstr ""
+msgstr "அனைத்து விரும்பிய சேவைகளும் இயக்கப்பட்டுள்ளன."
 
 #: healthcheck_system/services.py:42
 msgid ""
@@ -411,40 +496,47 @@ msgid ""
 "previously disabled. All of such services are enabled and are going to be"
 " started on startup."
 msgstr ""
+"சில சேவைகள் முன்பு முடக்கப்பட்டிருந்தாலும் தானாகவே செயல்படுத்தப்படும். இதுபோன்ற சேவைகள் "
+"அனைத்தும் இயக்கப்பட்டுள்ளன, அவை தொடக்கத்தில் தொடங்கப்பட உள்ளன."
 
 #: healthcheck_system/services.py:55
 msgid ""
 "Some services currently disabled are going to be enabled with future "
 "updates."
 msgstr ""
+"தற்போது முடக்கப்பட்ட சில சேவைகள் எதிர்கால புதுப்பிப்புகளுடன் செயல்படுத்தப்பட உள்ளன."
 
 #: healthcheck_system/services.py:59
 msgid ""
 "Following disabled services are going to be re-enabled with future "
 "updates: "
-msgstr ""
+msgstr "ஊனமுற்ற சேவைகள் எதிர்கால புதுப்பிப்புகளுடன் மீண்டும் இயக்கப்பட உள்ளன: "
 
 #: healthcheck_system/services.py:62
 msgid ""
 "These services are automatically enabled even if they were previously "
 "disabled to ensure router's functionality."
 msgstr ""
+"திசைவியின் செயல்பாட்டை உறுதி செய்வதற்காக முன்னர் முடக்கப்பட்டிருந்தாலும் இந்த சேவைகள் "
+"தானாகவே இயக்கப்படும்."
 
 #: healthcheck_system/services.py:69
 msgid ""
 "To solve this you should configure system to not install software you do "
 "not want."
 msgstr ""
+"இதைத் தீர்க்க நீங்கள் விரும்பாத மென்பொருளை நிறுவ வேண்டாம் என்று கணினியை உள்ளமைக்க வேண்டும்."
 
 #: healthcheck_system/services.py:106
 msgid ""
 "Checks if currently running services would be automatically strated after"
 " boot."
 msgstr ""
+"துவக்கத்திற்குப் பிறகு தற்போது இயங்கும் சேவைகள் தானாகவே தொடங்கப்படுமா என்று சரிபார்க்கவும்."
 
 #: healthcheck_system/services.py:113
 msgid "All running services are enabled."
-msgstr ""
+msgstr "இயங்கும் அனைத்து சேவைகளும் இயக்கப்பட்டுள்ளன."
 
 #: healthcheck_system/services.py:116
 msgid ""
@@ -452,31 +544,37 @@ msgid ""
 "activated. All currently running services are enabled so you should not "
 "miss any service after reboot."
 msgstr ""
+"செயல்படுத்தப்படாவிட்டால் சேவைகள் அடுத்த தொடக்கத்தில் தானாகவே தொடங்கப்படாது. தற்போது இயங்கும்"
+" அனைத்து சேவைகளும் இயக்கப்பட்டிருக்கின்றன, எனவே மறுதொடக்கம் செய்த பிறகு நீங்கள் எந்த "
+"சேவையையும் தவறவிடக்கூடாது."
 
 #: healthcheck_system/services.py:129
 msgid "There are currently running services that are not enabled."
-msgstr ""
+msgstr "இயக்கப்படாத சேவைகள் தற்போது உள்ளன."
 
 #: healthcheck_system/services.py:133
 msgid "Following currently running services are disabled: "
-msgstr ""
+msgstr "தற்போது இயங்கும் சேவைகள் முடக்கப்பட்டுள்ளன: "
 
 #: healthcheck_system/services.py:136
 msgid ""
 "Enabled services are started on startup. You might want to enable these "
 "services."
 msgstr ""
+"இயக்கப்பட்ட சேவைகள் தொடக்கத்தில் தொடங்கப்படுகின்றன. இந்த சேவைகளை இயக்க நீங்கள் விரும்பலாம்."
 
 #: healthcheck_system/services.py:140
 msgid "Using either LuCI or SSH enable mentioned services."
-msgstr ""
+msgstr "லூசி அல்லது பாஓடு பயன்படுத்துதல் குறிப்பிடப்பட்ட சேவைகளை இயக்கவும்."
 
 #: healthcheck_system/smart.py:120
 msgid "There is no ATA/SATA/NVMe device detected in system."
-msgstr ""
+msgstr "கணினியில் ATA/SATA/NVME சாதனம் கண்டறியப்படவில்லை."
 
 #: healthcheck_system/smart.py:123
 msgid ""
 "Check found no ATA/SATA/NVMe block device in system. This is most likely "
 "because there is just no such device plugged in."
 msgstr ""
+"கணினியில் ATA/SATA/NVME தொகுதி சாதனம் இல்லை என்று சரிபார்க்கவும். இதுபோன்ற சாதனம் "
+"செருகப்படாததால் இது பெரும்பாலும் இருக்கலாம்."
