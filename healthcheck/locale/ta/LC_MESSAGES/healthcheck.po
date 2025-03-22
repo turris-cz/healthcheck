@@ -9,116 +9,132 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2022-02-16 10:37+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-03-23 05:08+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/turris/healthcheck/"
+"ta/>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck/check.py:67
 msgid "Can be used to disable check execution. It has to be a boolean value."
 msgstr ""
+"காசோலை சாவுஒறுப்பு முடக்க பயன்படுத்தலாம். இது ஒரு பூலியன் மதிப்பாக இருக்க வேண்டும்."
 
 #: healthcheck/check.py:103
 msgid "Check execution failed with exception: "
-msgstr ""
+msgstr "விதிவிலக்குடன் சாவுஒறுப்பு தோல்வியுற்றது: "
 
 #: healthcheck/check.py:109
 msgid "Traceback:"
-msgstr ""
+msgstr "TRACEBACK:"
 
 #: healthcheck/check.py:120
 msgid "Check execution is disabled"
-msgstr ""
+msgstr "காசோலை சாவுஒறுப்பு முடக்கப்பட்டுள்ளது"
 
 #: healthcheck/check.py:124
 msgid ""
 "Both plugin as check itself are disabled in configuration. You are "
 "rigorous I give you that."
 msgstr ""
+"காசோலை என இரண்டு சொருகி உள்ளமைவில் முடக்கப்பட்டுள்ளது. நீங்கள் கடுமையாக இருக்கிறீர்கள், நான்"
+" அதை உங்களுக்குக் கொடுக்கிறேன்."
 
 #: healthcheck/check.py:126
 msgid ""
 "The plugin check is part of is explicitly disabled as whole in "
 "configuration."
 msgstr ""
+"சொருகி சோதனை ஒரு பகுதியாகும், இது உள்ளமைவில் முழுமையாக முடக்கப்பட்டுள்ளது."
 
 #: healthcheck/check.py:127
 msgid "The check is explicitly disabled in configuration."
-msgstr ""
+msgstr "கட்டமைப்பில் காசோலை வெளிப்படையாக முடக்கப்பட்டுள்ளது."
 
 #: healthcheck/__main__.py:12
 msgid "System health checker."
-msgstr ""
+msgstr "கணினி சுகாதார சரிபார்ப்பு."
 
 #: healthcheck/__main__.py:18
 msgid "List all available checks"
-msgstr ""
+msgstr "கிடைக்கக்கூடிய அனைத்து காசோலைகளையும் பட்டியலிடுங்கள்"
 
 #: healthcheck/__main__.py:20
 msgid "List all available UCI configuration options"
-msgstr ""
+msgstr "கிடைக்கக்கூடிய அனைத்து யுசிஐ உள்ளமைவு விருப்பங்களையும் பட்டியலிடுங்கள்"
 
 #: healthcheck/__main__.py:22
 msgid "Output in JSON data format"
-msgstr ""
+msgstr "சாதொபொகு தரவு வடிவத்தில் வெளியீடு"
 
 #: healthcheck/__main__.py:23
 msgid "Run healthcheck in background"
-msgstr ""
+msgstr "பின்னணியில் ஆரோக்கியத்தை இயக்கவும்"
 
 #: healthcheck/__main__.py:25
 msgid "Periodic check that sends notifications when issues are found"
-msgstr ""
+msgstr "சிக்கல்கள் காணப்படும்போது அறிவிப்புகளை அனுப்பும் அவ்வப்போது சோதனை"
 
 #: healthcheck/__main__.py:30
 msgid "Check to be executed. If not specified then all checks are executed."
 msgstr ""
+"செயல்படுத்தப்பட வேண்டும். குறிப்பிடப்படவில்லை என்றால் அனைத்து காசோலைகளும் "
+"செயல்படுத்தப்படுகின்றன."
 
 #: healthcheck/__main__.py:92
 msgid "No such plugin"
-msgstr ""
+msgstr "அத்தகைய சொருகி இல்லை"
 
 #: healthcheck/__main__.py:100
 msgid "No such check in plugin"
-msgstr ""
+msgstr "சொருகி அத்தகைய காசோலை இல்லை"
 
 #: healthcheck/_output.py:245
 msgid "#### Healthcheck detected the following new or deteriorated issues ####"
 msgstr ""
+"#### எல்த்செக் பின்வரும் புதிய அல்லது மோசமடைந்த சிக்கல்களைக் கண்டறிந்தது ####"
 
 #: healthcheck/_output.py:248
 msgid "#### Healthcheck detected improvement on following issues ####"
-msgstr ""
+msgstr "#### எல்த்செக் பின்வரும் சிக்கல்களில் முன்னேற்றம் கண்டறியப்பட்டது ####"
 
 #: healthcheck/_output.py:251
 msgid "#### Healthcheck still reports the following issues ####"
-msgstr ""
+msgstr "#### எல்த் செக் இன்னும் பின்வரும் சிக்கல்களைப் புகாரளிக்கிறது ####"
 
 #: healthcheck/_output.py:277
 msgid "Can be used to disable notifications."
-msgstr ""
+msgstr "அறிவிப்புகளை முடக்க பயன்படுத்தலாம்."
 
 #: healthcheck/_output.py:283
 msgid ""
 "Minimal priority for notification to be generated. This is number from 0 "
 "to 100 where higher means more significant. In default this is set to: "
 msgstr ""
+"அறிவிப்பை உருவாக்க குறைந்தபட்ச முன்னுரிமை. இது 0 முதல் 100 வரையிலான எண், அங்கு அதிக "
+"பொருள் மிகவும் முக்கியமானது. இயல்புநிலையாக இது அமைக்கப்பட்டுள்ளது: "
 
 #: healthcheck/_output.py:293
 msgid ""
 "Minimal priority for hardware related notifications to be generated. This"
 " is number as well as for level. In default this is set to: "
 msgstr ""
+"வன்பொருள் தொடர்பான அறிவிப்புகள் உருவாக்கப்படுவதற்கான குறைந்தபட்ச முன்னுரிமை. இது எண் "
+"மற்றும் நிலை. இயல்புநிலையாக இது அமைக்கப்பட்டுள்ளது: "
 
 #: healthcheck/_output.py:303
 msgid ""
 "Minimal priority for software related notifications to be generated. This"
 " is number as well as for level. In default this is set to: "
 msgstr ""
+"மென்பொருள் தொடர்பான அறிவிப்புகள் உருவாக்கப்படுவதற்கு குறைந்தபட்ச முன்னுரிமை. இது எண் "
+"மற்றும் நிலை. இயல்புநிலையாக இது அமைக்கப்பட்டுள்ளது: "
 
 #: healthcheck/_output.py:313
 msgid ""
@@ -126,16 +142,21 @@ msgid ""
 "and when should notification about persistent issues be send. In deafult "
 "it is set to: "
 msgstr ""
+"CRON வடிவத்தில் குறிப்பிடப்பட்டுள்ள அறிவிப்பு காலம். தொடர்ச்சியான பிரச்சினைகள் குறித்து "
+"எவ்வளவு அடிக்கடி, எப்போது அறிவிக்க வேண்டும் என்பதை இது குறிப்பிடுகிறது. காது "
+"கேளாமையில் இது அமைக்கப்பட்டுள்ளது: "
 
 #: healthcheck/plugin.py:60
 msgid ""
 "Can be used to disable all checks from this plugin. It has to be a "
 "boolean value."
 msgstr ""
+"இந்த சொருகி அனைத்து காசோலைகளையும் முடக்க பயன்படுத்தலாம். இது ஒரு பூலியன் மதிப்பாக இருக்"
+"க வேண்டும்."
 
 #: healthcheck/report.py:75
 msgid "Inconclusive"
-msgstr ""
+msgstr "முடிவில்லாத"
 
 #: healthcheck/report.py:78
 msgid ""
@@ -143,48 +164,56 @@ msgid ""
 "wasn't able to generate any other report. This highly suggests it failed "
 "horribly."
 msgstr ""
+"காசோலை முடிவில்லாதது. இதன் பொருள் சில காரணங்களால் காசோலை வேறு எந்த அறிக்கையையும் "
+"உருவாக்க முடியவில்லை. இது மிகவும் மோசமாக தோல்வியுற்றது என்று கூறுகிறது."
 
 #: healthcheck/report.py:92
 msgid "Not applicable"
-msgstr ""
+msgstr "பொருந்தாது"
 
 #: healthcheck/report.py:95
 msgid ""
 "The check wasn't applicable. This is most probably because it checks a "
 "system attribute that is not installed or activated."
 msgstr ""
+"காசோலை பொருந்தவில்லை. இது நிறுவப்படாத அல்லது செயல்படுத்தப்படாத ஒரு கணினி பண்புகளை "
+"சரிபார்க்கிறது."
 
 #: healthcheck/report.py:109
 msgid "Pass"
-msgstr ""
+msgstr "கணவாய்"
 
 #: healthcheck/report.py:112
 msgid "Check passed. No problem was detected."
-msgstr ""
+msgstr "காசோலை கடந்துவிட்டது. எந்த பிரச்சனையும் கண்டறியப்படவில்லை."
 
 #: healthcheck/report.py:126
 msgid "Try again later"
-msgstr ""
+msgstr "பின்னர் மீண்டும் முயற்சிக்கவும்"
 
 #: healthcheck/report.py:129
 msgid ""
 "The Check can't finish at the moment, but should be able after a while. "
 "This is commonly becuase it lacks data to assess trends from."
 msgstr ""
+"இந்த நேரத்தில் காசோலை முடிக்க முடியாது, ஆனால் சிறிது நேரத்திற்குப் பிறகு முடியும். இது"
+" பொதுவாக போக்குகளை மதிப்பிடுவதற்கான தரவு இல்லாதது."
 
 #: healthcheck/report.py:147
 msgid "Software advise"
-msgstr ""
+msgstr "மென்பொருள் அறிவுரை"
 
 #: healthcheck/report.py:150
 msgid ""
 "The check provides advice regarding the software running on the router. "
 "Please consider it."
 msgstr ""
+"திசைவியில் இயங்கும் மென்பொருள் தொடர்பான ஆலோசனையை காசோலை வழங்குகிறது. தயவுசெய்து அதைக் "
+"கவனியுங்கள்."
 
 #: healthcheck/report.py:161
 msgid "Software warning"
-msgstr ""
+msgstr "மென்பொருள் எச்சரிக்கை"
 
 #: healthcheck/report.py:164
 msgid ""
@@ -192,10 +221,13 @@ msgid ""
 " might be causing some functionality degradation now or in future.Please "
 "solve this issue at your convenience."
 msgstr ""
+"ஒரு காசோலை மென்பொருளுடன் ஒரு சிக்கலைக் கண்டறிந்தது. இது அபாயகரமானதிலிருந்து வெகு "
+"தொலைவில் உள்ளது, ஆனால் இது இப்போது அல்லது எதிர்காலத்தில் சில செயல்பாட்டு சீரழிவை "
+"ஏற்படுத்தக்கூடும். தயவுசெய்து இந்த சிக்கலை உங்கள் வசதிக்கேற்ப தீர்க்கவும்."
 
 #: healthcheck/report.py:179
 msgid "Software error"
-msgstr ""
+msgstr "மென்பொருள் பிழை"
 
 #: healthcheck/report.py:182
 msgid ""
@@ -204,20 +236,25 @@ msgid ""
 "and/or it can turn fatal for device functionality.Please resolve this "
 "problem as soon as possible."
 msgstr ""
+"ஒரு காசோலை மென்பொருளில் ஆபத்தான சிக்கலைக் கண்டறிந்தது. இது உடனடியாக ஆபத்தானது அல்ல, "
+"ஆனால் இது சில செயல்பாட்டு சீரழிவை ஏற்படுத்துகிறது மற்றும்/அல்லது சாதனத்தின் செயல்பாட்டிற்கு"
+" ஆபத்தானது. தயவுசெய்து இந்த சிக்கலை விரைவில் தீர்க்கவும்."
 
 #: healthcheck/report.py:197
 msgid "Software fatal error"
-msgstr ""
+msgstr "மென்பொருள் அபாயகரமான பிழை"
 
 #: healthcheck/report.py:200
 msgid ""
 "A check detected a fatal problem with the software. It is causing the "
 "system not to work properly."
 msgstr ""
+"ஒரு காசோலை மென்பொருளில் ஒரு அபாயகரமான சிக்கலைக் கண்டறிந்தது. இது கணினி சரியாக வேலை "
+"செய்யக்கூடாது."
 
 #: healthcheck/report.py:215
 msgid "Hardware warning"
-msgstr ""
+msgstr "வன்பொருள் எச்சரிக்கை"
 
 #: healthcheck/report.py:218
 msgid ""
@@ -225,10 +262,13 @@ msgid ""
 "might be causing some functionalitydegradation now or in future. Please "
 "solve this issue at your convenience."
 msgstr ""
+"ஒரு காசோலை வன்பொருளில் சிக்கலைக் கண்டறிந்தது. இது அபாயகரமானதிலிருந்து வெகு தொலைவில் "
+"உள்ளது, ஆனால் இப்போது அல்லது எதிர்காலத்தில் சில செயல்பாட்டு குறைப்பை ஏற்படுத்தக்கூடும். "
+"தயவுசெய்து இந்த சிக்கலை உங்கள் வசதிக்கேற்ப தீர்க்கவும்."
 
 #: healthcheck/report.py:232
 msgid "Hardware error"
-msgstr ""
+msgstr "வன்பொருள் பிழை"
 
 #: healthcheck/report.py:235
 msgid ""
@@ -237,33 +277,42 @@ msgid ""
 "turn fatal for the device.Please resolver this problem as soon as "
 "possible."
 msgstr ""
+"ஒரு காசோலை வன்பொருளுடன் ஆபத்தான சிக்கலைக் கண்டறிந்தது. இது உடனடியாக ஆபத்தானது அல்ல, "
+"ஆனால் சாத்தியமான காரண செயல்பாட்டு சீரழிவு மற்றும்/அல்லது இது சாதனத்திற்கு ஆபத்தானது. இந்"
+"த சிக்கலை விரைவில் தீர்க்கவும்."
 
 #: healthcheck/report.py:250
 msgid "Fatal hardware error"
-msgstr ""
+msgstr "அபாயகரமான வன்பொருள் பிழை"
 
 #: healthcheck/report.py:253
 msgid ""
 "A check detected a fatal problem with the hardware. It is causing the "
 "system to not work properly."
 msgstr ""
+"ஒரு காசோலை வன்பொருளில் ஒரு அபாயகரமான சிக்கலைக் கண்டறிந்தது. இது கணினி சரியாக வேலை "
+"செய்யாது."
 
 #: healthcheck/report.py:268
 msgid "Security advice"
-msgstr ""
+msgstr "பாதுகாப்பு அறிவுரை"
 
 #: healthcheck/report.py:271
 msgid ""
 "A check detected a possible security concern. It provides advice. Please "
 "consider it."
 msgstr ""
+"ஒரு காசோலை சாத்தியமான பாதுகாப்பு கவலையைக் கண்டறிந்தது. இது ஆலோசனைகளை வழங்குகிறது. "
+"தயவுசெய்து அதைக் கவனியுங்கள்."
 
 #: healthcheck/report.py:282
 msgid "Security warning"
-msgstr ""
+msgstr "பாதுகாப்பு எச்சரிக்கை"
 
 #: healthcheck/report.py:285
 msgid ""
 "A check detected a possible security problem. It is advised to solve it "
 "as soon as possible to mitigateany possible exploit."
 msgstr ""
+"ஒரு காசோலை சாத்தியமான பாதுகாப்பு சிக்கலைக் கண்டறிந்தது. சாத்தியமான சுரண்டலைக் "
+"குறைப்பதற்கு விரைவில் அதை தீர்க்க அறிவுறுத்தப்படுகிறது."
