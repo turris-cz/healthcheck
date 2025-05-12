@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2021-12-10 17:12+0100\n"
-"PO-Revision-Date: 2024-11-15 13:00+0000\n"
+"PO-Revision-Date: 2025-05-13 17:01+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
 "healthcheck-system/cs/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck_system/flash_writes.py:58 healthcheck_system/flash_writes.py:36
@@ -72,8 +72,8 @@ msgid ""
 msgstr ""
 "Náročné zápisové operace provádějte na jiných typech úložišť, zvlášť pokud "
 "úložiště MMC nelze vyměnit (např. je připájené na desce a ne vložené do "
-"slotu SD). Jedná se kromě jiného o služby pro sdílení souborů a cachování "
-"nebo o databáze a jiné nástroje pro sběr dat."
+"slotu SD). Jedná se kromě jiného o služby pro sdílení souborů a ukládání do "
+"mezipaměti nebo o databáze a jiné nástroje pro sběr dat."
 
 #: healthcheck_system/flash_writes.py:116
 msgid "Number of writes to MMC storage does not exceed limits"
@@ -107,7 +107,8 @@ msgstr "Měli byste jednat ihned, abyste zabránili trvalému poškození hardwa
 
 #: healthcheck_system/free_ram.py:38 healthcheck_system/free_ram.py:30
 msgid "watches amount of free ram and reports not enough space."
-msgstr "sleduje množství volné paměti RAM a hlásí nedostatek místa."
+msgstr ""
+"sleduje množství volné operační paměti (RAM) a hlásí nedostatek prostoru."
 
 #: healthcheck_system/free_ram.py:57
 msgid ""
@@ -160,7 +161,7 @@ msgstr "Zkontroluje množství volného místa v připojených souborových syst
 
 #: healthcheck_system/free_storage.py:98
 msgid "Specific mount point to be ignored (such as '/home')."
-msgstr "Konkrétní přípojný bod, který má být ignorován (například '/home')."
+msgstr "Konkrétní přípojný bod, který má být ignorován (například „/home“)."
 
 #: healthcheck_system/free_storage.py:103
 msgid "File Systems type to be ignored (such as 'sysfs')."
