@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2021-12-10 17:12+0100\n"
-"PO-Revision-Date: 2025-05-13 17:01+0000\n"
+"PO-Revision-Date: 2025-05-14 19:01+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
 "healthcheck-system/cs/>\n"
@@ -23,19 +23,22 @@ msgstr ""
 
 #: healthcheck_system/flash_writes.py:58 healthcheck_system/flash_writes.py:36
 msgid "Checks if system is not writing too much to flash storage."
-msgstr "Kontroluje, zda systém do flashového úložiště nezapisuje příliš mnoho."
+msgstr ""
+"Kontroluje, zda systém do flashového úložiště nezapisuje příliš intenzivně."
 
 #: healthcheck_system/flash_writes.py:78 healthcheck_system/flash_writes.py:68
 msgid "There is no flash device detected in system."
-msgstr "V systému nebylo detekováno žádné flashové zařízení."
+msgstr ""
+"V systému nebylo zjištěno žádné úložiště typu přímo přistupované flash "
+"paměti."
 
 #: healthcheck_system/flash_writes.py:81 healthcheck_system/flash_writes.py:71
 msgid ""
 "Check found no flash device in system. This is most likely because there is "
 "just no such device."
 msgstr ""
-"Kontrola nenalezla v systému žádné flashové zařízení. Je to pravděpodobně "
-"proto, že tu žádné takové zařízení prostě není."
+"Kontrola v systému nenalezla žádné úložiště typu přímo přistupované flash "
+"paměti. Nejspíš proto, že tu žádné takové zařízení zkrátka není."
 
 #: healthcheck_system/flash_writes.py:90
 msgid ""
@@ -45,11 +48,12 @@ msgid ""
 "writes to MMC can shorten lifespan to just a year or two. The that excessive "
 "writes are not regularly covered by warranty."
 msgstr ""
-"Počet zápisů na úložiště MMC je neodmyslitelně spojen s jeho životností. Ve "
-"srovnání s některými jinými běžnými úložišti, kde se nadměrné zápisy "
-"očekávají a životnost stále může pravidelně odpovídat životnosti zařízení, "
-"může nadměrný počet zápisů na MMC zkrátit životnost na pouhý rok nebo dva. "
-"Na tyto nadměrné zápisy se běžně nevztahuje záruka."
+"Od výše objemu zápisů na MMC úložiště se přímo odvíjí jeho životnost. V "
+"porovnání s některými jinými běžně používanými druhy úložišť, u kterých je s "
+"nadměrnými zápisy výslovně počítáno (a které díky tomu i tak běžně vydrží "
+"fungovat po celou předpokládanou dobu morální životnosti celého zařízení), "
+"může nadměrná intenzita zápisů na MMC zkrátit jeho životnost na pouhý rok "
+"nebo dva. Na tyto nadměrné zápisy se běžně nevztahuje záruka."
 
 #: healthcheck_system/flash_writes.py:97
 msgid "The calculation is since boot up that was {} ago."
@@ -148,8 +152,8 @@ msgid ""
 "You might want to check what processes are running on your router and how "
 "much memory they consume."
 msgstr ""
-"Možná budete chtít zkontrolovat, jaké procesy jsou na vašem routeru spuštěny "
-"a kolik paměti spotřebovávají."
+"Možná budete chtít zkontrolovat, jaké procesy jsou na vašem směrovači "
+"spuštěny a kolik paměti spotřebovávají."
 
 #: healthcheck_system/free_ram.py:147 healthcheck_system/free_ram.py:97
 msgid "System experiences memory shortage."
@@ -221,7 +225,7 @@ msgid ""
 "memory storages such as 'tmpfs' it might be enough to perform reboot."
 msgstr ""
 "To platí pro trvalá úložiště (hardwarová úložná zařízení). V případě "
-"paměťových úložišť, jako je \"tmpfs\", může stačit provést restart."
+"paměťových úložišť, jako je „tmpfs“, může stačit provést restart."
 
 #: healthcheck_system/free_storage.py:184
 #: healthcheck_system/free_storage.py:109
@@ -231,7 +235,7 @@ msgstr "K dispozici je dostatek volného úložného prostoru"
 #: healthcheck_system/free_storage.py:194
 #: healthcheck_system/free_storage.py:120
 msgid "Storage space is getting low"
-msgstr "Úložný prostor se vyčerpává"
+msgstr "Úložný prostor je vyčerpáván"
 
 #: healthcheck_system/free_storage.py:201
 #: healthcheck_system/free_storage.py:128
@@ -269,12 +273,12 @@ msgstr "Základní kontroly stability a odolnosti systému"
 
 #: healthcheck_system/merge_conffiles.py:52
 msgid "Notifies about updates of the configuration files in packages."
-msgstr "Upozorňuje na aktualizace konfiguračních souborů v balíčcích."
+msgstr "Upozorňuje na aktualizace souborů nastaveními z balíčků."
 
 #: healthcheck_system/merge_conffiles.py:65
 #: healthcheck_system/resolver_conf.py:27
 msgid "There are no configuration files with need for merge."
-msgstr "Neexistují žádné konfigurační soubory vyžadující sloučení."
+msgstr "Nemáte žádné soubory s nastaveními, které by bylo třeba sloučit."
 
 #: healthcheck_system/merge_conffiles.py:68
 #: healthcheck_system/resolver_conf.py:30
@@ -286,11 +290,12 @@ msgid ""
 "configuration file. Right now there are no configuration files that would "
 "require merging."
 msgstr ""
-"Konfigurační soubory se automaticky aktualizují pouze v případě, že nebyly "
-"mezitím změněny. Nikdy nejsou automaticky nahrazeny, pokud byly změněny. "
-"Nová verze je vždy umístěna do souboru s příponou '-opkg' s očekáváním, že "
-"uživatel bude svůj aktuální konfigurační soubor aktualizovat ručně. V tuto "
-"chvíli neexistují žádné konfigurační soubory, které by vyžadovaly sloučení."
+"Soubory s nastaveními budou automaticky aktualizovány pouze v případě, že "
+"nebyly mezitím změněny. Nikdy nejsou automaticky nahrazeny, pokud byly "
+"změněny. Nová verze je vždy umístěna do souboru s příponou „-opkg“ s "
+"očekáváním, že uživatel bude svůj aktuální soubor s nastaveními aktualizovat "
+"ručně. V tuto chvíli neexistují žádné soubory s nastaveními, které by "
+"vyžadovaly sloučení."
 
 #: healthcheck_system/merge_conffiles.py:83
 #: healthcheck_system/resolver_conf.py:45
@@ -305,7 +310,7 @@ msgstr ""
 #: healthcheck_system/resolver_conf.py:48
 msgid "The following configuration files from these packages should be merged:"
 msgstr ""
-"Následující konfigurační soubory z těchto balíčků by měly být sloučeny:"
+"Následující soubory s nastaveními z těchto balíčků by měly být sloučeny:"
 
 #: healthcheck_system/merge_conffiles.py:91
 #: healthcheck_system/resolver_conf.py:53
@@ -315,9 +320,9 @@ msgid ""
 "opkg' file (the original file name with '-opkg' appended and update your "
 "configuration accordingly. Then you can remove '*-opkg' file."
 msgstr ""
-"Tyto konfigurační soubory byly upraveny buď přímo vámi, nebo vámi použitou "
-"aplikací. Chcete zkontrolovat nový výchozí stav uložený v souboru '*-"
-"opkg' (původní název souboru s připojeným '-opkg' a podle toho aktualizovat "
+"Tyto soubory s nastaveními byly upraveny buď přímo vámi, nebo vámi použitou "
+"aplikací. Chcete zkontrolovat nový výchozí stav uložený v souboru „*-opkg2 ("
+"původní název souboru s připojeným '-opkg' a podle toho aktualizovat "
 "konfiguraci. Poté můžete soubor '*-opkg' odstranit."
 
 #: healthcheck_system/mmc_life.py:66 healthcheck_system/mmc_life.py:47
