@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2022-02-16 10:37+0100\n"
-"PO-Revision-Date: 2025-05-13 17:01+0000\n"
+"PO-Revision-Date: 2025-05-14 19:01+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/healthcheck/"
 "cs/>\n"
@@ -23,7 +23,9 @@ msgstr ""
 
 #: healthcheck/check.py:67
 msgid "Can be used to disable check execution. It has to be a boolean value."
-msgstr "Lze použít k zakázání provádění kontrol. Musí to být logická hodnota."
+msgstr ""
+"Lze použít k zakázání provádění kontrol. Je třeba, aby byla hodnota typu "
+"platí/neplatí."
 
 #: healthcheck/check.py:103
 msgid "Check execution failed with exception: "
@@ -35,25 +37,27 @@ msgstr "Zpětné sledování:"
 
 #: healthcheck/check.py:120
 msgid "Check execution is disabled"
-msgstr "Provedení kontrol je zakázáno"
+msgstr "Provádění kontrol je vypnuté"
 
 #: healthcheck/check.py:124
 msgid ""
 "Both plugin as check itself are disabled in configuration. You are "
 "rigorous I give you that."
-msgstr "Plugin i vlastní kontrola jsou v konfiguraci zakázané."
+msgstr ""
+"Jak příslušný zásuvný modul, tak i kontrola jako taková jsou v nastavení "
+"obojí zakázané – to je tedy přísnost…"
 
 #: healthcheck/check.py:126
 msgid ""
 "The plugin check is part of is explicitly disabled as whole in "
 "configuration."
 msgstr ""
-"Kontrola pluginu jako součásti je v konfiguraci explicitně zakázaná jako "
-"celek."
+"Kontrola zásuvného modulu jako součásti je v nastavení výslovně zakázaná "
+"jako celek."
 
 #: healthcheck/check.py:127
 msgid "The check is explicitly disabled in configuration."
-msgstr "Kontrola je v konfiguraci výslovně zakázána."
+msgstr "Kontrola je v nastavení výslovně zakázána."
 
 #: healthcheck/__main__.py:12
 msgid "System health checker."
@@ -82,8 +86,7 @@ msgstr "Periodická kontrola, které při nalezení problémů odesílá notifik
 #: healthcheck/__main__.py:30
 msgid "Check to be executed. If not specified then all checks are executed."
 msgstr ""
-"Kontrola, která má být provedena. Pokud není zadáno, provedou se všechny "
-"kontroly."
+"Kontrola, která má být provedena. Pokud není zadáno, budou provedeny všechny."
 
 #: healthcheck/__main__.py:92
 msgid "No such plugin"
@@ -91,7 +94,7 @@ msgstr "Žádný takový zásuvný modul"
 
 #: healthcheck/__main__.py:100
 msgid "No such check in plugin"
-msgstr "Žádná taková kontrola v pluginu"
+msgstr "Žádná taková kontrola v zásuvném modulu"
 
 #: healthcheck/_output.py:245
 msgid "#### Healthcheck detected the following new or deteriorated issues ####"
@@ -147,8 +150,8 @@ msgid ""
 "Can be used to disable all checks from this plugin. It has to be a "
 "boolean value."
 msgstr ""
-"Lze použít pro zákaz všech kontrol v tomto pluginu. Musí se jednat o "
-"pravdivostní hodnotu."
+"Lze použít pro zákaz všech kontrol v tomto zásuvném modulu. Je třeba, aby se "
+"jednalo o hodnotu typu platí/neplatí."
 
 #: healthcheck/report.py:75
 msgid "Inconclusive"
@@ -204,8 +207,8 @@ msgid ""
 "The check provides advice regarding the software running on the router. "
 "Please consider it."
 msgstr ""
-"Kontrola poskytuje rady týkající se softwaru běžícího na routeru. Zvažte "
-"prosím jejich využití."
+"Kontroly poskytují rady týkající se softwaru provozovaného na směrovači. "
+"Zvažte prosím jejich využití."
 
 #: healthcheck/report.py:161
 msgid "Software warning"
@@ -250,7 +253,7 @@ msgstr ""
 
 #: healthcheck/report.py:215
 msgid "Hardware warning"
-msgstr "Varování k hardwaru"
+msgstr "Varování ohledně hardware"
 
 #: healthcheck/report.py:218
 msgid ""
