@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2022-02-16 10:37+0100\n"
-"PO-Revision-Date: 2024-11-15 13:00+0000\n"
+"PO-Revision-Date: 2025-05-14 19:01+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
 "healthcheck-setup/cs/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.9-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck_setup/email_notifications.py:25
@@ -36,8 +36,8 @@ msgid ""
 "Turris system has notification system. Various components (including "
 "healthcheck) are using it to inform the administrator of possible issues."
 msgstr ""
-"Systém Turris obsahuje notifikační systém. Různé součásti, včetně "
-"healthcheck, ho využívají pro informování správce o možných problémech."
+"Systém Turris obsahuje notifikační systém. Různé součásti (včetně kontroly "
+"stavu) ho využívají pro informování správce o možných problémech."
 
 #: healthcheck_setup/email_notifications.py:41
 msgid ""
@@ -48,7 +48,7 @@ msgstr ""
 
 #: healthcheck_setup/email_notifications.py:51
 msgid "E-mail notifications will be sent out."
-msgstr "E-mailové notifikace se budou odesílat."
+msgstr "E-mailové notifikace budou odesílány."
 
 #: healthcheck_setup/email_notifications.py:54
 msgid "Notifications are sent to the following e-mail addresses: "
