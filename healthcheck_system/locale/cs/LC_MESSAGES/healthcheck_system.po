@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2021-12-10 17:12+0100\n"
-"PO-Revision-Date: 2025-05-14 19:01+0000\n"
+"PO-Revision-Date: 2025-05-17 19:01+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/"
 "healthcheck-system/cs/>\n"
@@ -161,7 +161,8 @@ msgstr "Systém trpí nedostatkem paměti."
 
 #: healthcheck_system/free_storage.py:73
 msgid "Checks amount of free space on mounted filesystems."
-msgstr "Zkontroluje množství volného místa v připojených souborových systémech."
+msgstr ""
+"Zkontroluje množství volného místa na připojených souborových systémech."
 
 #: healthcheck_system/free_storage.py:98
 msgid "Specific mount point to be ignored (such as '/home')."
@@ -169,8 +170,7 @@ msgstr "Konkrétní přípojný bod, který má být ignorován (například „
 
 #: healthcheck_system/free_storage.py:103
 msgid "File Systems type to be ignored (such as 'sysfs')."
-msgstr ""
-"Typy souborových systémů, který mají být ignorovány (například „sysfs“)."
+msgstr "Typ souborových systémů, který má být ignorován (například „sysfs“)."
 
 #: healthcheck_system/free_storage.py:146
 #: healthcheck_system/free_storage.py:110 healthcheck_system/free_storage.py:81
@@ -190,25 +190,24 @@ msgid ""
 "You should remove any unnecessary files and directories in case they were "
 "created by user(s) and not by system (unless you know what you are doing)."
 msgstr ""
-"Měli byste odstranit všechny nepotřebné soubory a adresáře v případě, že "
-"byly vytvořeny uživatelem (uživateli), nikoli systémem (pokud nevíte, co "
-"děláte)."
+"Měli byste odstranit všechny nepotřebné soubory a adresáře, které byly "
+"vytvořeny uživateli, nikoli systémem (ty jen pokud opravdu víte, co děláte)."
 
 #: healthcheck_system/free_storage.py:162 healthcheck_system/free_storage.py:92
 msgid ""
 " You can also remove some nonessential software you do not need to free "
 "storage space."
 msgstr ""
-" Můžete také odebrat některý nepodstatný software, který nepotřebujete, "
-"abyste uvolnili úložný prostor."
+" Prostor na úložišti je možné uvolnit také odebráním nějakého nepodstatného "
+"softwaru, který nepotřebujete."
 
 #: healthcheck_system/free_storage.py:164 healthcheck_system/free_storage.py:94
 msgid ""
 " You should also check snapshots and remove unnecessary ones (using schnapps "
 "or by any other way you are using)."
 msgstr ""
-" Měli byste také zkontrolovat snímky a odstranit nepotřebné (pomocí schnapps "
-"nebo jakýmkoli jiným způsobem, který používáte)."
+" Měli byste také zkontrolovat zachycené stavy a odstranit ty nepotřebné ("
+"pomocí schnapps nebo jakýmkoli jiným způsobem, který používáte)."
 
 #: healthcheck_system/free_storage.py:169 healthcheck_system/free_storage.py:97
 msgid ""
@@ -216,7 +215,7 @@ msgid ""
 "content resides in volatile memory."
 msgstr ""
 " V případě tohoto úložiště může také stačit pouze restartovat zařízení, "
-"protože obsah se nachází v nestálé paměti."
+"protože obsah se nachází v netrvalé paměti."
 
 #: healthcheck_system/free_storage.py:174
 #: healthcheck_system/free_storage.py:100
@@ -224,8 +223,8 @@ msgid ""
 "This applies to permanent storages (hardware storage devices). In case of "
 "memory storages such as 'tmpfs' it might be enough to perform reboot."
 msgstr ""
-"To platí pro trvalá úložiště (hardwarová úložná zařízení). V případě "
-"paměťových úložišť, jako je „tmpfs“, může stačit provést restart."
+"To platí pro trvalá úložiště (hardwarová úložná zařízení). V případě úložišť "
+"v operační paměti, jako je „tmpfs“, může stačit provést restart."
 
 #: healthcheck_system/free_storage.py:184
 #: healthcheck_system/free_storage.py:109
@@ -235,7 +234,7 @@ msgstr "K dispozici je dostatek volného úložného prostoru"
 #: healthcheck_system/free_storage.py:194
 #: healthcheck_system/free_storage.py:120
 msgid "Storage space is getting low"
-msgstr "Úložný prostor je vyčerpáván"
+msgstr "Dochází prostor na úložišti"
 
 #: healthcheck_system/free_storage.py:201
 #: healthcheck_system/free_storage.py:128
@@ -252,7 +251,7 @@ msgid ""
 msgstr ""
 "Mít úložné zařízení zaplněné téměř po okraj je nebezpečné, protože při "
 "aktualizacích systému nebo při aktualizaci či přidávání nových souborů může "
-"snadno dojít místo v úložišti. Navíc to také výrazně zpomaluje ukládání."
+"snadno dojít místo na úložišti. Navíc to také výrazně zpomaluje ukládání."
 
 #: healthcheck_system/free_storage.py:219
 #: healthcheck_system/free_storage.py:142
@@ -264,8 +263,8 @@ msgid ""
 "Storage is pretty much full. It is expected that writing or extending files "
 "can fail and services might start failing as well. You should act now!"
 msgstr ""
-"Úložiště je téměř plné. Očekává se, že zápis nebo rozšiřování souborů může "
-"selhat a také mohou začít selhávat služby. Měli byste jednat ihned!"
+"Úložiště je téměř plné. Je očekávatelné, že zápis nebo zvětšování souborů "
+"může selhat a také mohou začít selhávat služby. Měli byste jednat ihned!"
 
 #: healthcheck_system/__init__.py:38 healthcheck_system/__init__.py:32
 msgid "Basic system stability and endurance checks"
@@ -321,13 +320,13 @@ msgid ""
 "configuration accordingly. Then you can remove '*-opkg' file."
 msgstr ""
 "Tyto soubory s nastaveními byly upraveny buď přímo vámi, nebo vámi použitou "
-"aplikací. Chcete zkontrolovat nový výchozí stav uložený v souboru „*-opkg2 ("
-"původní název souboru s připojeným '-opkg' a podle toho aktualizovat "
-"konfiguraci. Poté můžete soubor '*-opkg' odstranit."
+"aplikací. Je třeba zkontrolovat nový výchozí stav uložený v souboru „*-opkg“ "
+"(původní název souboru s připojeným „-opkg“) a podle toho aktualizovat "
+"nastavení. Poté můžete soubor „*-opkg“ odstranit."
 
 #: healthcheck_system/mmc_life.py:66 healthcheck_system/mmc_life.py:47
 msgid "Watches wear of MMC storages plugged in to the router."
-msgstr "Sleduje opotřebení úložišť MMC připojených k routeru."
+msgstr "Sleduje opotřebení úložišť typu MMC, zapojených ve směrovači."
 
 #: healthcheck_system/mmc_life.py:86 healthcheck_system/mmc_life.py:76
 msgid "There is no MMC device detected in system."
@@ -351,7 +350,7 @@ msgstr "Nelze číst data extcsd."
 #: healthcheck_system/smart.py:152 healthcheck_system/mmc_life.py:96
 #: healthcheck_system/smart.py:86
 msgid "MMC tools (mmc-utils) are missing or not accessible."
-msgstr "Nástroje MMC (mmc-utils) chybí nebo nejsou přístupné."
+msgstr "Nástroje pro správu MMC (mmc-utils) chybí nebo nejsou přístupné."
 
 #: healthcheck_system/mmc_life.py:110 healthcheck_system/smart.py:132
 #: healthcheck_system/smart.py:153 healthcheck_system/mmc_life.py:97
@@ -370,18 +369,20 @@ msgid ""
 "You should install mmc-utils or any other package that provides mmc-utils's "
 "command 'mmc'."
 msgstr ""
-"Měli byste si nainstalovat mmc-utils nebo jiný balíček, který poskytuje "
-"příkaz 'mmc' z mmc-utils."
+"Měli byste nainstalovat mmc-utils nebo jiný balíček, který poskytuje příkaz "
+"„mmc“ z mmc-utils."
 
 #: healthcheck_system/mmc_life.py:129 healthcheck_system/mmc_life.py:116
 msgid "Reserved blocks on memory were depleted!"
-msgstr "Rezervované bloky paměti byly vyčerpány!"
+msgstr ""
+"Už nezbývají žádné (náhradní) bloky flash paměti pro nahrazování těch "
+"opotřebovaných!"
 
 #: healthcheck_system/mmc_life.py:133 healthcheck_system/mmc_life.py:131
 #: healthcheck_system/mmc_life.py:118
 #, python-format
 msgid "More than 80% of reserved blocks consumed!"
-msgstr "Spotřebováno více než 80 % objemu rezervovaných bloků!"
+msgstr "Spotřebováno více než 80 % objemu náhradních bloků!"
 
 #: healthcheck_system/mmc_life.py:132 healthcheck_system/mmc_life.py:119
 msgid "Device's lifespan is depleted at least: "
