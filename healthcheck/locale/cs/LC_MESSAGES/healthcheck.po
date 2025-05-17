@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2022-02-16 10:37+0100\n"
-"PO-Revision-Date: 2025-05-14 19:01+0000\n"
+"PO-Revision-Date: 2025-05-17 19:01+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/turris/healthcheck/"
 "cs/>\n"
@@ -142,8 +142,8 @@ msgid ""
 "and when should notification about persistent issues be send. In deafult "
 "it is set to: "
 msgstr ""
-"Časová perioda specifikovaná ve formátu pro cron. Určuje, jak často a kdy se "
-"budou posílat notifikace o přetrvávajících problémech. Výchozí hodnota je: "
+"Časová perioda specifikovaná ve formátu pro cron. Určuje, jak často a kdy "
+"budou posílány notifikace o přetrvávajících problémech. Výchozí hodnota je: "
 
 #: healthcheck/plugin.py:60
 msgid ""
@@ -184,7 +184,7 @@ msgstr "Úspěch"
 
 #: healthcheck/report.py:112
 msgid "Check passed. No problem was detected."
-msgstr "Kontrola byla úspěšně dokončena. Nebyl zjištěn žádný problém."
+msgstr "Kontrola úspěšně dokončena. Nebyl zjištěn žádný problém."
 
 #: healthcheck/report.py:126
 msgid "Try again later"
@@ -196,7 +196,7 @@ msgid ""
 "This is commonly becuase it lacks data to assess trends from."
 msgstr ""
 "Kontrolu nelze v tuto chvíli dokončit, ale mělo by to jít za chvíli. Obvykle "
-"to bývá proto, že nejsou k dispozici data pro vyhodnocení trendů."
+"to bývá proto, že ještě nejsou k dispozici data pro vyhodnocení trendů."
 
 #: healthcheck/report.py:147
 msgid "Software advise"
@@ -212,7 +212,7 @@ msgstr ""
 
 #: healthcheck/report.py:161
 msgid "Software warning"
-msgstr "Varování k softwaru"
+msgstr "Varování ohledně softwaru"
 
 #: healthcheck/report.py:164
 msgid ""
