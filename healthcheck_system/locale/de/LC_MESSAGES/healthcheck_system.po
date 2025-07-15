@@ -381,7 +381,7 @@ msgstr "Die Reserve-Blöcke des Speichers sind aufgebraucht!"
 #: healthcheck_system/mmc_life.py:133
 #, fuzzy, python-format
 msgid "More than 80% of reserved blocks consumed!"
-msgstr "Mehr als 80 % der reservierten Blöcke sind verbraucht!"
+msgstr "Mehr als 80% der reservierten Blöcke sind verbraucht!"
 
 #: healthcheck_system/mmc_life.py:134
 msgid "Device's lifespan is depleted at least: "
