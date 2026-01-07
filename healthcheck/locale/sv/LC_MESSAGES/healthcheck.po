@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2022-02-16 10:37+0100\n"
-"PO-Revision-Date: 2023-09-02 11:57+0000\n"
+"PO-Revision-Date: 2026-01-08 19:01+0000\n"
 "Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/turris/"
 "healthcheck/sv/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.1-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck/check.py:67
@@ -161,7 +161,7 @@ msgstr ""
 
 #: healthcheck/report.py:109
 msgid "Pass"
-msgstr ""
+msgstr "Godkänd"
 
 #: healthcheck/report.py:112
 msgid "Check passed. No problem was detected."
@@ -169,7 +169,7 @@ msgstr ""
 
 #: healthcheck/report.py:126
 msgid "Try again later"
-msgstr ""
+msgstr "Försök igen senare"
 
 #: healthcheck/report.py:129
 msgid ""
@@ -200,7 +200,7 @@ msgstr ""
 
 #: healthcheck/report.py:179
 msgid "Software error"
-msgstr ""
+msgstr "Mjukvarufel"
 
 #: healthcheck/report.py:182
 msgid ""
@@ -222,7 +222,7 @@ msgstr ""
 
 #: healthcheck/report.py:215
 msgid "Hardware warning"
-msgstr ""
+msgstr "Hårdvaruvarning"
 
 #: healthcheck/report.py:218
 msgid ""
@@ -233,7 +233,7 @@ msgstr ""
 
 #: healthcheck/report.py:232
 msgid "Hardware error"
-msgstr ""
+msgstr "Hårdvarufel"
 
 #: healthcheck/report.py:235
 msgid ""
@@ -245,7 +245,7 @@ msgstr ""
 
 #: healthcheck/report.py:250
 msgid "Fatal hardware error"
-msgstr ""
+msgstr "Dödligt hårdvarufel"
 
 #: healthcheck/report.py:253
 msgid ""
@@ -255,7 +255,7 @@ msgstr ""
 
 #: healthcheck/report.py:268
 msgid "Security advice"
-msgstr ""
+msgstr "Säkerhetsråd"
 
 #: healthcheck/report.py:271
 msgid ""
@@ -265,7 +265,7 @@ msgstr ""
 
 #: healthcheck/report.py:282
 msgid "Security warning"
-msgstr ""
+msgstr "Säkerhetsvarning"
 
 #: healthcheck/report.py:285
 msgid ""
