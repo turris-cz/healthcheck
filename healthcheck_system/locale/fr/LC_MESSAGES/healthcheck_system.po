@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2021-12-10 17:12+0100\n"
-"PO-Revision-Date: 2024-12-14 18:00+0000\n"
-"Last-Translator: ButterflyOfFire <boffire@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2026-03-22 18:09+0000\n"
+"Last-Translator: XVI <social-xvi@protonmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/turris/"
 "healthcheck-system/fr/>\n"
 "Language: fr\n"
@@ -18,16 +18,17 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.9-rc\n"
+"X-Generator: Weblate 5.17-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck_system/flash_writes.py:58
 msgid "Checks if system is not writing too much to flash storage."
 msgstr ""
+"Vérifier que le système ne fait pas trop d'écriture sur le stockage flash."
 
 #: healthcheck_system/flash_writes.py:78
 msgid "There is no flash device detected in system."
-msgstr ""
+msgstr "Il n'y a pas de stockage flash détecté dans le système."
 
 #: healthcheck_system/flash_writes.py:81
 msgid ""
