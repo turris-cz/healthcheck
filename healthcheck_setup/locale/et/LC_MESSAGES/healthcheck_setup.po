@@ -9,44 +9,51 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2022-02-16 10:37+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-04-19 07:09+0000\n"
+"Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/turris/"
+"healthcheck-setup/et/>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck_setup/email_notifications.py:25
 msgid "Checks if e-mail notifications are set up."
-msgstr ""
+msgstr "E-postiga saadetavate teavituste kontroll."
 
 #: healthcheck_setup/email_notifications.py:32
 msgid "Set up e-mail notifications to be notified of router events"
-msgstr ""
+msgstr "Teavitamaks ruuteriga toimunud sündmustest seadista e-post"
 
 #: healthcheck_setup/email_notifications.py:35
 msgid ""
 "Turris system has notification system. Various components (including "
 "healthcheck) are using it to inform the administrator of possible issues."
 msgstr ""
+"Turrisel on olemas teavitussüsteem. Erinevad komponendid (sealhulgas "
+"korrasoleku kontroll) kasutavad seda teavitamaks peakasutajat võimalikest "
+"probleemidest."
 
 #: healthcheck_setup/email_notifications.py:41
 msgid ""
 "Go to the \"Maintenance\" setting in Foris and set up e-mail "
 "notifications there."
 msgstr ""
+"Ava Forises „Hoolduse“ vaade ning seadista seal e-postiga saadetavad "
+"teavitused."
 
 #: healthcheck_setup/email_notifications.py:51
 msgid "E-mail notifications will be sent out."
-msgstr ""
+msgstr "E-postipõhised teavitused kuuluvad saatmisele."
 
 #: healthcheck_setup/email_notifications.py:54
 msgid "Notifications are sent to the following e-mail addresses: "
-msgstr ""
+msgstr "Teavitused saadetakse järgmistele e-posti aadressidele: "
 
 #: healthcheck_setup/__init__.py:23
 msgid "Suggestion for router setup."
-msgstr ""
+msgstr "Soovitus ruuteri seadistamiseks."
