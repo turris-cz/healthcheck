@@ -9,14 +9,16 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2022-02-16 10:37+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-04-19 07:09+0000\n"
+"Last-Translator: Priit Jõerüüt <jrthwlate@users.noreply.hosted.weblate.org>\n"
+"Language-Team: Estonian <https://hosted.weblate.org/projects/turris/"
+"healthcheck/et/>\n"
 "Language: et\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.17.1-dev\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck/check.py:67
@@ -69,7 +71,7 @@ msgstr ""
 
 #: healthcheck/__main__.py:23
 msgid "Run healthcheck in background"
-msgstr ""
+msgstr "Käivita korrasoleku kontroll taustal"
 
 #: healthcheck/__main__.py:25
 msgid "Periodic check that sends notifications when issues are found"
@@ -90,14 +92,20 @@ msgstr ""
 #: healthcheck/_output.py:245
 msgid "#### Healthcheck detected the following new or deteriorated issues ####"
 msgstr ""
+"#### Korrasoleku kontrolli käigus said tuvastatud järgnevad uued vead või "
+"senised vead, mile olukorda on muutunud halvemaks ####"
 
 #: healthcheck/_output.py:248
 msgid "#### Healthcheck detected improvement on following issues ####"
 msgstr ""
+"#### Korrasoleku kontrolli käigus said tuvastatud järgnevad vead, mile "
+"olukorda on muutunud paremaks ####"
 
 #: healthcheck/_output.py:251
 msgid "#### Healthcheck still reports the following issues ####"
 msgstr ""
+"#### Korrasoleku kontroll teavitab jätkuvalt järgmistet vigadest/"
+"probleemidest ####"
 
 #: healthcheck/_output.py:277
 msgid "Can be used to disable notifications."
