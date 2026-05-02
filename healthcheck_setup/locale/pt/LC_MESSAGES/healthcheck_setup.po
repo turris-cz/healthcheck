@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2022-02-16 10:37+0100\n"
-"PO-Revision-Date: 2026-05-02 23:10+0000\n"
+"PO-Revision-Date: 2026-05-04 00:09+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/"
 "healthcheck-setup/pt/>\n"
@@ -23,31 +23,37 @@ msgstr ""
 
 #: healthcheck_setup/email_notifications.py:25
 msgid "Checks if e-mail notifications are set up."
-msgstr ""
+msgstr "Verifica se as notificações por e-mail estão configuradas."
 
 #: healthcheck_setup/email_notifications.py:32
 msgid "Set up e-mail notifications to be notified of router events"
 msgstr ""
+"Configura notificações por e-mail para ser notificado de eventos do router"
 
 #: healthcheck_setup/email_notifications.py:35
 msgid ""
 "Turris system has notification system. Various components (including "
 "healthcheck) are using it to inform the administrator of possible issues."
 msgstr ""
+"O sistema Turris tem sistema de notificações. Vários componentes (incluindo "
+"a verificação de saúde) usam-no para informar o administrador de possíveis "
+"problemas."
 
 #: healthcheck_setup/email_notifications.py:41
 msgid ""
 "Go to the \"Maintenance\" setting in Foris and set up e-mail "
 "notifications there."
 msgstr ""
+"Vá à definição \"Manutenção\" em Foris e configure lá as notificações por e-"
+"mail."
 
 #: healthcheck_setup/email_notifications.py:51
 msgid "E-mail notifications will be sent out."
-msgstr ""
+msgstr "Notificações por e-mail vão ser enviadas."
 
 #: healthcheck_setup/email_notifications.py:54
 msgid "Notifications are sent to the following e-mail addresses: "
-msgstr ""
+msgstr "Notificações são enviadas para os seguintes endereços de e-mail: "
 
 #: healthcheck_setup/__init__.py:23
 msgid "Suggestion for router setup."
