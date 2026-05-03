@@ -9,29 +9,34 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2021-12-10 17:12+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-05-04 00:09+0000\n"
+"Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/"
+"healthcheck-system/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.17.1\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck_system/flash_writes.py:58
 msgid "Checks if system is not writing too much to flash storage."
 msgstr ""
+"Verifica se o sistema não está a escrever demasiado no armazenamento flash."
 
 #: healthcheck_system/flash_writes.py:78
 msgid "There is no flash device detected in system."
-msgstr ""
+msgstr "Não há nenhum dispositivo flash detetado no sistema."
 
 #: healthcheck_system/flash_writes.py:81
 msgid ""
 "Check found no flash device in system. This is most likely because there "
 "is just no such device."
 msgstr ""
+"A verificação descobriu que não há nenhum dispositivo flash no sistema. Isto "
+"provavelmente porque não existe tal dispositivo."
 
 #: healthcheck_system/flash_writes.py:94
 msgid ""
@@ -41,18 +46,24 @@ msgid ""
 "the excessive writes to MMC can shorten lifespan to just a year or two. "
 "The that excessive writes are not regularly covered by warranty."
 msgstr ""
+"O número de escritas em armazenamentos MMC está por natureza vinculado ao "
+"tempo de vida deles. Comparado com outros armazenamentos regulares onde a "
+"escrita excessiva é esperada e o tempo de vida consegue regularmente "
+"acompanhar o tempo de vida do aparelho, a escrita excessiva em MMC pode "
+"encurtar o tempo de vida para apenas um ano ou dois. Essas escritas "
+"excessivas não são regularmente cobertas pela garantia."
 
 #: healthcheck_system/flash_writes.py:101
 msgid "The calculation is since boot up that was {} ago."
-msgstr ""
+msgstr "O cálculo é desde o arranque que foi há {}."
 
 #: healthcheck_system/flash_writes.py:103
 msgid "The amount of recorded sector writes is {}."
-msgstr ""
+msgstr "A quantidade de escritas de sector registadas é {}."
 
 #: healthcheck_system/flash_writes.py:105
 msgid "That is {} sector writes per hour."
-msgstr ""
+msgstr "Isso é {} escritas de sector por hora."
 
 #: healthcheck_system/flash_writes.py:109
 msgid ""
@@ -61,100 +72,117 @@ msgid ""
 "in SD slot). These are but not limited to services for file sharing and "
 "caching as well as databases or other data collectors."
 msgstr ""
+"Mantenha as operações de escrita pesadas em outros tipos de armazenamento, "
+"especialmente se o armazenamento MMC não puder ser substituído (tal como "
+"estar soldado na placa e não inserido em slot SD). Estes não estão limitados "
+"a serviços para partilha de ficheiros e cache assim como bases de dados e "
+"outros coletores de dados."
 
 #: healthcheck_system/flash_writes.py:120
 msgid "Number of writes to MMC storage does not exceed limits"
-msgstr ""
+msgstr "O número de escritas no armazenamento MMC não excede o limite"
 
 #: healthcheck_system/flash_writes.py:130
 msgid ""
 "The amount of writes is hight but it is too soon after boot to reliably "
 "assess the impact"
 msgstr ""
+"A quantidade de escritas é alta mas é demasiado cedo após o arranque para "
+"avaliação fiável do impacto"
 
 #: healthcheck_system/flash_writes.py:134
 msgid ""
 "It is possible that this is just write happenig right after the boot and "
 "all will settle down in a while."
 msgstr ""
+"É possível que isto seja apenas escrita a acontecer logo após o arranque e "
+"que poderá acalmar daqui a algum tempo."
 
 #: healthcheck_system/flash_writes.py:146
 msgid "The amount of writes is considerably high"
-msgstr ""
+msgstr "A quantidade de escritas é consideravelmente alta"
 
 #: healthcheck_system/flash_writes.py:153
 msgid "The amount of writes is really high!"
-msgstr ""
+msgstr "A quantidade de escritas é realmente alta!"
 
 #: healthcheck_system/flash_writes.py:156
 msgid "You should act now to prevent permanent hardware damage!"
-msgstr ""
+msgstr "Você deve atuar agora para prevenir danos de hardware permanentes!"
 
 #: healthcheck_system/free_ram.py:38
 msgid "watches amount of free ram and reports not enough space."
 msgstr ""
+"monitoriza a quantidade de ram livre e reporta que não há espaço suficiente."
 
 #: healthcheck_system/free_ram.py:57
 msgid ""
 "Amount of memory or less that triggers error. The format is number and "
 "unit (such as '80MB')"
 msgstr ""
+"Quantidade de memória ou menos que despoleta o erro. O formato é número e "
+"unidade (tal como '80MB')"
 
 #: healthcheck_system/free_ram.py:64
 msgid ""
 "Amount of memory or less that triggers warning. The format is number and "
 "unit (such as '160MB')"
 msgstr ""
+"Quantidade de memória ou menos que despoleta o aviso. O formato é número e "
+"unidade (tal como '160MB')"
 
 #: healthcheck_system/free_ram.py:113
 msgid "Amount of free memory: "
-msgstr ""
+msgstr "Quantidade de memória livre: "
 
 #: healthcheck_system/free_ram.py:116
 msgid "Processes consuming the most memory:"
-msgstr ""
+msgstr "Processos a consumir a maioria da memória:"
 
 #: healthcheck_system/free_ram.py:130
 msgid "System seems to have enough free memory."
-msgstr ""
+msgstr "Sistema parece ter memória livre suficiente."
 
 #: healthcheck_system/free_ram.py:137
 msgid "System seems to have not enough free memory."
-msgstr ""
+msgstr "Sistema parece não ter memória livre suficiente."
 
 #: healthcheck_system/free_ram.py:140 healthcheck_system/free_ram.py:150
 msgid ""
 "You might want to check what processes are running on your router and how"
 " much memory they consume."
 msgstr ""
+"Você pode querer verificar que processos estão a correr no seu router e "
+"quanta memória eles consomem."
 
 #: healthcheck_system/free_ram.py:147
 msgid "System experiences memory shortage."
-msgstr ""
+msgstr "O sistema tem falta de memória."
 
 #: healthcheck_system/free_storage.py:73
 msgid "Checks amount of free space on mounted filesystems."
 msgstr ""
+"Verifica a quantidade de espaço livre nos sistemas de ficheiros montados."
 
 #: healthcheck_system/free_storage.py:98
 msgid "Specific mount point to be ignored (such as '/home')."
-msgstr ""
+msgstr "Ponto de montagem específico a ser ignorado (tal como '/home')."
 
 #: healthcheck_system/free_storage.py:103
 msgid "File Systems type to be ignored (such as 'sysfs')."
-msgstr ""
+msgstr "Tipo de Sistemas de Ficheiros a serem ignorados (tal como 'sysfs')."
 
 #: healthcheck_system/free_storage.py:146
 msgid " out of "
-msgstr ""
+msgstr " fora de "
 
 #: healthcheck_system/free_storage.py:148
 msgid " available on device: "
-msgstr ""
+msgstr " disponível no dispositivo: "
 
 #: healthcheck_system/free_storage.py:154
 msgid "used"
-msgstr ""
+msgstr "usado"
 
 #: healthcheck_system/free_storage.py:157
 msgid ""
@@ -162,42 +190,56 @@ msgid ""
 " created by user(s) and not by system (unless you know what you are "
 "doing)."
 msgstr ""
+"Deve remover quaisquer ficheiros e diretórios desnecessários no caso de "
+"terem sido criados por utilizador(es) e não pelo sistema (a menos que saiba "
+"o que está a fazer)."
 
 #: healthcheck_system/free_storage.py:162
 msgid ""
 " You can also remove some nonessential software you do not need to free "
 "storage space."
 msgstr ""
+" Também pode remover algum software não essencial de que não precise para "
+"libertar espaço de armazenamento."
 
 #: healthcheck_system/free_storage.py:164
 msgid ""
 " You should also check snapshots and remove unnecessary ones (using "
 "schnapps or by any other way you are using)."
 msgstr ""
+" Deve também verificar os instantâneos e remover os desnecessários (usando "
+"schnapps ou por outro modo que esteja a usar)."
 
 #: healthcheck_system/free_storage.py:169
 msgid ""
 " In case of this storage it can also be enough to just reboot device as "
 "content resides in volatile memory."
 msgstr ""
+" No caso deste armazenamento pode ser suficiente apenas reiniciar o aparelho "
+"pois o conteúdo reside em memória volátil."
 
 #: healthcheck_system/free_storage.py:174
 msgid ""
 "This applies to permanent storages (hardware storage devices). In case of"
 " memory storages such as 'tmpfs' it might be enough to perform reboot."
 msgstr ""
+"Isto aplica-se a armazenamentos permanentes (dispositivos de armazenamento "
+"de hardware). No caso de armazenamentos em memória como 'tmpfs' pode ser "
+"suficiente efetuar o reiniciar."
 
 #: healthcheck_system/free_storage.py:184
 msgid "There is enough of free storage space"
-msgstr ""
+msgstr "Existe espaço de armazenamento livre suficiente"
 
 #: healthcheck_system/free_storage.py:194
 msgid "Storage space is getting low"
-msgstr ""
+msgstr "O espaço de armazenamento está a ficar curto"
 
 #: healthcheck_system/free_storage.py:201
 msgid "Amount of free storage space is getting dangerously low"
 msgstr ""
+"A quantidade de espaço de armazenamento livre está a ficar perigosamente "
+"baixa"
 
 #: healthcheck_system/free_storage.py:207
 msgid ""
@@ -206,10 +248,15 @@ msgid ""
 "updated or new added. Not only that it also considerably slows down the "
 "storage."
 msgstr ""
+"Ter o dispositivo de armazenamento cheio quase até ao gargalo é perigoso "
+"pois pode facilmente ficar sem espaço de armazenamento com atualizações do "
+"sistema ou com ficheiros a serem atualizados ou novos adicionados. Não "
+"apenas isso também pode reduzir consideravelmente a velocidade do "
+"armazenamento."
 
 #: healthcheck_system/free_storage.py:219
 msgid "Storage is full!"
-msgstr ""
+msgstr "O armazenamento está cheio!!!"
 
 #: healthcheck_system/free_storage.py:225
 msgid ""
@@ -217,19 +264,23 @@ msgid ""
 "files can fail and services might start failing as well. You should act "
 "now!"
 msgstr ""
+"O armazenamento está totalmente cheio. É esperado que o escrever ou estender "
+"ficheiros falhe e os serviços podem começar a falhar também. Você deve atuar "
+"agora!"
 
 #: healthcheck_system/__init__.py:44
 msgid "Basic system stability and endurance checks"
-msgstr ""
+msgstr "Verificações básicas de estabilidade e resistência do sistema"
 
 #: healthcheck_system/merge_conffiles.py:56
 msgid "Notifies about updates of the configuration files in packages."
 msgstr ""
+"Notifica acerca de atualizações dos ficheiros de configuração nos pacotes."
 
 #: healthcheck_system/merge_conffiles.py:69
 #: healthcheck_system/resolver_conf.py:31
 msgid "There are no configuration files with need for merge."
-msgstr ""
+msgstr "Não existem ficheiros de configuração precisar de fusão."
 
 #: healthcheck_system/merge_conffiles.py:72
 #: healthcheck_system/resolver_conf.py:34
@@ -241,6 +292,12 @@ msgid ""
 "current configuration file. Right now there are no configuration files "
 "that would require merging."
 msgstr ""
+"Os ficheiros de configuração são atualizados automaticamente apenas se não "
+"forem modificados entretanto. Eles nunca são substituídos automaticamente "
+"após serem modificados. A nova versão é sempre colocada no ficheiro com "
+"sufixo '-opkg' com a expectativa que o utilizador vai atualizar manualmente "
+"o seu ficheiro de configuração atual. Neste momento não existem ficheiros de "
+"configuração a precisar de fusão."
 
 #: healthcheck_system/merge_conffiles.py:87
 #: healthcheck_system/resolver_conf.py:49
@@ -248,11 +305,14 @@ msgid ""
 "There are some configuration files with updated defaults that should be "
 "reviewed and merged."
 msgstr ""
+"Existem alguns ficheiros de configuração com predefinições atualizadas que "
+"devem ser revistos e fundidos."
 
 #: healthcheck_system/merge_conffiles.py:90
 #: healthcheck_system/resolver_conf.py:52
 msgid "The following configuration files from these packages should be merged:"
 msgstr ""
+"Os seguintes ficheiros de configuração destes pacotes devem ser fundidos:"
 
 #: healthcheck_system/merge_conffiles.py:95
 #: healthcheck_system/resolver_conf.py:57
@@ -265,11 +325,11 @@ msgstr ""
 
 #: healthcheck_system/mmc_life.py:70
 msgid "Watches wear of MMC storages plugged in to the router."
-msgstr ""
+msgstr "Monitoriza o desgaste de armazenamentos MMC ligados no router."
 
 #: healthcheck_system/mmc_life.py:88
 msgid "There is no MMC device detected in system."
-msgstr ""
+msgstr "Não existe nenhum dispositivo MMC detetado no sistema."
 
 #: healthcheck_system/mmc_life.py:91
 msgid ""
