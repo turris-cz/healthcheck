@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2021-12-10 17:12+0100\n"
-"PO-Revision-Date: 2026-05-04 00:09+0000\n"
+"PO-Revision-Date: 2026-05-05 20:11+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/"
 "healthcheck-system/pt/>\n"
@@ -322,6 +322,11 @@ msgid ""
 "'*-opkg' file (the original file name with '-opkg' appended and update "
 "your configuration accordingly. Then you can remove '*-opkg' file."
 msgstr ""
+"Estes ficheiros de configuração foram modificados ou diretamente por si ou "
+"por uma aplicação que usou. Deve querer verificar a nova predefinição "
+"estática guardada no ficheiro '*-opkg' (o nome do ficheiro original com '-"
+"opkg' acrescentado) e atualizar a sua configuração de maneira apropriada. "
+"Depois pode remover o ficheiro '*-opkg'."
 
 #: healthcheck_system/mmc_life.py:70
 msgid "Watches wear of MMC storages plugged in to the router."
@@ -336,25 +341,27 @@ msgid ""
 "Check found no MMC block device in system. This is most likely because "
 "there is just no such device plugged in."
 msgstr ""
+"A verificação não encontrou nenhum dispositivo de bloco MMC no sistema. O "
+"mais provável disto é não haver mesmo nenhum dispositivo destes ligado."
 
 #: healthcheck_system/mmc_life.py:106 healthcheck_system/smart.py:137
 #: healthcheck_system/smart.py:158
 msgid "It is not possible to read extcsd data."
-msgstr ""
+msgstr "Não é possível ler os dados extcsd."
 
 #: healthcheck_system/mmc_life.py:110 healthcheck_system/smart.py:141
 #: healthcheck_system/smart.py:162
 msgid "MMC tools (mmc-utils) are missing or not accessible."
-msgstr ""
+msgstr "Ferramentas MMC (mmc-utils) estão a faltar ou inacessíveis."
 
 #: healthcheck_system/mmc_life.py:112 healthcheck_system/smart.py:142
 #: healthcheck_system/smart.py:163
 msgid "Read failed with error: "
-msgstr ""
+msgstr "Leitura falhou com erro: "
 
 #: healthcheck_system/mmc_life.py:113
 msgid "MMC does not provide information about its lifespan."
-msgstr ""
+msgstr "A MMC não fornece informação sobre sua duração de vida."
 
 #: healthcheck_system/mmc_life.py:117 healthcheck_system/smart.py:146
 #: healthcheck_system/smart.py:167
@@ -362,19 +369,21 @@ msgid ""
 "You should install mmc-utils or any other package that provides mmc-"
 "utils's command 'mmc'."
 msgstr ""
+"Deve instalar o mmc-utils ou qualquer outro pacote que forneça o comando "
+"'mmc' do mmc-utils."
 
 #: healthcheck_system/mmc_life.py:131
 msgid "Reserved blocks on memory were depleted!"
-msgstr ""
+msgstr "Os blocos reservados na memória foram esgotados!"
 
 #: healthcheck_system/mmc_life.py:133
 #, python-format
 msgid "More than 80% of reserved blocks consumed!"
-msgstr ""
+msgstr "Mais de 80% o dos blocos reservados foram consumidos!"
 
 #: healthcheck_system/mmc_life.py:134
 msgid "Device's lifespan is depleted at least: "
-msgstr ""
+msgstr "Tempo de vida do dispositivo foi esgotado pelo menos: "
 
 #: healthcheck_system/mmc_life.py:135
 msgid ""
@@ -385,6 +394,12 @@ msgid ""
 "very heavily in the past. Note that the manufacturers do not provide "
 "warranty if MMC was used heavily.\n"
 msgstr ""
+"O armazenamento MMC tem quantidade limitada de escritas e por isso tem tempo "
+"de vida limitado. Isto significa que é normal e esperado que os blocos "
+"reservados vão diminuir se o seu dispositivo já tiver anos. No caso de um "
+"novo dispositivo isto pode ser defeito de fabrico mas mais provavelmente foi "
+"submetido a utilização pesada no passado. Note que os fabricantes não dão "
+"garantia se a MMC foi usada de maneira pesada.\n"
 
 #: healthcheck_system/mmc_life.py:143
 msgid ""
@@ -393,22 +408,27 @@ msgid ""
 "tasks such as file sharing, databases, containers, logs and others to "
 "some other storage device."
 msgstr ""
+"Para prolongar o tempo de vida do dispositivo deve minimizar a quantidade de "
+"escritas (de preferência para apenas as atualizações do sistema). Isto "
+"significa mover todas as tarefas se escrita pesadas tais como partilha de "
+"ficheiros, bases de dados, contentores, relatórios e outros para outro tipo "
+"de dispositivo de armazenamento."
 
 #: healthcheck_system/mmc_life.py:154
 msgid "Life of MMC is all right."
-msgstr ""
+msgstr "Vida do MMC está boa."
 
 #: healthcheck_system/mmc_life.py:161
 msgid "Life of MMC is getting short."
-msgstr ""
+msgstr "Vida do MMC está a ficar curta."
 
 #: healthcheck_system/mmc_life.py:168
 msgid "Life of MMC is getting dangerously short!"
-msgstr ""
+msgstr "Vida do MMC está a ficar perigosamente curta!"
 
 #: healthcheck_system/mmc_life.py:175
 msgid "MMC is end of life."
-msgstr ""
+msgstr "MMC está no fim de vida."
 
 #: healthcheck_system/mmc_life.py:178
 msgid ""
@@ -417,32 +437,43 @@ msgid ""
 "dear to you. It should be replaced if possible. Either with same type of "
 "device or with different in case it is MMC soldered to board in device."
 msgstr ""
+"Não há nada que possa ser feito agora. É demasiado tarde. O mais provável é "
+"a MMC já não ser utilizável. Deve parar de usa-la se os seus dados são "
+"importantes para si. Deve ser substituída se possível. Seja pelo mesmo tipo "
+"de dispositivo ou por diferente no caso de ser uma MMC soldada na placa do "
+"aparelho."
 
 #: healthcheck_system/pkg_check.py:48
 msgid ""
 "Verify that none of the user's modifications in files provided by "
 "packages would be removed by update."
 msgstr ""
+"Verifica que nenhuma das modificações do utilizador nos ficheiros fornecidos "
+"por pacotes será removida pela atualização."
 
 #: healthcheck_system/pkg_check.py:71
 msgid "All files provided by packages are in their original state"
-msgstr ""
+msgstr "Todos os ficheiros fornecidos por pacotes estão no seu estado original"
 
 #: healthcheck_system/pkg_check.py:74
 msgid ""
 "No files from packages were modified and thus there is no danger that "
 "subsequent update would erase these changes."
 msgstr ""
+"Nenhuns ficheiros de pacotes foram modificados e assim não há perigo que "
+"atualizações subsequentes possam apagar essas modificações."
 
 #: healthcheck_system/pkg_check.py:86
 msgid "Some files from system packages were modified."
-msgstr ""
+msgstr "Alguns ficheiros de pacotes de sistema foram modificados."
 
 #: healthcheck_system/pkg_check.py:90
 msgid ""
 "The changes in these files from these packages are going to be wiped with"
 " subsequent updates:"
 msgstr ""
+"As modificações nestes ficheiros destes pacotes vão ser limpas com "
+"atualizações subsequentes:"
 
 #: healthcheck_system/pkg_check.py:96
 msgid ""
@@ -455,16 +486,26 @@ msgid ""
 "If you are modifying some sort of the script you should think about "
 "sending your change to the upstream. It is open-source non the less."
 msgstr ""
+"Você deve reverter as alterações ao reinstalar os pacotes afetados e "
+"investigar a abordagem alternativa para o que está a tentar conseguir "
+"fazer.\n"
+"A maioria dos pacotes fornecem uma maneira de adicionar configuração sem ter "
+"de modificar o ficheiro de configuração raiz. Procure diretórios com o "
+"sufixo '.d'.\n"
+"Se você está a modificar algum tipo de script deveria pensar em enviar a sua "
+"alteração para o autor. Apesar de tudo, isto é código aberto."
 
 #: healthcheck_system/services.py:32
 msgid ""
 "Check if there is no disabled service that would be re-enabled with "
 "update."
 msgstr ""
+"Verifica se não há nenhum serviço desativado que iria ser reativado com a "
+"atualização."
 
 #: healthcheck_system/services.py:39
 msgid "All wanted services are enabled."
-msgstr ""
+msgstr "Todos os serviços desejados estão ativos."
 
 #: healthcheck_system/services.py:42
 msgid ""
@@ -472,18 +513,25 @@ msgid ""
 "previously disabled. All of such services are enabled and are going to be"
 " started on startup."
 msgstr ""
+"Alguns dos serviços são ativados automaticamente mesmo se eles estavam "
+"desativados anteriormente. Todos esses serviços estão ativos e vão ser "
+"iniciados durante o arranque do sistema."
 
 #: healthcheck_system/services.py:55
 msgid ""
 "Some services currently disabled are going to be enabled with future "
 "updates."
 msgstr ""
+"Alguns serviços atualmente desativados vão ser ativados com atualizações "
+"futuras."
 
 #: healthcheck_system/services.py:59
 msgid ""
 "Following disabled services are going to be re-enabled with future "
 "updates: "
 msgstr ""
+"Os seguintes serviços desativados vão ser re-ativados com atualizações "
+"futuras: "
 
 #: healthcheck_system/services.py:62
 msgid ""
@@ -505,7 +553,7 @@ msgstr ""
 
 #: healthcheck_system/services.py:113
 msgid "All running services are enabled."
-msgstr ""
+msgstr "Todos os serviços a correr estão ativos."
 
 #: healthcheck_system/services.py:116
 msgid ""
