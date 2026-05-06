@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2021-12-10 17:12+0100\n"
-"PO-Revision-Date: 2026-05-05 20:11+0000\n"
+"PO-Revision-Date: 2026-05-06 21:11+0000\n"
 "Last-Translator: Américo Monteiro <a_monteiro@gmx.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/turris/"
 "healthcheck-system/pt/>\n"
@@ -538,18 +538,24 @@ msgid ""
 "These services are automatically enabled even if they were previously "
 "disabled to ensure router's functionality."
 msgstr ""
+"Estes serviços são ativados automaticamente mesmo estando anteriormente "
+"desativados para assegurar a funcionalidade do router."
 
 #: healthcheck_system/services.py:69
 msgid ""
 "To solve this you should configure system to not install software you do "
 "not want."
 msgstr ""
+"Para resolver isto deve configurar o sistema para não instalar software que "
+"não deseja."
 
 #: healthcheck_system/services.py:106
 msgid ""
 "Checks if currently running services would be automatically strated after"
 " boot."
 msgstr ""
+"Verifica se os serviços a correr atualmente seriam iniciados automaticamente "
+"após arranque do sistema."
 
 #: healthcheck_system/services.py:113
 msgid "All running services are enabled."
@@ -561,31 +567,39 @@ msgid ""
 "activated. All currently running services are enabled so you should not "
 "miss any service after reboot."
 msgstr ""
+"Os serviços não serão iniciados automaticamente no próximo arranque a menos "
+"que estejam ativados. Todos os serviços atualmente a correr estão ativos, "
+"assim não deve perder nenhum serviço após reiniciar o sistema."
 
 #: healthcheck_system/services.py:129
 msgid "There are currently running services that are not enabled."
-msgstr ""
+msgstr "Existem serviços a correr atualmente que não estão ativos."
 
 #: healthcheck_system/services.py:133
 msgid "Following currently running services are disabled: "
-msgstr ""
+msgstr "Os seguintes serviços a correr atualmente estão desativados: "
 
 #: healthcheck_system/services.py:136
 msgid ""
 "Enabled services are started on startup. You might want to enable these "
 "services."
 msgstr ""
+"Os serviços ativados são iniciados no arranque. Deverá querer ativar esses "
+"serviços."
 
 #: healthcheck_system/services.py:140
 msgid "Using either LuCI or SSH enable mentioned services."
-msgstr ""
+msgstr "Usando os serviços mencionados seja com LuCI ou SSH ativo."
 
 #: healthcheck_system/smart.py:120
 msgid "There is no ATA/SATA/NVMe device detected in system."
-msgstr ""
+msgstr "Não existe nenhum dispositivo ATA/SATA/NVMe detetado no sistema."
 
 #: healthcheck_system/smart.py:123
 msgid ""
 "Check found no ATA/SATA/NVMe block device in system. This is most likely "
 "because there is just no such device plugged in."
 msgstr ""
+"A verificação não encontrou nenhum dispositivo de bloco ATA/SATA/NVMe no "
+"sistema. Isto é mais provável porque não há mesmo nenhum destes dispositivos "
+"ligado."
