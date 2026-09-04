@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: healthcheck 0.1\n"
 "Report-Msgid-Bugs-To: packaging@turris.cz\n"
 "POT-Creation-Date: 2021-12-10 17:12+0100\n"
-"PO-Revision-Date: 2023-07-22 19:05+0000\n"
-"Last-Translator: Milan Šalka <salka.milan@googlemail.com>\n"
+"PO-Revision-Date: 2026-09-04 14:04+0000\n"
+"Last-Translator: Atec <dr.atec@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/turris/"
 "healthcheck-system/sk/>\n"
 "Language: sk\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.0-dev\n"
+"X-Generator: Weblate 2026.9\n"
 "Generated-By: Babel 2.9.1\n"
 
 #: healthcheck_system/flash_writes.py:58 healthcheck_system/flash_writes.py:54
@@ -107,8 +107,7 @@ msgstr "Množstvo zápisov je naozaj vysoké!"
 
 #: healthcheck_system/flash_writes.py:152
 msgid "You should act now to prevent permanent hardware damage!"
-msgstr ""
-"Mali by ste okamžite konať, aby nedošlo k trvalému poškodeniu hardware!"
+msgstr "Mali by ste okamžite konať, aby nedošlo k trvalému poškodeniu hardware!"
 
 #: healthcheck_system/free_ram.py:38 healthcheck_system/free_ram.py:32
 #: healthcheck_system/free_ram.py:30
@@ -120,8 +119,8 @@ msgid ""
 "Amount of memory or less that triggers error. The format is number and unit "
 "(such as '80MB')"
 msgstr ""
-"Pokles pod množstvo pamäti, ktoré vyvolá chybu. Formát je číslo a jednotka ("
-"napríklad „80 MB“)"
+"Pokles pod množstvo pamäti, ktoré vyvolá chybu. Formát je číslo a jednotka "
+"(napríklad „80 MB“)"
 
 #: healthcheck_system/free_ram.py:64
 msgid ""
@@ -214,8 +213,8 @@ msgid ""
 " You should also check snapshots and remove unnecessary ones (using schnapps "
 "or by any other way you are using)."
 msgstr ""
-" Mali by ste tiež skontrolovať body obnovenia a nepotrebné odstrániť ("
-"pomocou schnapps alebo iným spôsobom, ktorý používate)."
+" Mali by ste tiež skontrolovať body obnovenia a nepotrebné odstrániť "
+"(pomocou schnapps alebo iným spôsobom, ktorý používate)."
 
 #: healthcheck_system/free_storage.py:169 healthcheck_system/free_storage.py:97
 msgid ""
@@ -580,8 +579,7 @@ msgstr "Nasledujúce aktuálne spustené služby sú zakázané: "
 msgid ""
 "Enabled services are started on startup. You might want to enable these "
 "services."
-msgstr ""
-"Povolené služby sa spustia pri štarte. Možno ich budete chcieť povoliť."
+msgstr "Povolené služby sa spustia pri štarte. Možno ich budete chcieť povoliť."
 
 #: healthcheck_system/services.py:140 healthcheck_system/services.py:117
 msgid "Using either LuCI or SSH enable mentioned services."
