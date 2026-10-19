@@ -18,5 +18,5 @@ def parse_bytes(value: str, unit: typing.Optional[str] = None) -> int:
     else:
         float_value = float(value)
     if unit not in BYTES_UNITS:
-        return ValueError("Unit is invalid: " + unit)
-    return float_value * math.pow(1024, BYTES_UNITS.index(unit))
+        raise ValueError("Unit is invalid: " + unit)
+    return int(float_value * math.pow(1024, BYTES_UNITS.index(unit)))

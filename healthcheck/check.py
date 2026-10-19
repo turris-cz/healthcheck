@@ -76,8 +76,8 @@ class Check(config.Configurable, metaclass=abc.ABCMeta):
 
         Returns instance of Report.
         """
-        if not self.config["enable"] or not self.plugin.config["enable"]:
-            return DisabledCheckReport(self.plugin.config["enable"], self.config["enable"])
+        if not self.config["enable"].value or not self.plugin.config["enable"].value:
+            return DisabledCheckReport(self.plugin.config["enable"].value, self.config["enable"].value)
         try:
             data = self._collect_data() or None
             parameters = self._parameters(data) or None
@@ -114,8 +114,8 @@ class DisabledCheckReport(report.InconclusiveReport):
     """Check execution wasn't attempted as it is disabled."""
 
     def __init__(self, enable_plugin: bool, enable_check: bool):
-        self.disabled_plugin = not disabled_plugin
-        self.disabled_check = not disabled_check
+        self.disabled_plugin = not enable_plugin
+        self.disabled_check = not enable_check
 
     def summary(self) -> str:
         return _("Check execution is disabled")
