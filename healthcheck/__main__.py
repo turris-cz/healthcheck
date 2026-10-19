@@ -1,3 +1,5 @@
+"""Command line interface of Healthcheck."""
+
 import argparse
 import logging
 import os
@@ -5,7 +7,7 @@ import sys
 
 from . import HealthCheck
 from ._gettext import _
-from ._output import ConsoleFormater, JSONFormater, NotificationFormater
+from ._output import ConsoleFormatter, JSONFormatter, NotificationFormatter
 
 logger = logging.getLogger(__name__)
 
@@ -37,8 +39,9 @@ def detach_std():
     sys.stdout.close()
     sys.stderr.close()
     sys.stdin.close()
-    sys.stdout = sys.stderr = open(os.devnull, "w")
-    sys.stdin = open(os.devnull, "r")
+    # The files have to stay open for the rest of the process lifetime.
+    sys.stdout = sys.stderr = open(os.devnull, "w", encoding="utf-8")  # pylint: disable=consider-using-with
+    sys.stdin = open(os.devnull, "r", encoding="utf-8")  # pylint: disable=consider-using-with
 
 
 def list_modules(handler):
@@ -53,17 +56,37 @@ def list_config_options(handler):
 
     def configs():
         for plugin in handler.values():
-            for config in plugin.config.values():
-                yield config
+            yield from plugin.config.values()
             for check in plugin.values():
-                for config in check.config.values():
-                    yield config
-        for config in NotificationFormater(handler.euci).config.values():
-            yield config
+                yield from check.config.values()
+        yield from NotificationFormatter(handler.euci).config.values()
 
     for config in configs():
         print(config.path(join=True))
         print("  " + config.option.description)
+
+
+def select_checks(handler, requested):
+    "Resolve requested checks to list of (plugin_name, check_name). All checks are selected if none are requested."
+    if not requested:
+        return [(plugin_name, check_name) for plugin_name, plugin in handler.items() for check_name in plugin]
+    checks = []
+    for req_check in requested:
+        req_split = req_check.split(":", maxsplit=1)
+        plugin_name = req_split[0]
+        if plugin_name not in handler:
+            logger.error("%s: %s", _("No such plugin"), plugin_name)
+            continue
+        if len(req_split) == 1:
+            for check_name in handler[plugin_name]:
+                checks.append((plugin_name, check_name))
+        else:
+            check_name = req_split[1]
+            if check_name not in handler[plugin_name]:
+                logger.error("%s: %s:%s", _("No such check in plugin"), plugin_name, check_name)
+                continue
+            checks.append((plugin_name, check_name))
+    return checks
 
 
 def main():
@@ -73,9 +96,11 @@ def main():
     handler = HealthCheck()
 
     if args.list:
-        return list_modules(handler)  # If plugins list is requested then just list it and exit
+        list_modules(handler)  # If plugins list is requested then just list it and exit
+        return
     if args.config_list:
-        return list_config_options(handler)  # If configuration listing is requested then just list it and exit
+        list_config_options(handler)  # If configuration listing is requested then just list it and exit
+        return
 
     if args.background:
         if os.fork():
@@ -83,32 +108,12 @@ def main():
         else:
             return
 
-    checks = []
-    if args.check:
-        for req_check in args.check:
-            req_split = req_check.split(":", maxsplit=1)
-            plugin_name = req_split[0]
-            if plugin_name not in handler:
-                logger.error("%s: %s", _("No such plugin"), plugin_name)
-                continue
-            if len(req_split) == 1:
-                for check_name in handler[plugin_name]:
-                    checks.append((plugin_name, check_name))
-            else:
-                check_name = req_split[1]
-                if check_name not in handler[plugin_name]:
-                    logger.error("%s: %s:%s", _("No such check in plugin"), plugin_name, check_name)
-                    continue
-                checks.append((plugin_name, check_name))
-    else:
-        for plugin_name, plugin in handler.items():
-            for check_name in plugin:
-                checks.append((plugin_name, check_name))
+    checks = select_checks(handler, args.check)
 
-    formater = (
-        JSONFormater() if args.json else NotificationFormater(handler.euci) if args.periodic else ConsoleFormater()
+    formatter = (
+        JSONFormatter() if args.json else NotificationFormatter(handler.euci) if args.periodic else ConsoleFormatter()
     )
-    with formater as format_reports:
+    with formatter as format_reports:
         for check in checks:
             format_reports(check[0], check[1], handler[check[0]][check[1]]())
 

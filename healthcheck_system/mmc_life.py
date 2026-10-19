@@ -1,3 +1,5 @@
+"""Check of eMMC life estimations."""
+
 import re
 import shutil
 import subprocess
@@ -36,7 +38,7 @@ class MMCLife(Check):
         # This relies only on naming schema of Linux devices but that should be enough in most cases.
         return tuple(dev for dev in Path("/dev").glob("mmcblk[0-9]") if dev.is_block_device())
 
-    def _run(self, data, param):
+    def _run(self, data, param):  # pylint: disable=too-many-return-statements
         if param is None:
             return NoMMCDeviceReport()
         if shutil.which("mmc") is None:

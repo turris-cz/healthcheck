@@ -1,4 +1,4 @@
-"""Output formaters."""
+"""Output formatters."""
 
 import abc
 import datetime
@@ -21,8 +21,8 @@ from ._gettext import _
 logger = logging.getLogger(__name__)
 
 
-class OutputFormater(abc.ABC):
-    """Generic definition of formater."""
+class OutputFormatter(abc.ABC):
+    """Generic definition of formatter."""
 
     def __init__(self):
         self.level = 50
@@ -30,7 +30,7 @@ class OutputFormater(abc.ABC):
     def __enter__(self):
         return self.report
 
-    def __exit__(self, type, value, traceback):
+    def __exit__(self, exc_type, exc_value, traceback):
         self.finish()
 
     @abc.abstractmethod
@@ -44,7 +44,7 @@ class OutputFormater(abc.ABC):
         """
 
 
-class ConsoleFormater(OutputFormater):
+class ConsoleFormatter(OutputFormatter):  # pylint: disable=too-many-instance-attributes
     """Output to console in text possibly with colors."""
 
     def __init__(self):
@@ -120,7 +120,7 @@ class ConsoleFormater(OutputFormater):
         self.console.print("  ".join(report))
 
 
-class JSONFormater(OutputFormater):
+class JSONFormatter(OutputFormatter):
     """Output in JSON."""
 
     def __init__(self):
@@ -148,7 +148,7 @@ class JSONFormater(OutputFormater):
             print(json.dumps(self.data))
 
 
-class NotificationFormater(OutputFormater, config.Configurable):
+class NotificationFormatter(OutputFormatter, config.Configurable):
     """Output to notification system."""
 
     DEFAULT_LEVEL = 40
@@ -195,7 +195,7 @@ class NotificationFormater(OutputFormater, config.Configurable):
         else:
             add(None, report)
 
-    def finish(self):
+    def finish(self):  # pylint: disable=too-many-branches
         worst = []
         better = []
         nochange = []
@@ -250,14 +250,14 @@ class NotificationFormater(OutputFormater, config.Configurable):
             message += nochange
         assert message, "There has to be some message if we get here"
         subprocess.run(["create_notification", "-s", "error", "\n\n".join(message)], check=True)
-        subprocess.run(["notifier"])
+        subprocess.run(["notifier"], check=False)
 
     @staticmethod
     def _report2str(identifier, report):
         suggestion = report.suggestion()
         idsplit = identifier.split("|", maxsplit=1)
         attr = f"## {idsplit[1]} " if len(idsplit) > 1 else ""
-        return f"{attr}## {report.summary()}\n" + report.details() + suggestion if suggestion else ""
+        return f"{attr}## {report.summary()}\n" + report.details() + (suggestion if suggestion else "")
 
     @classmethod
     def config_type(cls):

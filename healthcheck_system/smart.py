@@ -1,21 +1,12 @@
-import itertools
+"""Checks of S.M.A.R.T. attributes of ATA/SATA and NVMe drives."""
+
 import json
 import shutil
 import subprocess
-import typing
 from pathlib import Path
 
 from healthcheck.check import Check
-from healthcheck.report import (
-    HardwareErrorReport,
-    HardwareFatalErrorReport,
-    HardwareWarningReport,
-    InconclusiveReport,
-    MultiReport,
-    NotApplicableReport,
-    PassReport,
-    Report,
-)
+from healthcheck.report import InconclusiveReport, NotApplicableReport
 
 from ._gettext import _
 
@@ -25,7 +16,7 @@ DEFAULT_TEMPERATURE_ERROR = 60
 
 def smart(dev) -> tuple[int, dict]:
     """Loads S.M.A.R.T. info from provided device device and returns dict."""
-    out = subprocess.run(["smartctl", "--attributes", "--json=c", dev], capture_output=True)
+    out = subprocess.run(["smartctl", "--attributes", "--json=c", dev], capture_output=True, check=False)
     info = json.loads(out.stdout)
     return out.returncode, info
 
@@ -46,6 +37,7 @@ class SmartATA(Check):
             return UnableToGetSMARTReport(info)
 
         # TODO really check here
+        # pylint: disable=unused-variable
         reallocated_sector_cnt = self._smart_attribute(info, "Reallocated_Sector_Ct")
         reallocated_event_cnt = self._smart_attribute(info, "Reallocated_Event_Count")
         spin_retry_count = self._smart_attribute(info, "Spin_Retry_Count")
@@ -91,6 +83,7 @@ class SmartNVVMe(Check):
             return UnableToGetSMARTReport(info)
 
         # TODO really check here
+        # pylint: disable=unused-variable
         available_spare = self._smart_attribute(info, "available_spare")
         media_errors = self._smart_attribute(info, "media_errors")
         critical_warning = self._smart_attribute(info, "critical_warning")
@@ -132,27 +125,6 @@ class UnableToGetSMARTReport(InconclusiveReport):
     def __init__(self, info=None):
         # Info is either from smartctl in case of failed smartctl or None in case of missing smartmontools.
         self.info = info
-
-    def summary(self):
-        return _("It is not possible to read extcsd data.")
-
-    def details(self):
-        if self.info is None:
-            return _("MMC tools (mmc-utils) are missing or not accessible.")
-        return _("Read failed with error: ") + str(self.info["smartctl"]["messages"][0]["string"])
-
-    def suggestion(self):
-        if self.info is None:
-            return _("You should install mmc-utils or any other package that provides mmc-utils's command 'mmc'.")
-        return super().suggestion()
-
-
-class PreFailAttributesError(HardwareErrorReport):
-    """Some of the attributes that are expceted to be always zero are not."""
-
-    def __init__(self, reallocated_sector_cnt, spin_retry_count):
-        self.reallocated_sector_cnt = reallocated_sector_cnt
-        self.spin_retry_count = spin_retry_count
 
     def summary(self):
         return _("It is not possible to read extcsd data.")

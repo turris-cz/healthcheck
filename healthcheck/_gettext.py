@@ -1,3 +1,5 @@
+"""Translations for Healthcheck core."""
+
 import gettext
 import pathlib
 

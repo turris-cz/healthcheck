@@ -7,7 +7,7 @@ import pathlib
 
 
 class Storage(collections.abc.MutableMapping):
-    """Generic storage implemntation."""
+    """Generic storage implementation."""
 
     def __init__(self, path: pathlib.Path, update: bool = True):
         if not path.parent.exists():
@@ -15,7 +15,8 @@ class Storage(collections.abc.MutableMapping):
         self.path = path
         self._update = update
         existed = path.exists()
-        self.file = open(path, "r+" if existed else "x", encoding="utf-8")
+        # The file is held open (and locked) until close() is called.
+        self.file = open(path, "r+" if existed else "x", encoding="utf-8")  # pylint: disable=consider-using-with
         fcntl.flock(self.file.fileno(), fcntl.LOCK_EX if update else fcntl.LOCK_SH)
         if existed:
             self.file.seek(0)
@@ -38,7 +39,7 @@ class Storage(collections.abc.MutableMapping):
     def __enter__(self):
         return self
 
-    def __exit__(self, type, value, traceback):
+    def __exit__(self, exc_type, exc_value, traceback):
         self.close()
 
     def __getitem__(self, key):

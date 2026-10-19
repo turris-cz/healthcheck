@@ -1,3 +1,5 @@
+"""Translations for Healthcheck system plugin."""
+
 import gettext
 import pathlib
 

@@ -1,3 +1,5 @@
+"""Check of amount of free memory."""
+
 import logging
 import resource
 from pathlib import Path
@@ -78,7 +80,7 @@ class FreeRam(Check):
     def meminfo():
         "Load data from /proc/meminfo and returns dict"
         data = {}
-        with open("/proc/meminfo", "r") as file:
+        with open("/proc/meminfo", "r", encoding="utf-8") as file:
             for line in file:
                 splitted = [x.strip() for x in line.split(" ") if x]
                 splitted[0] = splitted[0][:-1]  # remove ':'

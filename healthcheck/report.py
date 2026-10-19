@@ -217,7 +217,8 @@ class HardwareWarningReport(HardwareReport):
 
     def level_description(self):
         return _(
-            "A check detected a problem with the hardware. It is far from fatal, but might be causing some functionality"
+            "A check detected a problem with the hardware. It is far from fatal, but might be causing some "
+            "functionality"
             "degradation now or in future. Please solve this issue at your convenience."
         )
 

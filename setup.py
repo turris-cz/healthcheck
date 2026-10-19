@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Setuptools packaging for Healthcheck."""
+
 import pathlib
 import subprocess
 
@@ -6,8 +8,11 @@ from setuptools import setup
 from setuptools.command.install import install
 
 
-class InstallWithCompiledMessages(install):
+class InstallWithCompiledMessages(install):  # pylint: disable=too-few-public-methods
+    """Install command that compiles translations first."""
+
     def run(self):
+        """Compile translation catalogs and then run regular install."""
         subprocess.run(["make", "-C", pathlib.Path(__file__).parent], check=True)
         super().run()
 

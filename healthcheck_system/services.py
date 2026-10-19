@@ -1,3 +1,5 @@
+"""Checks of services enabled state."""
+
 import json
 import subprocess
 import typing
@@ -14,10 +16,13 @@ class ReenabledServices(Check):
 
     def _run(self, data, param):
         disabled = []
-        with open("/etc/services_wanted", "r") as file:
-            for service in file:
+        with open("/etc/services_wanted", "r", encoding="utf-8") as file:
+            for line in file:
+                service = line.strip()
+                if not service:
+                    continue
                 if (Path("/etc/init.d") / service).exists():
-                    if not next((Path("/etc/rc.d") / service).glob("*[0-9]" + service)):
+                    if not next(Path("/etc/rc.d").glob("[KS][0-9][0-9]" + service), False):
                         disabled.append(service)
         if disabled:
             return ReenabledServicesReport(disabled)

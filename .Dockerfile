@@ -66,7 +66,7 @@ RUN apt-get update && apt-get install -y python3-venv
 RUN python3 -m venv /opt/venv && \
     . /opt/venv/bin/activate && \
     pip install --upgrade pip && \
-    pip install black isort pylint mypy
+    pip install black isort pylint mypy setuptools
 
 # Ensure the virtual environment is used by default
 ENV PATH="/opt/venv/bin:$PATH"

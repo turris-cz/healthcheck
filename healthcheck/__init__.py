@@ -3,8 +3,8 @@
 import collections.abc
 import logging
 import typing
+from importlib.metadata import entry_points
 
-import pkg_resources
 from euci import EUci
 
 from .plugin import Plugin
@@ -32,15 +32,16 @@ class HealthCheck(collections.abc.Mapping):
         self.euci = EUci()
         # Discover available plugins
         if plugins_discovery:
-            for plugin in pkg_resources.iter_entry_points("healthcheck.plugins"):
-                if plugin.name not in disable_plugins:
+            for entry_point in entry_points(group="healthcheck.plugins"):
+                if entry_point.name not in disable_plugins:
                     try:
-                        loaded_plugin = plugin.load()
-                    except Exception:
-                        logging.exception("Plugin '%s' failed to load", plugin.name)
-                    if plugin.name != loaded_plugin.name():
+                        loaded_plugin = entry_point.load()
+                    except Exception:  # pylint: disable=broad-exception-caught
+                        logging.exception("Plugin '%s' failed to load", entry_point.name)
+                        continue
+                    if entry_point.name != loaded_plugin.name():
                         logging.warning(
-                            "Setup tool plugin '%s' has different name: %s", plugin.name, loaded_plugin.name()
+                            "Setup tool plugin '%s' has different name: %s", entry_point.name, loaded_plugin.name()
                         )
                     self.__add_plugin(loaded_plugin)
         # Push extra plugins
@@ -52,7 +53,7 @@ class HealthCheck(collections.abc.Mapping):
         if issubclass(plugin, Plugin):
             try:
                 self._plugins[plugin.name()] = plugin(self.euci)
-            except Exception:
+            except Exception:  # pylint: disable=broad-exception-caught
                 logger.exception("Plugin '%s' failed to instantiate", plugin.name)
         else:
             logger.error(

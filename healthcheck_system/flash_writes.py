@@ -1,3 +1,5 @@
+"""Check of amount of writes to flash storage."""
+
 import datetime
 import itertools
 from pathlib import Path
@@ -68,7 +70,7 @@ class FlashWrites(Check):
     @staticmethod
     def uptime():
         """Returns uptime of device."""
-        with open("/proc/uptime", "r") as file:
+        with open("/proc/uptime", "r", encoding="utf-8") as file:
             return float(next(file).split()[0])
 
 
@@ -93,7 +95,8 @@ class _FlashWritesReport(Report):
         timedelta = humanize.time.naturaldelta(datetime.timedelta(seconds=self.device_uptime))
         return (
             _(
-                "Number of writes on MMC storages is inherently linked to lifespan of it. Compared to some other regular "
+                "Number of writes on MMC storages is inherently linked to lifespan of it. Compared to some other "
+                "regular "
                 "storages where excessive writes are expected and lifespan still can regularly meet lifespan of the "
                 "device, the excessive writes to MMC can shorten lifespan to just a year or two. The that excessive "
                 "writes are not regularly covered by warranty."
@@ -133,7 +136,8 @@ class FlashWritesTooEarly(_FlashWritesReport, TryAgainLater):
     def details(self):
         return (
             _(
-                "It is possible that this is just write happenig right after the boot and all will settle down in a while."
+                "It is possible that this is just write happening right after the boot and all will settle down in a "
+                "while."
             )
             + "\n"
             + super().details()

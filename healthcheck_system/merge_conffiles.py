@@ -1,3 +1,5 @@
+"""Check of configuration files waiting to be merged."""
+
 from pathlib import Path
 
 from healthcheck.check import Check

@@ -84,13 +84,13 @@ class Check(config.Configurable, metaclass=abc.ABCMeta):
             if parameters:
                 return report.MultiReport({param: self.__run(data, param) for param in parameters})
             return self.__run(data, None)
-        except Exception:
+        except Exception:  # pylint: disable=broad-exception-caught
             return InconclusiveExceptionReport()
 
     def __run(self, data, param):
         try:
             return self._run(data, param)
-        except Exception:
+        except Exception:  # pylint: disable=broad-exception-caught
             return InconclusiveExceptionReport()
 
 

@@ -1,3 +1,5 @@
+"""Check of free space on mounted file-systems."""
+
 import os
 import typing
 
@@ -124,7 +126,7 @@ class FreeStorage(Check):
         point. It contain fields "device" and "type".
         """
         ret = {}
-        with open("/proc/mounts", "r") as file:
+        with open("/proc/mounts", "r", encoding="utf-8") as file:
             for line in file:
                 columns = line.split()
                 if "rw" not in columns[3].split(","):

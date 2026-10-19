@@ -1,3 +1,5 @@
+"""Check that e-mail notifications are configured."""
+
 from euci import EUci
 
 from healthcheck.check import Check

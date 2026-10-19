@@ -1,3 +1,5 @@
+"""Check of modifications of files installed from packages."""
+
 from hashlib import sha256
 from pathlib import Path
 
@@ -32,7 +34,7 @@ class PkgCheck(Check):
                         continue
                     if file_hash != self._sha256sum(path):
                         if pkg_name not in modified:
-                            modified[pkg_name] = list()
+                            modified[pkg_name] = []
                         modified[pkg_name].append(path)
         if modified:
             return PkgCheckReport(modified)
@@ -71,7 +73,8 @@ class PkgCheckPass(PassReport):
 
     def details(self):
         return _(
-            "No files from packages were modified and thus there is no danger that subsequent update would erase these changes."
+            "No files from packages were modified and thus there is no danger that subsequent update would erase "
+            "these changes."
         )
 
 
