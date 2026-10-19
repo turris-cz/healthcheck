@@ -11,7 +11,6 @@ from .free_storage import FreeStorage
 from .merge_conffiles import MergeConffiles
 from .mmc_life import MMCLife
 from .pkg_check import PkgCheck
-from .resolver_conf import ResolverConf
 from .services import DisabledServices, ReenabledServices
 from .smart import SmartATA, SmartNVVMe
 

@@ -3,7 +3,6 @@
 import abc
 import collections.abc
 import dataclasses
-import functools
 import re
 import typing
 

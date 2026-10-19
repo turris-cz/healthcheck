@@ -10,7 +10,6 @@ from healthcheck.report import (
     HardwareFatalErrorReport,
     HardwareWarningReport,
     InconclusiveReport,
-    MultiReport,
     NotApplicableReport,
     PassReport,
     Report,
