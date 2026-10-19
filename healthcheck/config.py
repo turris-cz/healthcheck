@@ -1,5 +1,5 @@
-"""This implements classes to handle configuration for both healtcheck itself and every individual check.
-"""
+"""This implements classes to handle configuration for both healtcheck itself and every individual check."""
+
 import abc
 import collections.abc
 import dataclasses

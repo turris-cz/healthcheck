@@ -1,5 +1,5 @@
-"""Output formaters.
-"""
+"""Output formaters."""
+
 import abc
 import datetime
 import itertools
@@ -177,9 +177,7 @@ class NotificationFormater(OutputFormater, config.Configurable):
         level = (
             self.hardware_level
             if isinstance(report, _report.HardwareReport)
-            else self.software_level
-            if isinstance(report, _report.SoftwareReport)
-            else self.level
+            else self.software_level if isinstance(report, _report.SoftwareReport) else self.level
         )
 
         def add(attr, report):

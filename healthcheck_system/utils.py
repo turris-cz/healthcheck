@@ -1,5 +1,5 @@
-"""These are various common utility functions shared by multiple modules.
-"""
+"""These are various common utility functions shared by multiple modules."""
+
 import math
 import re
 import typing

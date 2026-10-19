@@ -2,6 +2,7 @@
 
 You should import it to such plugin and use Plugin class to define it.
 """
+
 import abc
 import collections.abc
 import typing

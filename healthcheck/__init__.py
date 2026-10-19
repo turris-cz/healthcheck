@@ -1,5 +1,5 @@
-"""This is Healthcheck. Tool to run various checks to ensure that system is in stable condition.
-"""
+"""This is Healthcheck. Tool to run various checks to ensure that system is in stable condition."""
+
 import collections.abc
 import logging
 import typing

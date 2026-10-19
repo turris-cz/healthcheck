@@ -3,6 +3,7 @@
 Any check execution terminates with a report. There are defined types of reports and those are implemented here.
 The check instanciates the correct one.
 """
+
 import abc
 import collections
 import collections.abc

@@ -2,6 +2,7 @@
 
 You should import it to plugin and use its classes to define new checks.
 """
+
 import abc
 import sys
 import traceback

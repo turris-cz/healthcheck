@@ -1,5 +1,5 @@
-"""Healthcheck setup checks.
-"""
+"""Healthcheck setup checks."""
+
 from euci import EUci
 
 from healthcheck.plugin import Plugin
