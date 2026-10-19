@@ -17,7 +17,7 @@ RUN \
 
 # Compile libubox
 RUN \
-  git clone git://git.openwrt.org/project/libubox.git ~/libubox && \
+  git clone https://git.openwrt.org/project/libubox.git ~/libubox && \
   cd ~/libubox && \
   cmake CMakeLists.txt && \
   make install && \
@@ -26,7 +26,7 @@ RUN \
 
 # Compile uci
 RUN \
-  git clone git://git.openwrt.org/project/uci.git ~/uci && \
+  git clone https://git.openwrt.org/project/uci.git ~/uci && \
   cd ~/uci && \
   cmake CMakeLists.txt && \
   make install && \
